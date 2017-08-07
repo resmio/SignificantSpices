@@ -83,6 +83,7 @@
 		5E41E9891F38B2890088339B /* SignificantSpices */ = {
 			isa = PBXGroup;
 			children = (
+				5E41E9A71F38B5980088339B /* Sources */,
 				5E41E98A1F38B2890088339B /* SignificantSpices.h */,
 				5E41E98B1F38B2890088339B /* Info.plist */,
 			);
@@ -96,6 +97,29 @@
 				5E41E9971F38B2890088339B /* Info.plist */,
 			);
 			path = SignificantSpicesTests;
+			sourceTree = "<group>";
+		};
+		5E41E9A71F38B5980088339B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5E41E9A81F38B59D0088339B /* Swift */,
+				5E41E9AB1F38B5D60088339B /* Foundation */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		5E41E9A81F38B59D0088339B /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
+		5E41E9AB1F38B5D60088339B /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Foundation;
 			sourceTree = "<group>";
 		};
 		7F7BADE2B4861E6E2E0029FC /* Frameworks */ = {
@@ -521,6 +545,7 @@
 				5E41E99D1F38B2890088339B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E41E99E1F38B2890088339B /* Build configuration list for PBXNativeTarget "SignificantSpicesTests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +554,7 @@
 				5E41E9A01F38B2890088339B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
