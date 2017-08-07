@@ -85,7 +85,6 @@
 				8B81AFD2E021AB7ECF0B1942754954B6 /* Foundation */,
 				4AD8A13AA32237370BCB20793AEE82D7 /* Swift */,
 			);
-			name = Sources;
 			path = Sources;
 			sourceTree = "<group>";
 		};
@@ -93,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = Swift;
 			path = Swift;
 			sourceTree = "<group>";
 		};
@@ -130,7 +128,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = Foundation;
 			path = Foundation;
 			sourceTree = "<group>";
 		};
@@ -213,6 +210,7 @@
 					1269BF55A375A6C5DA75ECF603F1EC08 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 56W9E3974K;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					FCC79E8EC26B3682D7856667903A1794 = {
@@ -366,6 +364,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4469084B5F7D3ECA68156BE199E7596D /* Pods-SignificantSpices.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 56W9E3974K;
@@ -378,6 +377,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = resmio.SignificantSpices;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -487,6 +487,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E013684E684B20237AD01BD8EC07F482 /* Pods-SignificantSpices.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 56W9E3974K;
