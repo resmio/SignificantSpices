@@ -2,6 +2,44 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:LICENSE.md">
+   </FileRef>
+   <FileRef
+      location = "group:README.md">
+   </FileRef>
+   <Group
+      location = "container:"
+      name = "xcode-project-setup">
+      <Group
+         location = "group:scripts"
+         name = "scripts">
+         <FileRef
+            location = "group:post-merge">
+         </FileRef>
+         <FileRef
+            location = "group:pre-push">
+         </FileRef>
+         <FileRef
+            location = "group:run_synx">
+         </FileRef>
+         <FileRef
+            location = "group:run_xUnique">
+         </FileRef>
+         <FileRef
+            location = "group:xUnique.py">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Gemfile">
+      </FileRef>
+      <FileRef
+         location = "group:run_synx_and_xUnique">
+      </FileRef>
+      <FileRef
+         location = "group:setup">
+      </FileRef>
+   </Group>
+   <FileRef
       location = "group:SignificantSpices.xcodeproj">
    </FileRef>
    <FileRef
