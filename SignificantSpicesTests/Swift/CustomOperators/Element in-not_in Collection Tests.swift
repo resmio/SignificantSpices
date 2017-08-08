@@ -14,61 +14,43 @@ class NilInOrNotInArrayTests: XCTestCase {
     func testNilIn_NERT_Array() {
         let a: [_NERT] = [_NERT(), _NERT(), _NERT()]
         
-        let nilInA: Bool = nil <> a
-        XCTAssertFalse(nilInA)
-        
-        let nilNotInA: Bool = nil >< a
-        XCTAssertTrue(nilNotInA)
+        XCTAssertFalse(nil <> a)
+        XCTAssertTrue(nil >< a)
     }
     
     func testNilNotIn_NERT_Array() {
         let a: [_NERT] = [_NERT(), _NERT(), _NERT()]
         
-        let nilNotInA: Bool = nil >< a
-        XCTAssertTrue(nilNotInA)
-        
-        let nilInA: Bool = nil <> a
-        XCTAssertFalse(nilInA)
+        XCTAssertTrue(nil >< a)
+        XCTAssertFalse(nil <> a)
     }
     
     func testNilIn_ENRT_Array() {
         let a: [_ENRT] = [1, 2, 3]
         
-        let nilInA: Bool = nil <> a
-        XCTAssertFalse(nilInA)
-        
-        let nilNotInA: Bool = nil >< a
-        XCTAssertTrue(nilNotInA)
+        XCTAssertFalse(nil <> a)
+        XCTAssertTrue(nil >< a)
     }
     
     func testNilNotIn_ENRT_Array() {
         let a: [_ENRT] = [1, 2, 3]
         
-        let nilNotInA: Bool = nil >< a
-        XCTAssertTrue(nilNotInA)
-        
-        let nilInA: Bool = nil <> a
-        XCTAssertFalse(nilInA)
+        XCTAssertTrue(nil >< a)
+        XCTAssertFalse(nil <> a)
     }
     
     func testNilIn_ERT_Array() {
         let a: [_ERT] = [_ERT(1), _ERT(2), _ERT(3)]
         
-        let nilInA: Bool = nil <> a
-        XCTAssertFalse(nilInA)
-        
-        let nilNotInA: Bool = nil >< a
-        XCTAssertTrue(nilNotInA)
+        XCTAssertFalse(nil <> a)
+        XCTAssertTrue(nil >< a)
     }
     
     func testNilNotIn_ERT_Array() {
         let a: [_ERT] = [_ERT(1), _ERT(2), _ERT(3)]
         
-        let nilNotInA: Bool = nil >< a
-        XCTAssertTrue(nilNotInA)
-        
-        let nilInA: Bool = nil <> a
-        XCTAssertFalse(nilInA)
+        XCTAssertTrue(nil >< a)
+        XCTAssertFalse(nil <> a)
     }
 }
 
@@ -76,38 +58,18 @@ class NilInOrNotInArrayTests: XCTestCase {
 class NERT_InOrNotInArrayTests: XCTestCase {
     func test_NERT_InArray() {
         let a: _NERT = _NERT()
-        let b: _NERT = a
-        let c: [_NERT] = [a, _NERT(), _NERT()]
+        let b: [_NERT] = [a, _NERT(), _NERT()]
         
-        let aInC: Bool = a <> c
-        XCTAssertTrue(aInC)
-        
-        let bInC: Bool = b <> c
-        XCTAssertTrue(bInC)
-        
-        let aNotInC: Bool = a >< c
-        XCTAssertFalse(aNotInC)
-        
-        let bNotInC: Bool = b >< c
-        XCTAssertFalse(bNotInC)
+        XCTAssertTrue(a <> b)
+        XCTAssertFalse(a >< b)
     }
     
     func test_NERT_NotInArray() {
         let a: _NERT = _NERT()
-        let b: _NERT = a
-        let c: [_NERT] = [_NERT(), _NERT(), _NERT()]
+        let b: [_NERT] = [_NERT(), _NERT(), _NERT()]
         
-        let aNotInC: Bool = a >< c
-        XCTAssertTrue(aNotInC)
-        
-        let bNotInC: Bool = b >< c
-        XCTAssertTrue(bNotInC)
-        
-        let aInC: Bool = a <> c
-        XCTAssertFalse(aInC)
-        
-        let bInC: Bool = b <> c
-        XCTAssertFalse(bInC)
+        XCTAssertTrue(a >< b)
+        XCTAssertFalse(a <> b)
     }
 }
 
@@ -118,35 +80,18 @@ class ENRT_InOrNotInArrayTests: XCTestCase {
         let b: _ENRT = 1
         let c: [_ENRT] = [a, 2, 3]
         
-        let aInC: Bool = a <> c
-        XCTAssertTrue(aInC)
+        XCTAssertTrue(a <> c)
+        XCTAssertFalse(a >< c)
         
-        let bInC: Bool = b <> c
-        XCTAssertTrue(bInC)
-        
-        let aNotInC: Bool = a >< c
-        XCTAssertFalse(aNotInC)
-        
-        let bNotInC: Bool = b >< c
-        XCTAssertFalse(bNotInC)
+        XCTAssertTrue(b <> c)
+        XCTAssertFalse(b >< c)
     }
     
     func test_ENRT_NotInArray() {
-        let a: _ENRT = 1
-        let b: _ENRT = 1
-        let c: [_ENRT] = [2, 3, 4]
+        let a: [_ENRT] = [2, 3, 4]
         
-        let aNotInC: Bool = a >< c
-        XCTAssertTrue(aNotInC)
-        
-        let bNotInC: Bool = b >< c
-        XCTAssertTrue(bNotInC)
-        
-        let aInC: Bool = a <> c
-        XCTAssertFalse(aInC)
-        
-        let bInC: Bool = b <> c
-        XCTAssertFalse(bInC)
+        XCTAssertTrue(1 >< a)
+        XCTAssertFalse(1 <> a)
     }
 }
 
@@ -157,35 +102,19 @@ class ERT_InOrNotInArrayTests: XCTestCase {
         let b: _ERT = _ERT(1)
         let c: [_ERT] = [a, _ERT(2), _ERT(3)]
         
-        let aInC: Bool = a <> c
-        XCTAssertTrue(aInC)
+        XCTAssertTrue(a <> c)
+        XCTAssertFalse(a >< c)
         
-        let bInC: Bool = b <> c
-        XCTAssertTrue(bInC)
-        
-        let aNotInC: Bool = a >< c
-        XCTAssertFalse(aNotInC)
-        
-        let bNotInC: Bool = b >< c
-        XCTAssertFalse(bNotInC)
+        XCTAssertTrue(b <> c)
+        XCTAssertFalse(b >< c)
     }
     
     func test_ERT_NotInArray() {
         let a: _ERT = _ERT(1)
-        let b: _ERT = _ERT(1)
-        let c: [_ERT] = [_ERT(2), _ERT(3), _ERT(4)]
+        let b: [_ERT] = [_ERT(2), _ERT(3), _ERT(4)]
         
-        let aNotInC: Bool = a >< c
-        XCTAssertTrue(aNotInC)
-        
-        let bNotInC: Bool = b >< c
-        XCTAssertTrue(bNotInC)
-        
-        let aInC: Bool = a <> c
-        XCTAssertFalse(aInC)
-        
-        let bInC: Bool = b <> c
-        XCTAssertFalse(bInC)
+        XCTAssertTrue(a >< b)
+        XCTAssertFalse(a <> b)
     }
 }
 
@@ -194,21 +123,15 @@ class NilInOrNotInSetTests: XCTestCase {
     func testNilInSet() {
         let a: Set<Int> = Set([1, 2, 3])
         
-        let nilInA: Bool = nil <> a
-        XCTAssertFalse(nilInA)
-        
-        let nilNotInA: Bool = nil >< a
-        XCTAssertTrue(nilNotInA)
+        XCTAssertFalse(nil <> a)
+        XCTAssertTrue(nil >< a)
     }
     
     func testNilNotIn_HNRT_Set() {
         let a: Set<Int> = Set([1, 2, 3])
         
-        let nilNotInA: Bool = nil >< a
-        XCTAssertTrue(nilNotInA)
-        
-        let nilInA: Bool = nil <> a
-        XCTAssertFalse(nilInA)
+        XCTAssertTrue(nil >< a)
+        XCTAssertFalse(nil <> a)
     }
 }
 
@@ -216,40 +139,23 @@ class NilInOrNotInSetTests: XCTestCase {
 class Int_InOrNotInSetTests: XCTestCase {
     func testIntInSet() {
         let a: Int = 1
-        let b: Int = a
+        let b: Int = 1
         
         let c: Set<Int> = Set([a, 2, 3])
         
-        let aInC: Bool = a <> c
-        XCTAssertTrue(aInC)
+        XCTAssertTrue(a <> c)
+        XCTAssertFalse(a >< c)
         
-        let bInC: Bool = b <> c
-        XCTAssertTrue(bInC)
-        
-        let aNotInC: Bool = a >< c
-        XCTAssertFalse(aNotInC)
-        
-        let bNotInC: Bool = b >< c
-        XCTAssertFalse(bNotInC)
+        XCTAssertTrue(b <> c)
+        XCTAssertFalse(b >< c)
     }
     
     func testIntNotInSet() {
         let a: Int = 1
-        let b: Int = a
+        let b: Set<Int> = Set([2, 3, 4])
         
-        let c: Set<Int> = Set([2, 3, 4])
-        
-        let aInC: Bool = a <> c
-        XCTAssertFalse(aInC)
-        
-        let bInC: Bool = b <> c
-        XCTAssertFalse(bInC)
-        
-        let aNotInC: Bool = a >< c
-        XCTAssertTrue(aNotInC)
-        
-        let bNotInC: Bool = b >< c
-        XCTAssertTrue(bNotInC)
+        XCTAssertFalse(a <> b)
+        XCTAssertTrue(a >< b)
     }
 }
 
