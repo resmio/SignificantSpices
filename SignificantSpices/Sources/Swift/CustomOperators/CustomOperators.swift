@@ -46,3 +46,30 @@ public func ^ <T: Hashable>(l: Set<T>, r: Set<T>) -> Set<T> {
     return l.symmetricDifference(r)
 }
 
+
+// MARK: - - Collection 'in'/'not in' Operators
+// MARK: Element "in" Collection
+infix operator <> : ComparisonPrecedence
+
+public func <> <T: Equatable>(l: T?, r: [T]) -> Bool {
+    guard let l: T = l else { return false }
+    return r.contains(l)
+}
+
+public func <> <T: Hashable>(l: T?, r: Set<T>) -> Bool {
+    guard let l: T = l else { return false }
+    return r.contains(l)
+}
+
+// MARK: Element "not in" Collection
+infix operator >< : ComparisonPrecedence
+
+public func >< <T: Equatable>(l: T?, r: [T]) -> Bool {
+    guard let l: T = l else { return true }
+    return !(r.contains(l))
+}
+
+public func >< <T: Hashable>(l: T?, r: Set<T>) -> Bool {
+    guard let l: T = l else { return true }
+    return !(r.contains(l))
+}
