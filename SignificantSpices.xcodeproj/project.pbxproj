@@ -12,7 +12,8 @@
 		9030672F85A6D20D6BC3119E0A1AF321 /* CustomOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3835150371474C3CFCA50707F4CF56 /* CustomOperators.swift */; };
 		A810B2F084DEB5258A1BEE3E71F7FA2A /* Pods_SignificantSpices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4332FB54B157D2121723BA622DC5398F /* Pods_SignificantSpices.framework */; };
 		ABB06CD0EAEF0367573B795329B02FDE /* SignificantSpices.h in Headers */ = {isa = PBXBuildFile; fileRef = AB23BE19D6E3B867A63D0979046005EC /* SignificantSpices.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EB12B6DE686681D6519806F8CA887876 /* CustomOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362696888123684E2A8AE01C794D5FB2 /* CustomOperatorTests.swift */; };
+		D0058A78F8583F160CCFFF8767BB2990 /* BoolInPlaceANDAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035763FCB825085C0B4DBBEA18AA6CD0 /* BoolInPlaceANDAssignmentTests.swift */; };
+		D0447BCC50DA457F43D1E11101730E2B /* BoolInPlaceORAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6162931A6BBC06A973E5F132670C26D /* BoolInPlaceORAssignmentTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		035763FCB825085C0B4DBBEA18AA6CD0 /* BoolInPlaceANDAssignmentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolInPlaceANDAssignmentTests.swift; sourceTree = "<group>"; };
 		1EE922369843DBDB5DC5B42B514EAAE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F996EF7EB4B21593CFE79D23607ABBA /* Pods_SignificantSpicesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignificantSpicesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		362696888123684E2A8AE01C794D5FB2 /* CustomOperatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOperatorTests.swift; sourceTree = "<group>"; };
 		4332FB54B157D2121723BA622DC5398F /* Pods_SignificantSpices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignificantSpices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4469084B5F7D3ECA68156BE199E7596D /* Pods-SignificantSpices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignificantSpices.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignificantSpices/Pods-SignificantSpices.debug.xcconfig"; sourceTree = "<group>"; };
 		4FCAB712E0C0C5F9467523A7B4806058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +37,7 @@
 		AB23BE19D6E3B867A63D0979046005EC /* SignificantSpices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignificantSpices.h; sourceTree = "<group>"; };
 		B88CC5EAE04F668DD5A2ABA31EA54ACE /* SignificantSpices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SignificantSpices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF92CF8FDA925C867BA680BAE86641E7 /* Pods-SignificantSpicesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignificantSpicesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SignificantSpicesTests/Pods-SignificantSpicesTests.release.xcconfig"; sourceTree = "<group>"; };
+		C6162931A6BBC06A973E5F132670C26D /* BoolInPlaceORAssignmentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolInPlaceORAssignmentTests.swift; sourceTree = "<group>"; };
 		C952148BBB2362E72B92A6906D6EC7AE /* Pods-SignificantSpicesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignificantSpicesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignificantSpicesTests/Pods-SignificantSpicesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E013684E684B20237AD01BD8EC07F482 /* Pods-SignificantSpices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignificantSpices.release.xcconfig"; path = "Pods/Target Support Files/Pods-SignificantSpices/Pods-SignificantSpices.release.xcconfig"; sourceTree = "<group>"; };
 		E237F779B339D37317197384A5A864CF /* SignificantSpicesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignificantSpicesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,24 +111,6 @@
 			);
 			sourceTree = "<group>";
 		};
-		6FE0C62A884ABFF81B3CDF9C894B54F6 /* Swift */ = {
-			isa = PBXGroup;
-			children = (
-				76E7A6A88B152B49A500808DD5C31167 /* CustomOperators */,
-			);
-			name = Swift;
-			path = Swift;
-			sourceTree = "<group>";
-		};
-		76E7A6A88B152B49A500808DD5C31167 /* CustomOperators */ = {
-			isa = PBXGroup;
-			children = (
-				362696888123684E2A8AE01C794D5FB2 /* CustomOperatorTests.swift */,
-			);
-			name = CustomOperators;
-			path = CustomOperators;
-			sourceTree = "<group>";
-		};
 		5FDCC4404EE92CAA91B282136ED9615A /* SignificantSpicesTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +118,23 @@
 				4FCAB712E0C0C5F9467523A7B4806058 /* Info.plist */,
 			);
 			path = SignificantSpicesTests;
+			sourceTree = "<group>";
+		};
+		6FE0C62A884ABFF81B3CDF9C894B54F6 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				76E7A6A88B152B49A500808DD5C31167 /* CustomOperators */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		76E7A6A88B152B49A500808DD5C31167 /* CustomOperators */ = {
+			isa = PBXGroup;
+			children = (
+				035763FCB825085C0B4DBBEA18AA6CD0 /* BoolInPlaceANDAssignmentTests.swift */,
+				C6162931A6BBC06A973E5F132670C26D /* BoolInPlaceORAssignmentTests.swift */,
+			);
+			path = CustomOperators;
 			sourceTree = "<group>";
 		};
 		7B21558072D46F1283F6A798D53F2339 /* Frameworks */ = {
@@ -390,7 +391,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB12B6DE686681D6519806F8CA887876 /* CustomOperatorTests.swift in Sources */,
+				D0058A78F8583F160CCFFF8767BB2990 /* BoolInPlaceANDAssignmentTests.swift in Sources */,
+				D0447BCC50DA457F43D1E11101730E2B /* BoolInPlaceORAssignmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
