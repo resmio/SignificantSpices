@@ -10,7 +10,17 @@
 // MARK: Element "in" Collection
 infix operator <> : ComparisonPrecedence
 
-public func <> <T: Equatable>(l: T?, r: [T]) -> Bool {
+public func <> <T>(l: T?, r: [T]) -> Bool where T: AnyObject {
+    guard let l: T = l else { return false }
+    return r.contains(where: { $0 === l })
+}
+
+public func <> <T>(l: T?, r: [T]) -> Bool where T: Equatable {
+    guard let l: T = l else { return false }
+    return r.contains(l)
+}
+
+public func <> <T>(l: T?, r: [T]) -> Bool where T: AnyObject, T: Equatable {
     guard let l: T = l else { return false }
     return r.contains(l)
 }
@@ -24,7 +34,17 @@ public func <> <T: Hashable>(l: T?, r: Set<T>) -> Bool {
 // MARK: Element "not in" Collection
 infix operator >< : ComparisonPrecedence
 
-public func >< <T: Equatable>(l: T?, r: [T]) -> Bool {
+public func >< <T>(l: T?, r: [T]) -> Bool where T: AnyObject {
+    guard let l: T = l else { return false }
+    return r.contains(where: { $0 !== l })
+}
+
+public func >< <T>(l: T?, r: [T]) -> Bool where T: Equatable {
+    guard let l: T = l else { return true }
+    return !(r.contains(l))
+}
+
+public func >< <T>(l: T?, r: [T]) -> Bool where T: AnyObject, T: Equatable {
     guard let l: T = l else { return true }
     return !(r.contains(l))
 }

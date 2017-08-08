@@ -15,6 +15,7 @@
 		A810B2F084DEB5258A1BEE3E71F7FA2A /* Pods_SignificantSpices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4332FB54B157D2121723BA622DC5398F /* Pods_SignificantSpices.framework */; };
 		ABB06CD0EAEF0367573B795329B02FDE /* SignificantSpices.h in Headers */ = {isa = PBXBuildFile; fileRef = AB23BE19D6E3B867A63D0979046005EC /* SignificantSpices.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB24058B23E3E3CA9D0AE7E3051A2611 /* Bool in-place Assignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30933E13ABF86CEAF4BD1F8CBDD78C8D /* Bool in-place Assignments.swift */; };
+		C69E0C28BAF3506FF7CE9A659B834637 /* Element in-not_in Collection Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5A335804E83E4049C1FFD63F6E3B3 /* Element in-not_in Collection Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		4332FB54B157D2121723BA622DC5398F /* Pods_SignificantSpices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignificantSpices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4469084B5F7D3ECA68156BE199E7596D /* Pods-SignificantSpices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignificantSpices.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignificantSpices/Pods-SignificantSpices.debug.xcconfig"; sourceTree = "<group>"; };
 		4FCAB712E0C0C5F9467523A7B4806058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67B5A335804E83E4049C1FFD63F6E3B3 /* Element in-not_in Collection Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Element in-not_in Collection Tests.swift"; sourceTree = "<group>"; };
 		94887B09BC0C494CC0EFFB80EF5A233F /* Set Combinations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Set Combinations.swift"; sourceTree = "<group>"; };
 		96EB18384680EDE0A5A384B9619ED92F /* Element in-not_in Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Element in-not_in Collection.swift"; sourceTree = "<group>"; };
 		AB23BE19D6E3B867A63D0979046005EC /* SignificantSpices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignificantSpices.h; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				2BCFB6E04F7840BF83B777D221B38930 /* Bool in-place Assignment Tests.swift */,
+				67B5A335804E83E4049C1FFD63F6E3B3 /* Element in-not_in Collection Tests.swift */,
 			);
 			path = CustomOperators;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				230020E1CF0516A9C5EA9505315B7930 /* Bool in-place Assignment Tests.swift in Sources */,
+				C69E0C28BAF3506FF7CE9A659B834637 /* Element in-not_in Collection Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
