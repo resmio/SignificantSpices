@@ -10,7 +10,7 @@ import XCTest
 import SignificantSpices.Swift
 
 
-class CustomOperatorTests: XCTestCase {
+class BoolInPlaceAndAssignment: XCTestCase {
     func testBoolInplaceAndAssignment1() {
         var a: Bool = true
         a &&= false
@@ -33,5 +33,32 @@ class CustomOperatorTests: XCTestCase {
         var a: Bool = false
         a &&= true
         XCTAssertFalse(a)
+    }
+}
+
+
+class BoolInPlaceOrAssignment: XCTestCase {
+    func testBoolInplaceOrAssignment1() {
+        var a: Bool = true
+        a ||= false
+        XCTAssertTrue(a)
+    }
+    
+    func testBoolInplaceOrAssignment2() {
+        var a: Bool = true
+        a ||= true
+        XCTAssertTrue(a)
+    }
+    
+    func testBoolInplaceOrAssignment3() {
+        var a: Bool = false
+        a ||= false
+        XCTAssertFalse(a)
+    }
+    
+    func testBoolInplaceOrAssignment4() {
+        var a: Bool = false
+        a ||= true
+        XCTAssertTrue(a)
     }
 }
