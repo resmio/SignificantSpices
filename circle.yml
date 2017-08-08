@@ -1,0 +1,33 @@
+machine:
+  environment:
+    LANG: en_US.UTF-8
+  xcode:
+    version: "8.3"
+
+dependencies:
+  override:
+    # We need this override, since circle inferably (and unnecessarily) fetches
+    # the complete Cocoapods specs repo from S3 (which takes around 1 minute),
+    # even though we're using our own, tiny Specs repo...
+    - pod install
+
+    # Also installing xcpretty from here, since Circle doesn't
+    # infer a gem install due to the override, thus just adding
+    # it to the Gemfile won't help
+    - gem install xcpretty
+
+test:
+  pre:
+    - mkdir "$CIRCLE_ARTIFACTS/xcodebuild-logs"
+  override:
+    - set -o pipefail &&
+      xcodebuild
+      -workspace SignificantSpices.xcworkspace
+      -scheme "SignificantSpices"
+      -destination 'platform=iOS Simulator,name=iPad Air,OS=latest'
+      clean
+      build
+      test
+      | tee "$CIRCLE_ARTIFACTS/xcodebuild-logs/xcodebuild-verbose.log"
+      | xcpretty
+      | tee "$CIRCLE_ARTIFACTS/xcodebuild-logs/xcodebuild-xcpretty.log"
