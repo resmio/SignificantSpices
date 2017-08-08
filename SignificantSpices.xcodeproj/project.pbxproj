@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2261D7D2F73B371FF630090114AA65F5 /* Set Combinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94887B09BC0C494CC0EFFB80EF5A233F /* Set Combinations.swift */; };
+		230020E1CF0516A9C5EA9505315B7930 /* Bool in-place Assignment Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCFB6E04F7840BF83B777D221B38930 /* Bool in-place Assignment Tests.swift */; };
 		252FB39434BCA316CFDB0A41645BA6CB /* SignificantSpices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88CC5EAE04F668DD5A2ABA31EA54ACE /* SignificantSpices.framework */; };
 		37B75079F084B6878B1D694B505F26AE /* Pods_SignificantSpicesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F996EF7EB4B21593CFE79D23607ABBA /* Pods_SignificantSpicesTests.framework */; };
 		568F451E43D198648B93EC73383CB6A5 /* Element in-not_in Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EB18384680EDE0A5A384B9619ED92F /* Element in-not_in Collection.swift */; };
 		A810B2F084DEB5258A1BEE3E71F7FA2A /* Pods_SignificantSpices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4332FB54B157D2121723BA622DC5398F /* Pods_SignificantSpices.framework */; };
 		ABB06CD0EAEF0367573B795329B02FDE /* SignificantSpices.h in Headers */ = {isa = PBXBuildFile; fileRef = AB23BE19D6E3B867A63D0979046005EC /* SignificantSpices.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB24058B23E3E3CA9D0AE7E3051A2611 /* Bool in-place Assignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30933E13ABF86CEAF4BD1F8CBDD78C8D /* Bool in-place Assignments.swift */; };
-		D0058A78F8583F160CCFFF8767BB2990 /* BoolInPlaceANDAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035763FCB825085C0B4DBBEA18AA6CD0 /* BoolInPlaceANDAssignmentTests.swift */; };
-		D0447BCC50DA457F43D1E11101730E2B /* BoolInPlaceORAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6162931A6BBC06A973E5F132670C26D /* BoolInPlaceORAssignmentTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,9 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		035763FCB825085C0B4DBBEA18AA6CD0 /* BoolInPlaceANDAssignmentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolInPlaceANDAssignmentTests.swift; sourceTree = "<group>"; };
 		1EE922369843DBDB5DC5B42B514EAAE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F996EF7EB4B21593CFE79D23607ABBA /* Pods_SignificantSpicesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignificantSpicesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BCFB6E04F7840BF83B777D221B38930 /* Bool in-place Assignment Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool in-place Assignment Tests.swift"; sourceTree = "<group>"; };
 		30933E13ABF86CEAF4BD1F8CBDD78C8D /* Bool in-place Assignments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool in-place Assignments.swift"; sourceTree = "<group>"; };
 		4332FB54B157D2121723BA622DC5398F /* Pods_SignificantSpices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignificantSpices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4469084B5F7D3ECA68156BE199E7596D /* Pods-SignificantSpices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignificantSpices.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignificantSpices/Pods-SignificantSpices.debug.xcconfig"; sourceTree = "<group>"; };
@@ -41,7 +40,6 @@
 		AB23BE19D6E3B867A63D0979046005EC /* SignificantSpices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignificantSpices.h; sourceTree = "<group>"; };
 		B88CC5EAE04F668DD5A2ABA31EA54ACE /* SignificantSpices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SignificantSpices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF92CF8FDA925C867BA680BAE86641E7 /* Pods-SignificantSpicesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignificantSpicesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SignificantSpicesTests/Pods-SignificantSpicesTests.release.xcconfig"; sourceTree = "<group>"; };
-		C6162931A6BBC06A973E5F132670C26D /* BoolInPlaceORAssignmentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolInPlaceORAssignmentTests.swift; sourceTree = "<group>"; };
 		C952148BBB2362E72B92A6906D6EC7AE /* Pods-SignificantSpicesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignificantSpicesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignificantSpicesTests/Pods-SignificantSpicesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E013684E684B20237AD01BD8EC07F482 /* Pods-SignificantSpices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignificantSpices.release.xcconfig"; path = "Pods/Target Support Files/Pods-SignificantSpices/Pods-SignificantSpices.release.xcconfig"; sourceTree = "<group>"; };
 		E237F779B339D37317197384A5A864CF /* SignificantSpicesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignificantSpicesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,8 +133,7 @@
 		76E7A6A88B152B49A500808DD5C31167 /* CustomOperators */ = {
 			isa = PBXGroup;
 			children = (
-				035763FCB825085C0B4DBBEA18AA6CD0 /* BoolInPlaceANDAssignmentTests.swift */,
-				C6162931A6BBC06A973E5F132670C26D /* BoolInPlaceORAssignmentTests.swift */,
+				2BCFB6E04F7840BF83B777D221B38930 /* Bool in-place Assignment Tests.swift */,
 			);
 			path = CustomOperators;
 			sourceTree = "<group>";
@@ -399,8 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0058A78F8583F160CCFFF8767BB2990 /* BoolInPlaceANDAssignmentTests.swift in Sources */,
-				D0447BCC50DA457F43D1E11101730E2B /* BoolInPlaceORAssignmentTests.swift in Sources */,
+				230020E1CF0516A9C5EA9505315B7930 /* Bool in-place Assignment Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
