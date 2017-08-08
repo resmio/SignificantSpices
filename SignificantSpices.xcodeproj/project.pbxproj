@@ -161,6 +161,7 @@
 			buildConfigurationList = 55E428B837591F1514C40C89E5794A6E /* Build configuration list for PBXNativeTarget "SignificantSpices" */;
 			buildPhases = (
 				88CA0700CE3299719676C98D01DB2C8D /* [CP] Check Pods Manifest.lock */,
+				2230D97AEBEAEDB888CE134E67108AE1 /* [Custom] Generate Warnings from TODOs/FIXMEs/etc */,
 				57191F5F907AC7911D6E9B5153AAB405 /* Sources */,
 				D8604396B42B178813B77E69C217CECC /* Frameworks */,
 				04D8E8FBBCFF58632E493C2A8AED27C0 /* Headers */,
@@ -256,6 +257,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2230D97AEBEAEDB888CE134E67108AE1 /* [Custom] Generate Warnings from TODOs/FIXMEs/etc */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[Custom] Generate Warnings from TODOs/FIXMEs/etc";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "KEYWORDS=\"\\/\\/ ERROR:|\\/\\/ WARNING:|\\/\\/ TODO:|\\/\\/ FIXME:|\\/\\/ \\?\\?\\?:|\\/\\/ \\!\\!\\!:|\\/\\/ LOCALIZE\"\necho \"Scanning project for $KEYWORDS ...\"\nfind \"${SRCROOT}/SignificantSpices/\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
+		};
 		65A04A8AAD88AF5CCFBEF24FC744DD98 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
