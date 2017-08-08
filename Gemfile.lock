@@ -44,7 +44,6 @@ GEM
     cocoapods-try (1.1.0)
     colored (1.2)
     colorize (0.8.1)
-    concurrent-ruby (1.0.5)
     escape (0.0.4)
     fourflusher (2.0.1)
     fuzzy_match (2.0.4)
