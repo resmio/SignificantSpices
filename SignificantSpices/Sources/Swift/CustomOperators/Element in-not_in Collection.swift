@@ -35,8 +35,8 @@ public func <> <T: Hashable>(l: T?, r: Set<T>) -> Bool {
 infix operator >< : ComparisonPrecedence
 
 public func >< <T>(l: T?, r: [T]) -> Bool where T: AnyObject {
-    guard let l: T = l else { return false }
-    return r.contains(where: { $0 !== l })
+    guard let l: T = l else { return true }
+    return !(r.contains(where: { $0 === l }))
 }
 
 public func >< <T>(l: T?, r: [T]) -> Bool where T: Equatable {
