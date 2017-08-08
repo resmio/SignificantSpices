@@ -12,7 +12,7 @@
 		9030672F85A6D20D6BC3119E0A1AF321 /* CustomOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3835150371474C3CFCA50707F4CF56 /* CustomOperators.swift */; };
 		A810B2F084DEB5258A1BEE3E71F7FA2A /* Pods_SignificantSpices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4332FB54B157D2121723BA622DC5398F /* Pods_SignificantSpices.framework */; };
 		ABB06CD0EAEF0367573B795329B02FDE /* SignificantSpices.h in Headers */ = {isa = PBXBuildFile; fileRef = AB23BE19D6E3B867A63D0979046005EC /* SignificantSpices.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9636DC4695A3925A50ED7CD6A0323DF /* SignificantSpicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651092BC0ED5F5FC7ABD82866C2EB9D3 /* SignificantSpicesTests.swift */; };
+		EB12B6DE686681D6519806F8CA887876 /* CustomOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362696888123684E2A8AE01C794D5FB2 /* CustomOperatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,10 +28,10 @@
 /* Begin PBXFileReference section */
 		1EE922369843DBDB5DC5B42B514EAAE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F996EF7EB4B21593CFE79D23607ABBA /* Pods_SignificantSpicesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignificantSpicesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		362696888123684E2A8AE01C794D5FB2 /* CustomOperatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOperatorTests.swift; sourceTree = "<group>"; };
 		4332FB54B157D2121723BA622DC5398F /* Pods_SignificantSpices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignificantSpices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4469084B5F7D3ECA68156BE199E7596D /* Pods-SignificantSpices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignificantSpices.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignificantSpices/Pods-SignificantSpices.debug.xcconfig"; sourceTree = "<group>"; };
 		4FCAB712E0C0C5F9467523A7B4806058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		651092BC0ED5F5FC7ABD82866C2EB9D3 /* SignificantSpicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignificantSpicesTests.swift; sourceTree = "<group>"; };
 		9D3835150371474C3CFCA50707F4CF56 /* CustomOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOperators.swift; sourceTree = "<group>"; };
 		AB23BE19D6E3B867A63D0979046005EC /* SignificantSpices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignificantSpices.h; sourceTree = "<group>"; };
 		B88CC5EAE04F668DD5A2ABA31EA54ACE /* SignificantSpices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SignificantSpices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,11 +109,29 @@
 			);
 			sourceTree = "<group>";
 		};
+		6FE0C62A884ABFF81B3CDF9C894B54F6 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				76E7A6A88B152B49A500808DD5C31167 /* CustomOperators */,
+			);
+			name = Swift;
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		76E7A6A88B152B49A500808DD5C31167 /* CustomOperators */ = {
+			isa = PBXGroup;
+			children = (
+				362696888123684E2A8AE01C794D5FB2 /* CustomOperatorTests.swift */,
+			);
+			name = CustomOperators;
+			path = CustomOperators;
+			sourceTree = "<group>";
+		};
 		5FDCC4404EE92CAA91B282136ED9615A /* SignificantSpicesTests */ = {
 			isa = PBXGroup;
 			children = (
+				6FE0C62A884ABFF81B3CDF9C894B54F6 /* Swift */,
 				4FCAB712E0C0C5F9467523A7B4806058 /* Info.plist */,
-				651092BC0ED5F5FC7ABD82866C2EB9D3 /* SignificantSpicesTests.swift */,
 			);
 			path = SignificantSpicesTests;
 			sourceTree = "<group>";
@@ -372,7 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9636DC4695A3925A50ED7CD6A0323DF /* SignificantSpicesTests.swift in Sources */,
+				EB12B6DE686681D6519806F8CA887876 /* CustomOperatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
