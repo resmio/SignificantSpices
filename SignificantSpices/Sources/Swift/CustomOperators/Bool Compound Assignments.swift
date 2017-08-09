@@ -1,5 +1,5 @@
 //
-//  Bool in-place AND.swift
+//  Bool Compound Assignment.swift
 //  SignificantSpices
 //
 //  Created by Jan Nash on 8/8/17.
