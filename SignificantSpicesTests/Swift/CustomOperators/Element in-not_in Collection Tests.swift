@@ -11,46 +11,25 @@ import SignificantSpices.Swift
 
 
 class NilInOrNotInArrayTests: XCTestCase {
-    func testNilIn_NERT_Array() {
+    func testNilInOrNotIn_NERT_Array() {
         let a: [_NERT] = [_NERT(), _NERT(), _NERT()]
         
         XCTAssertFalse(nil <> a)
         XCTAssertTrue(nil >< a)
     }
     
-    func testNilNotIn_NERT_Array() {
-        let a: [_NERT] = [_NERT(), _NERT(), _NERT()]
-        
-        XCTAssertTrue(nil >< a)
-        XCTAssertFalse(nil <> a)
-    }
-    
-    func testNilIn_ENRT_Array() {
+    func testNilInOrNotIn_ENRT_Array() {
         let a: [_ENRT] = [1, 2, 3]
         
         XCTAssertFalse(nil <> a)
         XCTAssertTrue(nil >< a)
     }
     
-    func testNilNotIn_ENRT_Array() {
-        let a: [_ENRT] = [1, 2, 3]
-        
-        XCTAssertTrue(nil >< a)
-        XCTAssertFalse(nil <> a)
-    }
-    
-    func testNilIn_ERT_Array() {
+    func testNilInOrNotIn_ERT_Array() {
         let a: [_ERT] = [_ERT(1), _ERT(2), _ERT(3)]
         
         XCTAssertFalse(nil <> a)
         XCTAssertTrue(nil >< a)
-    }
-    
-    func testNilNotIn_ERT_Array() {
-        let a: [_ERT] = [_ERT(1), _ERT(2), _ERT(3)]
-        
-        XCTAssertTrue(nil >< a)
-        XCTAssertFalse(nil <> a)
     }
 }
 
@@ -120,18 +99,11 @@ class ERT_InOrNotInArrayTests: XCTestCase {
 
 
 class NilInOrNotInSetTests: XCTestCase {
-    func testNilInSet() {
+    func testNilInOrNotInSet() {
         let a: Set<Int> = [1, 2, 3]
         
         XCTAssertFalse(nil <> a)
         XCTAssertTrue(nil >< a)
-    }
-    
-    func testNilNotIn_HNRT_Set() {
-        let a: Set<Int> = [1, 2, 3]
-        
-        XCTAssertTrue(nil >< a)
-        XCTAssertFalse(nil <> a)
     }
 }
 
