@@ -9,13 +9,13 @@
 
 // MARK: in-place &&
 infix operator &&= : AssignmentPrecedence
-public func &&= (lhs: inout Bool, rhs: Bool) {
-    lhs = lhs && rhs
+public func &&= (l: inout Bool, r: Bool) {
+    l = l && r
 }
 
 
 // MARK: in-place ||
 infix operator ||= : AssignmentPrecedence
-public func ||= (lhs: inout Bool, rhs: Bool) {
-    lhs = lhs || rhs
+public func ||= (l: inout Bool, r: Bool) {
+    l = l || r
 }
