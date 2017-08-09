@@ -10,6 +10,21 @@ import XCTest
 import SignificantSpices.Swift
 
 
+// MARK: Helper Types
+private typealias _ENRT = Int /*Equatable Non-Reference Type*/
+private class _NERT /*Non Equatable Reference Type*/ {}
+private class _ERT: Equatable /*Equatable Reference Type*/ {
+    init(_ value: Int) { self.value = value }
+    private(set) var value: Int = 0
+    static func ==(_ lhs: _ERT, _ rhs: _ERT) -> Bool {
+        return lhs.value == rhs.value
+    }
+}
+private class _HERT: _ERT, Hashable /*Hashable Equatable Reference Type*/ {
+    var hashValue: Int { return self.value.hashValue }
+}
+
+
 class NilInOrNotInArrayTests: XCTestCase {
     func testNilInOrNotIn_NERT_Array() {
         let a: [_NERT] = [_NERT(), _NERT(), _NERT()]
@@ -34,25 +49,6 @@ class NilInOrNotInArrayTests: XCTestCase {
 }
 
 
-class NERT_InOrNotInArrayTests: XCTestCase {
-    func test_NERT_InArray() {
-        let a: _NERT = _NERT()
-        let b: [_NERT] = [a, _NERT(), _NERT()]
-        
-        XCTAssertTrue(a <> b)
-        XCTAssertFalse(a >< b)
-    }
-    
-    func test_NERT_NotInArray() {
-        let a: _NERT = _NERT()
-        let b: [_NERT] = [_NERT(), _NERT(), _NERT()]
-        
-        XCTAssertTrue(a >< b)
-        XCTAssertFalse(a <> b)
-    }
-}
-
-
 class ENRT_InOrNotInArrayTests: XCTestCase {
     func test_ENRT_InArray() {
         let a: _ENRT = 1
@@ -71,6 +67,25 @@ class ENRT_InOrNotInArrayTests: XCTestCase {
         
         XCTAssertTrue(1 >< a)
         XCTAssertFalse(1 <> a)
+    }
+}
+
+
+class NERT_InOrNotInArrayTests: XCTestCase {
+    func test_NERT_InArray() {
+        let a: _NERT = _NERT()
+        let b: [_NERT] = [a, _NERT(), _NERT()]
+        
+        XCTAssertTrue(a <> b)
+        XCTAssertFalse(a >< b)
+    }
+    
+    func test_NERT_NotInArray() {
+        let a: _NERT = _NERT()
+        let b: [_NERT] = [_NERT(), _NERT(), _NERT()]
+        
+        XCTAssertTrue(a >< b)
+        XCTAssertFalse(a <> b)
     }
 }
 
@@ -108,12 +123,12 @@ class NilInOrNotInSetTests: XCTestCase {
 }
 
 
-class Int_InOrNotInSetTests: XCTestCase {
-    func testIntInSet() {
-        let a: Int = 1
-        let b: Int = 1
+class ENRT_InOrNotInSetTests: XCTestCase {
+    func test_ENRT_InSet() {
+        let a: _ENRT = 1
+        let b: _ENRT = 1
         
-        let c: Set<Int> = [a, 2, 3]
+        let c: Set<_ENRT> = [a, 2, 3]
         
         XCTAssertTrue(a <> c)
         XCTAssertFalse(a >< c)
@@ -122,9 +137,9 @@ class Int_InOrNotInSetTests: XCTestCase {
         XCTAssertFalse(b >< c)
     }
     
-    func testIntNotInSet() {
-        let a: Int = 1
-        let b: Set<Int> = [2, 3, 4]
+    func test_ENRT_NotInSet() {
+        let a: _ENRT = 1
+        let b: Set<_ENRT> = [2, 3, 4]
         
         XCTAssertFalse(a <> b)
         XCTAssertTrue(a >< b)
@@ -132,14 +147,25 @@ class Int_InOrNotInSetTests: XCTestCase {
 }
 
 
-// MARK: // Private
-// MARK: Helper Types
-private typealias _ENRT = Int /*Equatable Non-Reference Type*/
-private class _NERT /*Non Equatable Reference Type*/ {}
-private class _ERT: Equatable /*Equatable Reference Type*/ {
-    init(_ value: Int) { self.value = value }
-    private(set) var value: Int = 0
-    static func ==(_ lhs: _ERT, _ rhs: _ERT) -> Bool {
-        return lhs.value == rhs.value
+class HERT_InOrNotInSetTests: XCTestCase {
+    func test_ERT_InSet() {
+        let a: _HERT = _HERT(1)
+        let b: _HERT = _HERT(1)
+        
+        let c: Set<_HERT> = [a, _HERT(2), _HERT(3)]
+        
+        XCTAssertTrue(a <> c)
+        XCTAssertFalse(a >< c)
+        
+        XCTAssertTrue(b <> c)
+        XCTAssertFalse(b >< c)
+    }
+    
+    func test_HERT_NotInSet() {
+        let a: _HERT = _HERT(1)
+        let b: Set<_HERT> = [_HERT(2), _HERT(3), _HERT(4)]
+        
+        XCTAssertFalse(a <> b)
+        XCTAssertTrue(a >< b)
     }
 }
