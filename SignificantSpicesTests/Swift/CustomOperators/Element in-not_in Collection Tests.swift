@@ -121,14 +121,14 @@ class ERT_InOrNotInArrayTests: XCTestCase {
 
 class NilInOrNotInSetTests: XCTestCase {
     func testNilInSet() {
-        let a: Set<Int> = Set([1, 2, 3])
+        let a: Set<Int> = [1, 2, 3]
         
         XCTAssertFalse(nil <> a)
         XCTAssertTrue(nil >< a)
     }
     
     func testNilNotIn_HNRT_Set() {
-        let a: Set<Int> = Set([1, 2, 3])
+        let a: Set<Int> = [1, 2, 3]
         
         XCTAssertTrue(nil >< a)
         XCTAssertFalse(nil <> a)
@@ -141,7 +141,7 @@ class Int_InOrNotInSetTests: XCTestCase {
         let a: Int = 1
         let b: Int = 1
         
-        let c: Set<Int> = Set([a, 2, 3])
+        let c: Set<Int> = [a, 2, 3]
         
         XCTAssertTrue(a <> c)
         XCTAssertFalse(a >< c)
@@ -152,7 +152,7 @@ class Int_InOrNotInSetTests: XCTestCase {
     
     func testIntNotInSet() {
         let a: Int = 1
-        let b: Set<Int> = Set([2, 3, 4])
+        let b: Set<Int> = [2, 3, 4]
         
         XCTAssertFalse(a <> b)
         XCTAssertTrue(a >< b)

@@ -10,7 +10,7 @@ import XCTest
 import SignificantSpices.Swift
 
 
-class BoolInPlaceANDAssignment: XCTestCase {
+class BoolInPlaceANDAssignmentTests: XCTestCase {
     func testFalseFalse() {
         var a: Bool = false
         a &&= false
@@ -37,7 +37,7 @@ class BoolInPlaceANDAssignment: XCTestCase {
 }
 
 
-class BoolInPlaceORAssignment: XCTestCase {
+class BoolInPlaceORAssignmentTests: XCTestCase {
     func testFalseFalse() {
         var a: Bool = false
         a ||= false
