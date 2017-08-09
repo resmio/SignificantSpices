@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EA50EE0C2108FA00FBF742D4EDC735B /* Collection Extension Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7AD6D69CF6A6210CE2F5A5068DB31D /* Collection Extension Tests.swift */; };
 		1CC67D99A7481532B0AD65E8CE8914BE /* Bool Compound Assignment Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2758B8612E0DBED5D57C51A3E36B3C8A /* Bool Compound Assignment Tests.swift */; };
 		2261D7D2F73B371FF630090114AA65F5 /* Set Combinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94887B09BC0C494CC0EFFB80EF5A233F /* Set Combinations.swift */; };
 		252FB39434BCA316CFDB0A41645BA6CB /* SignificantSpices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88CC5EAE04F668DD5A2ABA31EA54ACE /* SignificantSpices.framework */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A7AD6D69CF6A6210CE2F5A5068DB31D /* Collection Extension Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection Extension Tests.swift"; sourceTree = "<group>"; };
 		1347BD313F92C829EFF4E052FFA2BB7B /* Bool Compound Assignments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool Compound Assignments.swift"; sourceTree = "<group>"; };
 		1EE922369843DBDB5DC5B42B514EAAE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F996EF7EB4B21593CFE79D23607ABBA /* Pods_SignificantSpicesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignificantSpicesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,11 +142,13 @@
 			);
 			sourceTree = "<group>";
 		};
-		5E2B24371F3B601100F83285 /* Extensions */ = {
+		54623D7249ADCDF16253D896F3B068BD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0A7AD6D69CF6A6210CE2F5A5068DB31D /* Collection Extension Tests.swift */,
 			);
 			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		5FDCC4404EE92CAA91B282136ED9615A /* SignificantSpicesTests */ = {
@@ -159,8 +163,8 @@
 		6FE0C62A884ABFF81B3CDF9C894B54F6 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
-				5E2B24371F3B601100F83285 /* Extensions */,
 				76E7A6A88B152B49A500808DD5C31167 /* CustomOperators */,
+				54623D7249ADCDF16253D896F3B068BD /* Extensions */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -438,6 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CC67D99A7481532B0AD65E8CE8914BE /* Bool Compound Assignment Tests.swift in Sources */,
+				0EA50EE0C2108FA00FBF742D4EDC735B /* Collection Extension Tests.swift in Sources */,
 				C69E0C28BAF3506FF7CE9A659B834637 /* Element in-not_in Collection Tests.swift in Sources */,
 				D7F01CC62EC84D46C12192CD4ACBFC32 /* Optional String Interpolation Tests.swift in Sources */,
 				AA18B0B17818CAB892828D49048FAB89 /* Set Combination Tests.swift in Sources */,
