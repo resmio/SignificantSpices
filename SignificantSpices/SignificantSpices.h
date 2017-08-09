@@ -6,7 +6,7 @@
 //  Copyright © 2017 resmio. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for SignificantSpices.
 FOUNDATION_EXPORT double SignificantSpicesVersionNumber;

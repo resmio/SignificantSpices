@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CC67D99A7481532B0AD65E8CE8914BE /* Bool Compound Assignment Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2758B8612E0DBED5D57C51A3E36B3C8A /* Bool Compound Assignment Tests.swift */; };
+		2261D7D2F73B371FF630090114AA65F5 /* Set Combinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94887B09BC0C494CC0EFFB80EF5A233F /* Set Combinations.swift */; };
 		252FB39434BCA316CFDB0A41645BA6CB /* SignificantSpices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88CC5EAE04F668DD5A2ABA31EA54ACE /* SignificantSpices.framework */; };
 		37B75079F084B6878B1D694B505F26AE /* Pods_SignificantSpicesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F996EF7EB4B21593CFE79D23607ABBA /* Pods_SignificantSpicesTests.framework */; };
+		568F451E43D198648B93EC73383CB6A5 /* Element in-not_in Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EB18384680EDE0A5A384B9619ED92F /* Element in-not_in Collection.swift */; };
+		5DA8000877E4D92E3AFDDC65389B573B /* Optional String Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BFF73F3C47180863C61FD02F3B4DF3 /* Optional String Interpolation.swift */; };
 		A810B2F084DEB5258A1BEE3E71F7FA2A /* Pods_SignificantSpices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4332FB54B157D2121723BA622DC5398F /* Pods_SignificantSpices.framework */; };
+		AA18B0B17818CAB892828D49048FAB89 /* Set Combination Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E91330CC8DB470F8E28EB9A0EE4F82 /* Set Combination Tests.swift */; };
 		ABB06CD0EAEF0367573B795329B02FDE /* SignificantSpices.h in Headers */ = {isa = PBXBuildFile; fileRef = AB23BE19D6E3B867A63D0979046005EC /* SignificantSpices.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9636DC4695A3925A50ED7CD6A0323DF /* SignificantSpicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651092BC0ED5F5FC7ABD82866C2EB9D3 /* SignificantSpicesTests.swift */; };
+		B4F2B8CC22CC39F7ED461FD7C32B89D5 /* Bool Compound Assignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347BD313F92C829EFF4E052FFA2BB7B /* Bool Compound Assignments.swift */; };
+		C69E0C28BAF3506FF7CE9A659B834637 /* Element in-not_in Collection Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5A335804E83E4049C1FFD63F6E3B3 /* Element in-not_in Collection Tests.swift */; };
+		D7F01CC62EC84D46C12192CD4ACBFC32 /* Optional String Interpolation Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAA79313BBC3F62BADDB52B010219D4 /* Optional String Interpolation Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,12 +32,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1347BD313F92C829EFF4E052FFA2BB7B /* Bool Compound Assignments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool Compound Assignments.swift"; sourceTree = "<group>"; };
 		1EE922369843DBDB5DC5B42B514EAAE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F996EF7EB4B21593CFE79D23607ABBA /* Pods_SignificantSpicesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignificantSpicesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2758B8612E0DBED5D57C51A3E36B3C8A /* Bool Compound Assignment Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool Compound Assignment Tests.swift"; sourceTree = "<group>"; };
+		2DAA79313BBC3F62BADDB52B010219D4 /* Optional String Interpolation Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional String Interpolation Tests.swift"; sourceTree = "<group>"; };
 		4332FB54B157D2121723BA622DC5398F /* Pods_SignificantSpices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignificantSpices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43E91330CC8DB470F8E28EB9A0EE4F82 /* Set Combination Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Set Combination Tests.swift"; sourceTree = "<group>"; };
 		4469084B5F7D3ECA68156BE199E7596D /* Pods-SignificantSpices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignificantSpices.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignificantSpices/Pods-SignificantSpices.debug.xcconfig"; sourceTree = "<group>"; };
 		4FCAB712E0C0C5F9467523A7B4806058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		651092BC0ED5F5FC7ABD82866C2EB9D3 /* SignificantSpicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignificantSpicesTests.swift; sourceTree = "<group>"; };
+		67B5A335804E83E4049C1FFD63F6E3B3 /* Element in-not_in Collection Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Element in-not_in Collection Tests.swift"; sourceTree = "<group>"; };
+		94887B09BC0C494CC0EFFB80EF5A233F /* Set Combinations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Set Combinations.swift"; sourceTree = "<group>"; };
+		96EB18384680EDE0A5A384B9619ED92F /* Element in-not_in Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Element in-not_in Collection.swift"; sourceTree = "<group>"; };
+		A9BFF73F3C47180863C61FD02F3B4DF3 /* Optional String Interpolation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional String Interpolation.swift"; sourceTree = "<group>"; };
 		AB23BE19D6E3B867A63D0979046005EC /* SignificantSpices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignificantSpices.h; sourceTree = "<group>"; };
 		B88CC5EAE04F668DD5A2ABA31EA54ACE /* SignificantSpices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SignificantSpices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF92CF8FDA925C867BA680BAE86641E7 /* Pods-SignificantSpicesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignificantSpicesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SignificantSpicesTests/Pods-SignificantSpicesTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +105,7 @@
 		4AD8A13AA32237370BCB20793AEE82D7 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				EF972B82CE408AE89E455D496AD7F4AF /* CustomOperators */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -109,10 +124,29 @@
 		5FDCC4404EE92CAA91B282136ED9615A /* SignificantSpicesTests */ = {
 			isa = PBXGroup;
 			children = (
+				6FE0C62A884ABFF81B3CDF9C894B54F6 /* Swift */,
 				4FCAB712E0C0C5F9467523A7B4806058 /* Info.plist */,
-				651092BC0ED5F5FC7ABD82866C2EB9D3 /* SignificantSpicesTests.swift */,
 			);
 			path = SignificantSpicesTests;
+			sourceTree = "<group>";
+		};
+		6FE0C62A884ABFF81B3CDF9C894B54F6 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				76E7A6A88B152B49A500808DD5C31167 /* CustomOperators */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		76E7A6A88B152B49A500808DD5C31167 /* CustomOperators */ = {
+			isa = PBXGroup;
+			children = (
+				2758B8612E0DBED5D57C51A3E36B3C8A /* Bool Compound Assignment Tests.swift */,
+				67B5A335804E83E4049C1FFD63F6E3B3 /* Element in-not_in Collection Tests.swift */,
+				2DAA79313BBC3F62BADDB52B010219D4 /* Optional String Interpolation Tests.swift */,
+				43E91330CC8DB470F8E28EB9A0EE4F82 /* Set Combination Tests.swift */,
+			);
+			path = CustomOperators;
 			sourceTree = "<group>";
 		};
 		7B21558072D46F1283F6A798D53F2339 /* Frameworks */ = {
@@ -140,6 +174,17 @@
 				BF92CF8FDA925C867BA680BAE86641E7 /* Pods-SignificantSpicesTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF972B82CE408AE89E455D496AD7F4AF /* CustomOperators */ = {
+			isa = PBXGroup;
+			children = (
+				1347BD313F92C829EFF4E052FFA2BB7B /* Bool Compound Assignments.swift */,
+				96EB18384680EDE0A5A384B9619ED92F /* Element in-not_in Collection.swift */,
+				A9BFF73F3C47180863C61FD02F3B4DF3 /* Optional String Interpolation.swift */,
+				94887B09BC0C494CC0EFFB80EF5A233F /* Set Combinations.swift */,
+			);
+			path = CustomOperators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,6 +398,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F2B8CC22CC39F7ED461FD7C32B89D5 /* Bool Compound Assignments.swift in Sources */,
+				568F451E43D198648B93EC73383CB6A5 /* Element in-not_in Collection.swift in Sources */,
+				5DA8000877E4D92E3AFDDC65389B573B /* Optional String Interpolation.swift in Sources */,
+				2261D7D2F73B371FF630090114AA65F5 /* Set Combinations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +409,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9636DC4695A3925A50ED7CD6A0323DF /* SignificantSpicesTests.swift in Sources */,
+				1CC67D99A7481532B0AD65E8CE8914BE /* Bool Compound Assignment Tests.swift in Sources */,
+				C69E0C28BAF3506FF7CE9A659B834637 /* Element in-not_in Collection Tests.swift in Sources */,
+				D7F01CC62EC84D46C12192CD4ACBFC32 /* Optional String Interpolation Tests.swift in Sources */,
+				AA18B0B17818CAB892828D49048FAB89 /* Set Combination Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +575,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C952148BBB2362E72B92A6906D6EC7AE /* Pods-SignificantSpicesTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 56W9E3974K;
 				INFOPLIST_FILE = SignificantSpicesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -536,6 +589,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BF92CF8FDA925C867BA680BAE86641E7 /* Pods-SignificantSpicesTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 56W9E3974K;
 				INFOPLIST_FILE = SignificantSpicesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
