@@ -24,7 +24,7 @@ public func ???<T>(optional: Optional<T>, defaultValue: @autoclosure () -> Strin
 
 
 // MARK: Default Implementation for ???, uses "nil" as default
-prefix operator ??
-public prefix func ??<T>(optional: T?) -> String {
+prefix operator ???
+public prefix func ???<T>(optional: T?) -> String {
     return "\(optional ??? "nil")"
 }

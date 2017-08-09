@@ -25,11 +25,11 @@ class OptionalStringInterpolationTests: XCTestCase {
     
     func testDefaultOptionalStringInterpolationOperatorForNone() {
         let optional: Int? = nil
-        XCTAssertEqual("\(??optional)", "nil")
+        XCTAssertEqual("\(???optional)", "nil")
     }
     
     func testDefaultOptionalStringInterpolationOperatorForSome() {
         let optional: Int? = 42
-        XCTAssertEqual("\(??optional)", "42")
+        XCTAssertEqual("\(???optional)", "42")
     }
 }
