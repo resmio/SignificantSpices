@@ -18,6 +18,7 @@
 		5DA8000877E4D92E3AFDDC65389B573B /* Optional String Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BFF73F3C47180863C61FD02F3B4DF3 /* Optional String Interpolation.swift */; };
 		7000893806B336E8DF20C521C4BE27BE /* RangeReplacableCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CB86F288933761E07C46BA44B0602D /* RangeReplacableCollection.swift */; };
 		9B25A693E202C095ABA6B58EB9A7E45B /* Optional Extension Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0BB981EBF7DC43CF0900E3EA5F97B9 /* Optional Extension Tests.swift */; };
+		A6DB71E46B71EEE9CBA516157BF1C4B3 /* Sequence Extension Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F82F14D4A9B3E55E80CD8E70AFDE60E /* Sequence Extension Tests.swift */; };
 		A810B2F084DEB5258A1BEE3E71F7FA2A /* Pods_SignificantSpices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4332FB54B157D2121723BA622DC5398F /* Pods_SignificantSpices.framework */; };
 		AA18B0B17818CAB892828D49048FAB89 /* Set Combination Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E91330CC8DB470F8E28EB9A0EE4F82 /* Set Combination Tests.swift */; };
 		ABB06CD0EAEF0367573B795329B02FDE /* SignificantSpices.h in Headers */ = {isa = PBXBuildFile; fileRef = AB23BE19D6E3B867A63D0979046005EC /* SignificantSpices.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		0A7AD6D69CF6A6210CE2F5A5068DB31D /* Collection Extension Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection Extension Tests.swift"; sourceTree = "<group>"; };
+		0F82F14D4A9B3E55E80CD8E70AFDE60E /* Sequence Extension Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence Extension Tests.swift"; sourceTree = "<group>"; };
 		1347BD313F92C829EFF4E052FFA2BB7B /* Bool Compound Assignments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool Compound Assignments.swift"; sourceTree = "<group>"; };
 		1EE922369843DBDB5DC5B42B514EAAE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F996EF7EB4B21593CFE79D23607ABBA /* Pods_SignificantSpicesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignificantSpicesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +163,7 @@
 				0A7AD6D69CF6A6210CE2F5A5068DB31D /* Collection Extension Tests.swift */,
 				8A0BB981EBF7DC43CF0900E3EA5F97B9 /* Optional Extension Tests.swift */,
 				B24CCD6C3BDFB1E528FD8C96C52CC6AC /* RangeReplacableCollection Extension Tests.swift */,
+				0F82F14D4A9B3E55E80CD8E70AFDE60E /* Sequence Extension Tests.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -488,6 +491,7 @@
 				9B25A693E202C095ABA6B58EB9A7E45B /* Optional Extension Tests.swift in Sources */,
 				D7F01CC62EC84D46C12192CD4ACBFC32 /* Optional String Interpolation Tests.swift in Sources */,
 				13D056F4608A6443BDE4744728C87655 /* RangeReplacableCollection Extension Tests.swift in Sources */,
+				A6DB71E46B71EEE9CBA516157BF1C4B3 /* Sequence Extension Tests.swift in Sources */,
 				AA18B0B17818CAB892828D49048FAB89 /* Set Combination Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
