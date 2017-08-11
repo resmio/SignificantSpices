@@ -7,6 +7,7 @@
 //
 
 
+// MARK: // Public
 // MARK: - - Normal Operators
 // MARK: Intersection
 infix operator §: AdditionPrecedence

@@ -7,6 +7,7 @@
 //
 
 
+// MARK: // Public
 // MARK: Optional<String>
 extension Optional where Wrapped == String {
     public var isNilOrEmpty: Bool {

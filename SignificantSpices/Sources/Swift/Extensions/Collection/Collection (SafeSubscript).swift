@@ -7,6 +7,7 @@
 //
 
 
+// MARK: // Public
 extension Collection where Indices.Iterator.Element == Index {
     public subscript (safe index: Index) -> Generator.Element? {
         return self.indices.contains(index) ? self[index] : nil

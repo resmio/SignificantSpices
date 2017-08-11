@@ -7,6 +7,8 @@
 //
 
 
+// MARK: // Public
+// MARK: where Iterator.Element : AnyObject
 extension RangeReplaceableCollection where Iterator.Element : AnyObject {
     public mutating func remove(_ object : Iterator.Element?) {
         guard let _object: Iterator.Element = object else { return }
@@ -16,6 +18,7 @@ extension RangeReplaceableCollection where Iterator.Element : AnyObject {
 }
 
 
+// MARK: where Iterator.Element : Equatable
 extension RangeReplaceableCollection where Iterator.Element : Equatable {
     public mutating func remove(_ object : Iterator.Element?) {
         guard let _object: Iterator.Element = object else { return }
@@ -25,6 +28,7 @@ extension RangeReplaceableCollection where Iterator.Element : Equatable {
 }
 
 
+// MARK: where Iterator.Element : AnyObject & Equatable
 extension RangeReplaceableCollection where Iterator.Element : AnyObject & Equatable {
     public mutating func remove(_ object : Iterator.Element?) {
         guard let _object: Iterator.Element = object else { return }

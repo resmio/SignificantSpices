@@ -7,6 +7,7 @@
 //
 
 
+// MARK: // Public
 // MARK: Element "in" Collection
 infix operator <> : ComparisonPrecedence
 
