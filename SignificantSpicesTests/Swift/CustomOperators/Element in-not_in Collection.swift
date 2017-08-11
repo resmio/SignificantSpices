@@ -1,5 +1,5 @@
 //
-//  Element in-not_in Collection Tests.swift
+//  Element in-not_in Collection.swift
 //  SignificantSpices
 //
 //  Created by Jan Nash on 8/8/17.
@@ -148,7 +148,7 @@ class ENRT_InOrNotInSetTests: XCTestCase {
 
 
 class HERT_InOrNotInSetTests: XCTestCase {
-    func test_ERT_InSet() {
+    func test_HERT_InSet() {
         let a: _HERT = _HERT(1)
         let b: _HERT = _HERT(1)
         

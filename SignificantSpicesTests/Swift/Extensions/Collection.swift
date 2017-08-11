@@ -1,5 +1,5 @@
 //
-//  Collection Tests.swift
+//  Collection.swift
 //  SignificantSpices
 //
 //  Created by Jan Nash on 8/9/17.

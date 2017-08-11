@@ -1,5 +1,5 @@
 //
-//  RangeReplacableCollection Extension Tests.swift
+//  RangeReplacableCollection.swift
 //  SignificantSpices
 //
 //  Created by Jan Nash on 8/9/17.

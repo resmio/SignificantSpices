@@ -1,5 +1,5 @@
 //
-//  Sequence Extension Tests.swift
+//  Sequence.swift
 //  SignificantSpices
 //
 //  Created by Jan Nash on 8/11/17.

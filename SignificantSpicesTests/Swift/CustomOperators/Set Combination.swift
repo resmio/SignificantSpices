@@ -1,5 +1,5 @@
 //
-//  Set Combination Tests.swift
+//  Set Combination.swift
 //  SignificantSpices
 //
 //  Created by Jan Nash on 8/8/17.
