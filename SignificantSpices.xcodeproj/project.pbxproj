@@ -22,6 +22,7 @@
 		AA18B0B17818CAB892828D49048FAB89 /* Set Combination Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E91330CC8DB470F8E28EB9A0EE4F82 /* Set Combination Tests.swift */; };
 		ABB06CD0EAEF0367573B795329B02FDE /* SignificantSpices.h in Headers */ = {isa = PBXBuildFile; fileRef = AB23BE19D6E3B867A63D0979046005EC /* SignificantSpices.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B25825B09820220894A9000EC1B4B5ED /* Optional (IsNilOrEmpty).swift in Sources */ = {isa = PBXBuildFile; fileRef = E294E359E6327D7A3F84CAA8353B23BF /* Optional (IsNilOrEmpty).swift */; };
+		B29E4B766218D7237173016DEE91AFC6 /* Sequence (groupedBy).swift in Sources */ = {isa = PBXBuildFile; fileRef = E059A3C35C5AD084087466DD5AED88A5 /* Sequence (groupedBy).swift */; };
 		B4F2B8CC22CC39F7ED461FD7C32B89D5 /* Bool Compound Assignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347BD313F92C829EFF4E052FFA2BB7B /* Bool Compound Assignments.swift */; };
 		C69E0C28BAF3506FF7CE9A659B834637 /* Element in-not_in Collection Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5A335804E83E4049C1FFD63F6E3B3 /* Element in-not_in Collection Tests.swift */; };
 		D7F01CC62EC84D46C12192CD4ACBFC32 /* Optional String Interpolation Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAA79313BBC3F62BADDB52B010219D4 /* Optional String Interpolation Tests.swift */; };
@@ -61,6 +62,7 @@
 		C952148BBB2362E72B92A6906D6EC7AE /* Pods-SignificantSpicesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignificantSpicesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignificantSpicesTests/Pods-SignificantSpicesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1506A43DD9D59F65A252F93BD440E6C /* Collection (SafeSubscript).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection (SafeSubscript).swift"; sourceTree = "<group>"; };
 		E013684E684B20237AD01BD8EC07F482 /* Pods-SignificantSpices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignificantSpices.release.xcconfig"; path = "Pods/Target Support Files/Pods-SignificantSpices/Pods-SignificantSpices.release.xcconfig"; sourceTree = "<group>"; };
+		E059A3C35C5AD084087466DD5AED88A5 /* Sequence (groupedBy).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence (groupedBy).swift"; sourceTree = "<group>"; };
 		E237F779B339D37317197384A5A864CF /* SignificantSpicesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignificantSpicesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E294E359E6327D7A3F84CAA8353B23BF /* Optional (IsNilOrEmpty).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional (IsNilOrEmpty).swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +130,7 @@
 				0F72FBE4E56521FC0EC27E0BCB84DF1F /* Collection */,
 				AB743A74939F5A39E078BBFC0B9D18D6 /* Optional */,
 				75D3D2F14C81200F7A8659705AAC0895 /* RangeReplacableCollection */,
+				EB2B57C9CF52CB0C367A9F156974A9C0 /* Sequence */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -232,6 +235,14 @@
 				E294E359E6327D7A3F84CAA8353B23BF /* Optional (IsNilOrEmpty).swift */,
 			);
 			path = Optional;
+			sourceTree = "<group>";
+		};
+		EB2B57C9CF52CB0C367A9F156974A9C0 /* Sequence */ = {
+			isa = PBXGroup;
+			children = (
+				E059A3C35C5AD084087466DD5AED88A5 /* Sequence (groupedBy).swift */,
+			);
+			path = Sequence;
 			sourceTree = "<group>";
 		};
 		EF972B82CE408AE89E455D496AD7F4AF /* CustomOperators */ = {
@@ -462,6 +473,7 @@
 				B25825B09820220894A9000EC1B4B5ED /* Optional (IsNilOrEmpty).swift in Sources */,
 				5DA8000877E4D92E3AFDDC65389B573B /* Optional String Interpolation.swift in Sources */,
 				7000893806B336E8DF20C521C4BE27BE /* RangeReplacableCollection.swift in Sources */,
+				B29E4B766218D7237173016DEE91AFC6 /* Sequence (groupedBy).swift in Sources */,
 				2261D7D2F73B371FF630090114AA65F5 /* Set Combinations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
