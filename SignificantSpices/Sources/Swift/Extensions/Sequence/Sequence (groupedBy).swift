@@ -26,8 +26,10 @@ private class _Box<A> {
 
 // MARK: Implementation
 private extension Sequence {
-    func _groupedBy<U: Hashable>(_ key: (Iterator.Element) -> U) -> [U : [Iterator.Element]] {
-        var categories: [U : _Box<[Iterator.Element]>] = [:]
+    typealias _E = Self.Iterator.Element
+    
+    func _groupedBy<U: Hashable>(_ key: (_E) -> U) -> [U : [_E]] {
+        var categories: [U : _Box<[_E]>] = [:]
         
         for element in self {
             let key = key(element)
@@ -36,7 +38,7 @@ private extension Sequence {
             }
         }
         
-        var result: [U : [Iterator.Element]] = Dictionary(minimumCapacity: categories.count)
+        var result: [U : [_E]] = Dictionary(minimumCapacity: categories.count)
         
         for (key, box) in categories {
             result[key] = box.value
