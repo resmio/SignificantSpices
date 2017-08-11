@@ -25,7 +25,7 @@ extension RangeReplaceableCollection where Iterator.Element : Equatable {
 }
 
 
-extension RangeReplaceableCollection where Iterator.Element : AnyObject, Iterator.Element : Equatable {
+extension RangeReplaceableCollection where Iterator.Element : AnyObject & Equatable {
     public mutating func remove(_ object : Iterator.Element?) {
         guard let _object: Iterator.Element = object else { return }
         guard let index: Index = self.index(of: _object) else { return }
