@@ -9,7 +9,7 @@
 
 // MARK: // Public
 extension Sequence {
-    func first(_ n: Int, fulfilling condition: (Iterator.Element) -> Bool) -> [Iterator.Element] {
+    public func first(_ n: Int, fulfilling condition: (Iterator.Element) -> Bool) -> [Iterator.Element] {
         return self._first(n, fulfilling: condition)
     }
 }
