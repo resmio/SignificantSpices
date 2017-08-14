@@ -10,7 +10,7 @@
 // MARK: // Public
 // MARK: forAll (condition)
 extension Sequence {
-    public func all(fulfill condition: ((Iterator.Element) -> Bool)! = { _ in return true }) -> Bool {
-        return !self.contains(where: !condition)
+    public func all(fulfill condition: ((Iterator.Element) -> Bool)) -> Bool {
+        return !self.contains(where: { !condition($0) })
     }
 }
