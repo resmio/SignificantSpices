@@ -1,5 +1,5 @@
 //
-//  Optional.swift
+//  Optional (isNilOrEmpty).swift
 //  SignificantSpices
 //
 //  Created by Jan Nash on 8/9/17.
@@ -10,7 +10,7 @@ import XCTest
 import SignificantSpices.Swift
 
 
-class OptionalExtensionTests: XCTestCase {
+class OptionalIsNilOrEmptyTests: XCTestCase {
     func testNilCollectionIsNilOrEmpty() {
         let a: [Int]? = nil
         XCTAssertTrue(a.isNilOrEmpty)

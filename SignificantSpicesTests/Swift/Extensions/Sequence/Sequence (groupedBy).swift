@@ -1,5 +1,5 @@
 //
-//  Sequence.swift
+//  Sequence (groupedBy).swift
 //  SignificantSpices
 //
 //  Created by Jan Nash on 8/11/17.
@@ -10,7 +10,7 @@ import XCTest
 import SignificantSpices.Swift
 
 
-// Helper Types
+// MARK: Helper Types
 private class Foo {
     init(_ bar: Int) { self.bar = bar }
     private(set) var bar: Int

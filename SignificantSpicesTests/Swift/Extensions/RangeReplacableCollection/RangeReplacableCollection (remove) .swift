@@ -1,5 +1,5 @@
 //
-//  RangeReplacableCollection.swift
+//  RangeReplacableCollection (remove).swift
 //  SignificantSpices
 //
 //  Created by Jan Nash on 8/9/17.
@@ -22,7 +22,7 @@ private class _ERT: Equatable /*Equatable Reference Type*/ {
 }
 
 
-class RangeReplaceableCollectionExtensionTests: XCTestCase {
+class RangeReplaceableCollectionRemoveTests: XCTestCase {
     func testRemove_ENRT_fromArray() {
         var a: [_ENRT] = [1, 2, 3, 3, 3, 4, 5]
         

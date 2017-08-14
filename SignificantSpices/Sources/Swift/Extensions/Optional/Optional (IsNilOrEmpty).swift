@@ -1,5 +1,5 @@
 //
-//  Optional (IsNilOrEmpty).swift
+//  Optional (isNilOrEmpty).swift
 //  SignificantSpices
 //
 //  Created by Jan Nash on 8/9/17.

@@ -1,5 +1,5 @@
 //
-//  Collection (SafeSubscript).swift
+//  Collection (safe-subscript).swift
 //  SignificantSpices
 //
 //  Created by Jan Nash on 8/9/17.
