@@ -9,7 +9,7 @@
 
 // MARK: // Public
 extension Sequence {
-    public func none(fulfill condition: (Iterator.Element) -> Bool) -> Bool {
+    public func none(fulfills condition: (Iterator.Element) -> Bool) -> Bool {
         return !self.contains(where: condition)
     }
 }
