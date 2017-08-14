@@ -10,6 +10,9 @@
 		1EB11416E2A8B71A97F85E8007173CA4 /* Collection (safe-subscript).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4684F2A98946F1F8BB4A867EA06D47F1 /* Collection (safe-subscript).swift */; };
 		2261D7D2F73B371FF630090114AA65F5 /* Set Combinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94887B09BC0C494CC0EFFB80EF5A233F /* Set Combinations.swift */; };
 		252FB39434BCA316CFDB0A41645BA6CB /* SignificantSpices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88CC5EAE04F668DD5A2ABA31EA54ACE /* SignificantSpices.framework */; };
+		255EA86E0F42FDDFAF1BC493E1E9D517 /* Sequence (none).swift in Sources */ = {isa = PBXBuildFile; fileRef = 55905315B86A584579EECC94F54255DB /* Sequence (none).swift */; };
+		2C397C76DDCDC5C6AB773A8F880EB95B /* Sequence (all).swift in Sources */ = {isa = PBXBuildFile; fileRef = B612093C64621DD2FD0B478E755D11BB /* Sequence (all).swift */; };
+		2EB80551E26EC9E45D236FD8C284A400 /* Sequence (firstNfulfilling).swift in Sources */ = {isa = PBXBuildFile; fileRef = 971F0FF79F4C41416E28C523946C5B4B /* Sequence (firstNfulfilling).swift */; };
 		2FFF85404BD88E0441ADDFD6A0B87F69 /* Element in-not_in Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44E1FDD38894CD86367E7C2D1604D68 /* Element in-not_in Collection.swift */; };
 		37B75079F084B6878B1D694B505F26AE /* Pods_SignificantSpicesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F996EF7EB4B21593CFE79D23607ABBA /* Pods_SignificantSpicesTests.framework */; };
 		508C3EF4D840C94D1B9C47B23CAAC3F2 /* Bool Compound Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6649024E8E6AC1BDDEE35F80745D38 /* Bool Compound Assignment.swift */; };
@@ -50,13 +53,16 @@
 		4469084B5F7D3ECA68156BE199E7596D /* Pods-SignificantSpices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignificantSpices.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignificantSpices/Pods-SignificantSpices.debug.xcconfig"; sourceTree = "<group>"; };
 		4684F2A98946F1F8BB4A867EA06D47F1 /* Collection (safe-subscript).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection (safe-subscript).swift"; sourceTree = "<group>"; };
 		4FCAB712E0C0C5F9467523A7B4806058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55905315B86A584579EECC94F54255DB /* Sequence (none).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence (none).swift"; sourceTree = "<group>"; };
 		5AD0FB7AB28DC6B04EC810B4D10085EB /* Sequence (groupedBy).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence (groupedBy).swift"; sourceTree = "<group>"; };
 		7CC289F276088824CA5E6E3D55B3CBF9 /* Optional String Interpolation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional String Interpolation.swift"; sourceTree = "<group>"; };
 		94887B09BC0C494CC0EFFB80EF5A233F /* Set Combinations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Set Combinations.swift"; sourceTree = "<group>"; };
 		96EB18384680EDE0A5A384B9619ED92F /* Element in-not_in Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Element in-not_in Collection.swift"; sourceTree = "<group>"; };
+		971F0FF79F4C41416E28C523946C5B4B /* Sequence (firstNfulfilling).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence (firstNfulfilling).swift"; sourceTree = "<group>"; };
 		A9BFF73F3C47180863C61FD02F3B4DF3 /* Optional String Interpolation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional String Interpolation.swift"; sourceTree = "<group>"; };
 		AB23BE19D6E3B867A63D0979046005EC /* SignificantSpices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignificantSpices.h; sourceTree = "<group>"; };
 		B44E1FDD38894CD86367E7C2D1604D68 /* Element in-not_in Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Element in-not_in Collection.swift"; sourceTree = "<group>"; };
+		B612093C64621DD2FD0B478E755D11BB /* Sequence (all).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence (all).swift"; sourceTree = "<group>"; };
 		B88CC5EAE04F668DD5A2ABA31EA54ACE /* SignificantSpices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SignificantSpices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF92CF8FDA925C867BA680BAE86641E7 /* Pods-SignificantSpicesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignificantSpicesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SignificantSpicesTests/Pods-SignificantSpicesTests.release.xcconfig"; sourceTree = "<group>"; };
 		BFDBE4362731D55ABB01186B84BB61EF /* Optional (isNilOrEmpty).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional (isNilOrEmpty).swift"; sourceTree = "<group>"; };
@@ -271,10 +277,14 @@
 			);
 			path = RangeReplacableCollection;
 			sourceTree = "<group>";
+		};
 		EB2B57C9CF52CB0C367A9F156974A9C0 /* Sequence */ = {
 			isa = PBXGroup;
 			children = (
+				B612093C64621DD2FD0B478E755D11BB /* Sequence (all).swift */,
+				971F0FF79F4C41416E28C523946C5B4B /* Sequence (firstNfulfilling).swift */,
 				E059A3C35C5AD084087466DD5AED88A5 /* Sequence (groupedBy).swift */,
+				55905315B86A584579EECC94F54255DB /* Sequence (none).swift */,
 			);
 			path = Sequence;
 			sourceTree = "<group>";
@@ -507,7 +517,10 @@
 				AC5AFEBE79186DFD082419D08280FE92 /* Optional (isNilOrEmpty).swift in Sources */,
 				5DA8000877E4D92E3AFDDC65389B573B /* Optional String Interpolation.swift in Sources */,
 				D1BBCE1FCF28158A6F9B4DB4C8E47C01 /* RangeReplacableCollection (remove).swift in Sources */,
+				2C397C76DDCDC5C6AB773A8F880EB95B /* Sequence (all).swift in Sources */,
+				2EB80551E26EC9E45D236FD8C284A400 /* Sequence (firstNfulfilling).swift in Sources */,
 				B29E4B766218D7237173016DEE91AFC6 /* Sequence (groupedBy).swift in Sources */,
+				255EA86E0F42FDDFAF1BC493E1E9D517 /* Sequence (none).swift in Sources */,
 				2261D7D2F73B371FF630090114AA65F5 /* Set Combinations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
