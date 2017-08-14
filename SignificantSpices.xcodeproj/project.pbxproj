@@ -27,6 +27,7 @@
 		AC5AFEBE79186DFD082419D08280FE92 /* Optional (isNilOrEmpty).swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDBE4362731D55ABB01186B84BB61EF /* Optional (isNilOrEmpty).swift */; };
 		B29E4B766218D7237173016DEE91AFC6 /* Sequence (groupedBy).swift in Sources */ = {isa = PBXBuildFile; fileRef = E059A3C35C5AD084087466DD5AED88A5 /* Sequence (groupedBy).swift */; };
 		B4F2B8CC22CC39F7ED461FD7C32B89D5 /* Bool Compound Assignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347BD313F92C829EFF4E052FFA2BB7B /* Bool Compound Assignments.swift */; };
+		CE41C994C4AC701373C66AE90327307D /* (T) -> Bool Negation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CD8C8C467506B5ADD29B10D65F9C5 /* (T) -> Bool Negation.swift */; };
 		D1BBCE1FCF28158A6F9B4DB4C8E47C01 /* RangeReplacableCollection (remove).swift in Sources */ = {isa = PBXBuildFile; fileRef = C39FD466762528B6D50BC5578713710C /* RangeReplacableCollection (remove).swift */; };
 		DCDA6A20A28127E81DFBDF2F3BA41778 /* RangeReplacableCollection (remove) .swift in Sources */ = {isa = PBXBuildFile; fileRef = 4204A885A30D7DCE14A4AA31986EBF7D /* RangeReplacableCollection (remove) .swift */; };
 		E4545F1F4C3672F9DEE449D8D5ACD345 /* Optional (isNilOrEmpty).swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9AE0FB4CDD76B5B2086E2E69DBC8D4 /* Optional (isNilOrEmpty).swift */; };
@@ -73,6 +74,7 @@
 		E013684E684B20237AD01BD8EC07F482 /* Pods-SignificantSpices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignificantSpices.release.xcconfig"; path = "Pods/Target Support Files/Pods-SignificantSpices/Pods-SignificantSpices.release.xcconfig"; sourceTree = "<group>"; };
 		E059A3C35C5AD084087466DD5AED88A5 /* Sequence (groupedBy).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence (groupedBy).swift"; sourceTree = "<group>"; };
 		E237F779B339D37317197384A5A864CF /* SignificantSpicesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignificantSpicesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE3CD8C8C467506B5ADD29B10D65F9C5 /* (T) -> Bool Negation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "(T) -> Bool Negation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,6 +294,7 @@
 		EF972B82CE408AE89E455D496AD7F4AF /* CustomOperators */ = {
 			isa = PBXGroup;
 			children = (
+				EE3CD8C8C467506B5ADD29B10D65F9C5 /* (T) -> Bool Negation.swift */,
 				1347BD313F92C829EFF4E052FFA2BB7B /* Bool Compound Assignments.swift */,
 				96EB18384680EDE0A5A384B9619ED92F /* Element in-not_in Collection.swift */,
 				A9BFF73F3C47180863C61FD02F3B4DF3 /* Optional String Interpolation.swift */,
@@ -511,6 +514,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE41C994C4AC701373C66AE90327307D /* (T) -> Bool Negation.swift in Sources */,
 				B4F2B8CC22CC39F7ED461FD7C32B89D5 /* Bool Compound Assignments.swift in Sources */,
 				1EB11416E2A8B71A97F85E8007173CA4 /* Collection (safe-subscript).swift in Sources */,
 				568F451E43D198648B93EC73383CB6A5 /* Element in-not_in Collection.swift in Sources */,
