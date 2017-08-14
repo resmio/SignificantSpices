@@ -21,6 +21,7 @@
 		5DA8000877E4D92E3AFDDC65389B573B /* Optional String Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BFF73F3C47180863C61FD02F3B4DF3 /* Optional String Interpolation.swift */; };
 		6B16A1266DBF4461BA1185B929F0AA9F /* Optional String Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC289F276088824CA5E6E3D55B3CBF9 /* Optional String Interpolation.swift */; };
 		951B623DAA5D38EA0483C547BDF19464 /* Sequence (groupedBy).swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD0FB7AB28DC6B04EC810B4D10085EB /* Sequence (groupedBy).swift */; };
+		958E35DB40F2550678AEC0E1C83A318D /* (T) -> Bool Negation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEC6039A7C1769D91E5AC92F8EC3E0E /* (T) -> Bool Negation.swift */; };
 		A810B2F084DEB5258A1BEE3E71F7FA2A /* Pods_SignificantSpices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4332FB54B157D2121723BA622DC5398F /* Pods_SignificantSpices.framework */; };
 		ABB06CD0EAEF0367573B795329B02FDE /* SignificantSpices.h in Headers */ = {isa = PBXBuildFile; fileRef = AB23BE19D6E3B867A63D0979046005EC /* SignificantSpices.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC5AFEBE79186DFD082419D08280FE92 /* Optional (isNilOrEmpty).swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDBE4362731D55ABB01186B84BB61EF /* Optional (isNilOrEmpty).swift */; };
@@ -60,6 +61,7 @@
 		96EB18384680EDE0A5A384B9619ED92F /* Element in-not_in Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Element in-not_in Collection.swift"; sourceTree = "<group>"; };
 		971F0FF79F4C41416E28C523946C5B4B /* Sequence (firstNfulfilling).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence (firstNfulfilling).swift"; sourceTree = "<group>"; };
 		9AA27106795274DA616657E6DAFA6350 /* Set Combinations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Set Combinations.swift"; sourceTree = "<group>"; };
+		9AEC6039A7C1769D91E5AC92F8EC3E0E /* (T) -> Bool Negation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "(T) -> Bool Negation.swift"; sourceTree = "<group>"; };
 		A9BFF73F3C47180863C61FD02F3B4DF3 /* Optional String Interpolation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional String Interpolation.swift"; sourceTree = "<group>"; };
 		AB23BE19D6E3B867A63D0979046005EC /* SignificantSpices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignificantSpices.h; sourceTree = "<group>"; };
 		B44E1FDD38894CD86367E7C2D1604D68 /* Element in-not_in Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Element in-not_in Collection.swift"; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 		76E7A6A88B152B49A500808DD5C31167 /* CustomOperators */ = {
 			isa = PBXGroup;
 			children = (
+				9AEC6039A7C1769D91E5AC92F8EC3E0E /* (T) -> Bool Negation.swift */,
 				CA6649024E8E6AC1BDDEE35F80745D38 /* Bool Compound Assignment.swift */,
 				B44E1FDD38894CD86367E7C2D1604D68 /* Element in-not_in Collection.swift */,
 				7CC289F276088824CA5E6E3D55B3CBF9 /* Optional String Interpolation.swift */,
@@ -533,6 +536,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				958E35DB40F2550678AEC0E1C83A318D /* (T) -> Bool Negation.swift in Sources */,
 				508C3EF4D840C94D1B9C47B23CAAC3F2 /* Bool Compound Assignment.swift in Sources */,
 				55CD9B347227C485D73E4C973A672CD4 /* Collection (safe-subscript).swift in Sources */,
 				2FFF85404BD88E0441ADDFD6A0B87F69 /* Element in-not_in Collection.swift in Sources */,
