@@ -34,9 +34,18 @@ class RangeReplaceableCollectionRemoveTests: XCTestCase {
         
         a.remove(3)
         XCTAssertEqual(a, [1, 2, 4, 5])
-        
-        a.remove(3)
-        XCTAssertEqual(a, [1, 2, 4, 5])
+    }
+    
+    func testRemove_ENRT_fromArrayWhenItIsNotContained() {
+        var a: [_ENRT] = [1, 2, 3, 3, 3, 4, 5]
+        a.remove(10)
+        XCTAssertEqual(a, [1, 2, 3, 3, 3, 4, 5])
+    }
+    
+    func testRemove_nil_from_ENRT_Array() {
+        var a: [_ENRT] = [1, 2, 3, 3, 3, 4, 5]
+        a.remove(nil)
+        XCTAssertEqual(a, [1, 2, 3, 3, 3, 4, 5])
     }
     
     func testRemove_NERT_fromArray() {
@@ -68,11 +77,36 @@ class RangeReplaceableCollectionRemoveTests: XCTestCase {
         for (l, r) in zip(f, [a, b, d, e]) {
             XCTAssert(l === r)
         }
+    }
+    
+    func testRemove_NERT_fromArrayWhenItIsNotContained() {
+        let a: _NERT = _NERT()
+        let b: _NERT = _NERT()
+        let c: _NERT = _NERT()
+        let d: _NERT = _NERT()
+        let e: _NERT = _NERT()
         
-        f.remove(c)
+        var f: [_NERT] = [a, b, c, c, c, d, e]
+        f.remove(_NERT())
         
-        XCTAssertEqual(f.count, 4)
-        for (l, r) in zip(f, [a, b, d, e]) {
+        XCTAssertEqual(f.count, 7)
+        for (l, r) in zip(f, [a, b, c, c, c, d, e]) {
+            XCTAssert(l === r)
+        }
+    }
+    
+    func testRemove_nil_from_NERT_Array() {
+        let a: _NERT = _NERT()
+        let b: _NERT = _NERT()
+        let c: _NERT = _NERT()
+        let d: _NERT = _NERT()
+        let e: _NERT = _NERT()
+        
+        var f: [_NERT] = [a, b, c, c, c, d, e]
+        f.remove(nil)
+        
+        XCTAssertEqual(f.count, 7)
+        for (l, r) in zip(f, [a, b, c, c, c, d, e]) {
             XCTAssert(l === r)
         }
     }
@@ -104,9 +138,25 @@ class RangeReplaceableCollectionRemoveTests: XCTestCase {
         d.remove(c)
         
         XCTAssertEqual(d, [_ERT(1), _ERT(2), _ERT(4), _ERT(5)])
+    }
+    
+    func testRemove_ERT_fromArrayWhenItIsNotContained() {
+        let a: _ERT = _ERT(3)
+        let b: _ERT = _ERT(3)
+        let c: _ERT = _ERT(3)
         
-        d.remove(a)
+        var d: [_ERT] = [_ERT(1), _ERT(2), a, b, c, _ERT(4), _ERT(5)]
+        d.remove(_ERT(10))
+        XCTAssertEqual(d, [_ERT(1), _ERT(2), a, b, c, _ERT(4), _ERT(5)])
+    }
+    
+    func testRemove_nil_from_ERT_Array() {
+        let a: _ERT = _ERT(3)
+        let b: _ERT = _ERT(3)
+        let c: _ERT = _ERT(3)
         
-        XCTAssertEqual(d, [_ERT(1), _ERT(2), _ERT(4), _ERT(5)])
+        var d: [_ERT] = [_ERT(1), _ERT(2), a, b, c, _ERT(4), _ERT(5)]
+        d.remove(nil)
+        XCTAssertEqual(d, [_ERT(1), _ERT(2), a, b, c, _ERT(4), _ERT(5)])
     }
 }
