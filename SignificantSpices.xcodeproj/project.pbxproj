@@ -32,6 +32,7 @@
 		B4F2B8CC22CC39F7ED461FD7C32B89D5 /* Bool Compound Assignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1347BD313F92C829EFF4E052FFA2BB7B /* Bool Compound Assignments.swift */; };
 		B9744130B781C9068E601AFEFE4FBEFC /* Set Combinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA27106795274DA616657E6DAFA6350 /* Set Combinations.swift */; };
 		CE41C994C4AC701373C66AE90327307D /* (T) -> Bool Negation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CD8C8C467506B5ADD29B10D65F9C5 /* (T) -> Bool Negation.swift */; };
+		CF1218FFABFD60B39E360E7F8BC06849 /* gcd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01284A1A900607CCEEC7320B13417E /* gcd.swift */; };
 		D1BBCE1FCF28158A6F9B4DB4C8E47C01 /* RangeReplacableCollection (remove).swift in Sources */ = {isa = PBXBuildFile; fileRef = C39FD466762528B6D50BC5578713710C /* RangeReplacableCollection (remove).swift */; };
 		DCDA6A20A28127E81DFBDF2F3BA41778 /* RangeReplacableCollection (remove) .swift in Sources */ = {isa = PBXBuildFile; fileRef = 4204A885A30D7DCE14A4AA31986EBF7D /* RangeReplacableCollection (remove) .swift */; };
 		E326D550E7A64B40504FAC5E64BCD70B /* gcd.swift in Sources */ = {isa = PBXBuildFile; fileRef = D202B15413FE994AB146D93E0F57ED15 /* gcd.swift */; };
@@ -58,6 +59,7 @@
 		439008F96C2774C0A28AF026754219E3 /* Collection (safe-subscript).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection (safe-subscript).swift"; sourceTree = "<group>"; };
 		4469084B5F7D3ECA68156BE199E7596D /* Pods-SignificantSpices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignificantSpices.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignificantSpices/Pods-SignificantSpices.debug.xcconfig"; sourceTree = "<group>"; };
 		4684F2A98946F1F8BB4A867EA06D47F1 /* Collection (safe-subscript).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection (safe-subscript).swift"; sourceTree = "<group>"; };
+		4F01284A1A900607CCEEC7320B13417E /* gcd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = gcd.swift; path = gcd.swift; sourceTree = "<group>"; };
 		4FCAB712E0C0C5F9467523A7B4806058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55905315B86A584579EECC94F54255DB /* Sequence (none).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence (none).swift"; sourceTree = "<group>"; };
 		5AD0FB7AB28DC6B04EC810B4D10085EB /* Sequence (groupedBy).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence (groupedBy).swift"; sourceTree = "<group>"; };
@@ -78,7 +80,7 @@
 		C39FD466762528B6D50BC5578713710C /* RangeReplacableCollection (remove).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RangeReplacableCollection (remove).swift"; sourceTree = "<group>"; };
 		C952148BBB2362E72B92A6906D6EC7AE /* Pods-SignificantSpicesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignificantSpicesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignificantSpicesTests/Pods-SignificantSpicesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CA6649024E8E6AC1BDDEE35F80745D38 /* Bool Compound Assignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool Compound Assignment.swift"; sourceTree = "<group>"; };
-		D202B15413FE994AB146D93E0F57ED15 /* gcd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = gcd.swift; path = gcd.swift; sourceTree = "<group>"; };
+		D202B15413FE994AB146D93E0F57ED15 /* gcd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gcd.swift; sourceTree = "<group>"; };
 		DC9AE0FB4CDD76B5B2086E2E69DBC8D4 /* Optional (isNilOrEmpty).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional (isNilOrEmpty).swift"; sourceTree = "<group>"; };
 		E013684E684B20237AD01BD8EC07F482 /* Pods-SignificantSpices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignificantSpices.release.xcconfig"; path = "Pods/Target Support Files/Pods-SignificantSpices/Pods-SignificantSpices.release.xcconfig"; sourceTree = "<group>"; };
 		E059A3C35C5AD084087466DD5AED88A5 /* Sequence (groupedBy).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence (groupedBy).swift"; sourceTree = "<group>"; };
@@ -116,6 +118,15 @@
 				AB23BE19D6E3B867A63D0979046005EC /* SignificantSpices.h */,
 			);
 			path = SignificantSpices;
+			sourceTree = "<group>";
+		};
+		06923625636E86B784EA5B7FE9F0E56D /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				4F01284A1A900607CCEEC7320B13417E /* gcd.swift */,
+			);
+			name = Functions;
+			path = Functions;
 			sourceTree = "<group>";
 		};
 		0F72FBE4E56521FC0EC27E0BCB84DF1F /* Collection */ = {
@@ -206,15 +217,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		DB8850898187728F16315B8A51D0E53B /* Functions */ = {
-			isa = PBXGroup;
-			children = (
-				D202B15413FE994AB146D93E0F57ED15 /* gcd.swift */,
-			);
-			name = Functions;
-			path = Functions;
-			sourceTree = "<group>";
-		};
 		5FDCC4404EE92CAA91B282136ED9615A /* SignificantSpicesTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +231,7 @@
 			children = (
 				76E7A6A88B152B49A500808DD5C31167 /* CustomOperators */,
 				54623D7249ADCDF16253D896F3B068BD /* Extensions */,
+				06923625636E86B784EA5B7FE9F0E56D /* Functions */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -294,6 +297,14 @@
 				439008F96C2774C0A28AF026754219E3 /* Collection (safe-subscript).swift */,
 			);
 			path = Collection;
+			sourceTree = "<group>";
+		};
+		DB8850898187728F16315B8A51D0E53B /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				D202B15413FE994AB146D93E0F57ED15 /* gcd.swift */,
+			);
+			path = Functions;
 			sourceTree = "<group>";
 		};
 		DCCC1CEE5D523CFDCFFD0945D09F2437 /* RangeReplacableCollection */ = {
@@ -570,6 +581,7 @@
 				951B623DAA5D38EA0483C547BDF19464 /* Sequence (groupedBy).swift in Sources */,
 				56F13E9E1D8E0FDC1F5098E51055655C /* Sequence (none).swift in Sources */,
 				B9744130B781C9068E601AFEFE4FBEFC /* Set Combinations.swift in Sources */,
+				CF1218FFABFD60B39E360E7F8BC06849 /* gcd.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
