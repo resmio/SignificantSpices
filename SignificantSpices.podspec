@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "Jan Nash" => "jan@resmio.com" }
 
-  s.ios.deployment_target = "9.0"
+  s.ios.deployment_target = "8.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -22,11 +22,11 @@ Pod::Spec.new do |s|
     :tag => "v#{s.version}" 
   }
 
-  s.subspec 'Swift' do |swift|
-    swift.source_files = 'SignificantSpices/Sources/Swift/**/*.{swift}'
+  s.subspec 'SwiftExtensions' do |swiftext|
+    swiftext.source_files = 'SignificantSpices/Sources/SwiftExtensions/**/*.{swift}'
   end
 
-  s.subspec 'Foundation' do |foundation|
-    foundation.source_files = 'SignificantSpices/Sources/Foundation/**/*.{swift}'
+  s.subspec 'FoundationExtensions' do |foundationext|
+    foundationext.source_files = 'SignificantSpices/Sources/FoundationExtensions/**/*.{swift}'
   end
 end
