@@ -1,5 +1,5 @@
 //
-//  Optional String Interpolation Tests.swift
+//  Optional String Interpolation.swift
 //  SignificantSpices
 //
 //  Created by Jan Nash on 8/9/17.

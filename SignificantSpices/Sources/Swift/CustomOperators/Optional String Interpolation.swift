@@ -6,11 +6,12 @@
 //  Copyright © 2017 resmio. All rights reserved.
 //
 
-
 //  Thank you for ???, Ole Begemann
 //  https://oleb.net/blog/2016/12/optionals-string-interpolation/
 //
 
+
+// MARK: // Public
 // MARK: Default String for Optional String-Interpolation
 infix operator ??? : NilCoalescingPrecedence
 public func ???<T>(optional: Optional<T>, defaultValue: @autoclosure () -> String) -> String {
