@@ -127,7 +127,6 @@
 				7E8761BFD617245998A4FD9951DF758D /* Extensions */,
 				A5F8D92A527B0868D7DCEDC4FB235286 /* Functions */,
 			);
-			name = SwiftExtensions;
 			path = SwiftExtensions;
 			sourceTree = "<group>";
 		};
@@ -270,7 +269,6 @@
 				EFDCB05A237FD189C2400F9B8482C818 /* Extensions */,
 				CA31FD21DCC243082FCABF7B36CE5AFC /* Functions */,
 			);
-			name = SwiftExtensions;
 			path = SwiftExtensions;
 			sourceTree = "<group>";
 		};
@@ -313,7 +311,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = FoundationExtensions;
 			path = FoundationExtensions;
 			sourceTree = "<group>";
 		};
@@ -642,10 +639,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 0.0.1;
+				CURRENT_PROJECT_VERSION = 0.1.0;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DYLIB_COMPATIBILITY_VERSION = 0.0.1;
-				DYLIB_CURRENT_VERSION = 0.0.1;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = 0.1.0;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -698,10 +695,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 0.0.1;
+				CURRENT_PROJECT_VERSION = 0.1.0;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DYLIB_COMPATIBILITY_VERSION = 0.0.1;
-				DYLIB_CURRENT_VERSION = 0.0.1;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = 0.1.0;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
