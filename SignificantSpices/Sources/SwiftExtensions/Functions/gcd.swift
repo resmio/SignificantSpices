@@ -21,7 +21,7 @@ public func gcd<T: UnsignedInteger>(_ m: T, _ n: T) -> T {
 
 
 // MARK: // Private
-private func _gcd<T: Integer>(_ m: T, _ n: T) -> T {
+private func _gcd<T: BinaryInteger>(_ m: T, _ n: T) -> T {
     guard m != 0 && n != 0 else {
         return m + n
     }
