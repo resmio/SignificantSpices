@@ -11,28 +11,28 @@
 // MARK: - - Normal Operators
 // MARK: Intersection
 infix operator §: AdditionPrecedence
-public func § <T: Hashable>(l: Set<T>, r: Set<T>) -> Set<T> {
+public func § <T>(l: Set<T>, r: Set<T>) -> Set<T> {
     return l.intersection(r)
 }
 
 
 // MARK: Union
 infix operator +: AdditionPrecedence
-public func + <T: Hashable>(l: Set<T>, r: Set<T>) -> Set<T> {
+public func + <T>(l: Set<T>, r: Set<T>) -> Set<T> {
     return l.union(r)
 }
 
 
 // MARK: Substraction
 infix operator -: AdditionPrecedence
-public func - <T: Hashable>(l: Set<T>, r: Set<T>) -> Set<T> {
+public func - <T>(l: Set<T>, r: Set<T>) -> Set<T> {
     return l.subtracting(r)
 }
 
 
 // MARK: Symmetric Difference
 infix operator ^: AdditionPrecedence
-public func ^ <T: Hashable>(l: Set<T>, r: Set<T>) -> Set<T> {
+public func ^ <T>(l: Set<T>, r: Set<T>) -> Set<T> {
     return l.symmetricDifference(r)
 }
 
@@ -40,27 +40,27 @@ public func ^ <T: Hashable>(l: Set<T>, r: Set<T>) -> Set<T> {
 // MARK: - - Compound Assignment
 // MARK: Intersection Assignment
 infix operator §=: AssignmentPrecedence
-public func §= <T: Hashable>(l: inout Set<T>, r: Set<T>) {
+public func §= <T>(l: inout Set<T>, r: Set<T>) {
     return l.formIntersection(r)
 }
 
 
 // MARK: Union Assignment
 infix operator +=: AssignmentPrecedence
-public func += <T: Hashable>(l: inout Set<T>, r: Set<T>) {
+public func += <T>(l: inout Set<T>, r: Set<T>) {
     return l.formUnion(r)
 }
 
 
 // MARK: Substraction Assignment
 infix operator -=: AssignmentPrecedence
-public func -= <T: Hashable>(l: inout Set<T>, r: Set<T>) {
+public func -= <T>(l: inout Set<T>, r: Set<T>) {
     return l.subtract(r)
 }
 
 
 // MARK: Symmetric Difference Assignment
 infix operator ^=: AssignmentPrecedence
-public func ^= <T: Hashable>(l: inout Set<T>, r: Set<T>) {
+public func ^= <T>(l: inout Set<T>, r: Set<T>) {
     return l.formSymmetricDifference(r)
 }
