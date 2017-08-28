@@ -8,7 +8,7 @@
 
 
 // MARK: // Public
-extension Collection where Indices.Iterator.Element == Index {
+extension Collection {
     public subscript (safe index: Index) -> Iterator.Element? {
         return self.indices.contains(index) ? self[index] : nil
     }
