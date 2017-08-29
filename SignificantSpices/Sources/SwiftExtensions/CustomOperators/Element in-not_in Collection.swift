@@ -26,7 +26,7 @@ public func <> <T>(l: T?, r: [T]) -> Bool where T: AnyObject & Equatable {
     return r.contains(l)
 }
 
-public func <> <T: Hashable>(l: T?, r: Set<T>) -> Bool {
+public func <> <T>(l: T?, r: Set<T>) -> Bool {
     guard let l: T = l else { return false }
     return r.contains(l)
 }
@@ -50,7 +50,7 @@ public func >< <T>(l: T?, r: [T]) -> Bool where T: AnyObject & Equatable {
     return !(r.contains(l))
 }
 
-public func >< <T: Hashable>(l: T?, r: Set<T>) -> Bool {
+public func >< <T>(l: T?, r: Set<T>) -> Bool {
     guard let l: T = l else { return true }
     return !(r.contains(l))
 }
