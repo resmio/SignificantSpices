@@ -8,49 +8,52 @@
 
 
 // MARK: // Public
+// MARK: Operator Declarations
 // MARK: Element "in" Collection
 infix operator <> : ComparisonPrecedence
-
-public func <> <T>(l: T?, r: [T]) -> Bool where T: AnyObject {
-    guard let l: T = l else { return false }
-    return r.contains(where: { $0 === l })
-}
-
-public func <> <T>(l: T?, r: [T]) -> Bool where T: Equatable {
-    guard let l: T = l else { return false }
-    return r.contains(l)
-}
-
-public func <> <T>(l: T?, r: [T]) -> Bool where T: AnyObject & Equatable {
-    guard let l: T = l else { return false }
-    return r.contains(l)
-}
-
-public func <> <T>(l: T?, r: Set<T>) -> Bool {
-    guard let l: T = l else { return false }
-    return r.contains(l)
-}
-
 
 // MARK: Element "not in" Collection
 infix operator >< : ComparisonPrecedence
 
-public func >< <T>(l: T?, r: [T]) -> Bool where T: AnyObject {
-    guard let l: T = l else { return true }
-    return !(r.contains(where: { $0 === l }))
+
+// MARK: Extension Declarations
+// MARK: where Iterator.Element: AnyObject
+public extension Collection where Iterator.Element: AnyObject {
+    public static func <> (element: Iterator.Element?, collection: Self) -> Bool{
+        guard let element: Iterator.Element = element else { return false }
+        return collection.contains(where: { $0 === element })
+    }
+    
+    public static func >< (element: Iterator.Element?, collection: Self) -> Bool {
+        guard let element: Iterator.Element = element else { return true }
+        return !(collection.contains(where: { $0 === element }))
+    }
 }
 
-public func >< <T>(l: T?, r: [T]) -> Bool where T: Equatable {
-    guard let l: T = l else { return true }
-    return !(r.contains(l))
+
+// MARK: where Iterator.Element: Equatable
+public extension Collection where Iterator.Element: Equatable {
+    public static func <> (element: Iterator.Element?, collection: Self) -> Bool {
+        guard let element: Iterator.Element = element else { return false }
+        return collection.contains(element)
+    }
+    
+    public static func >< (element: Iterator.Element?, collection: Self) -> Bool {
+        guard let element: Iterator.Element = element else { return true }
+        return !(collection.contains(element))
+    }
 }
 
-public func >< <T>(l: T?, r: [T]) -> Bool where T: AnyObject & Equatable {
-    guard let l: T = l else { return true }
-    return !(r.contains(l))
-}
 
-public func >< <T>(l: T?, r: Set<T>) -> Bool {
-    guard let l: T = l else { return true }
-    return !(r.contains(l))
+// MARK: where Iterator.Element: AnyObject & Equatable
+public extension Collection where Iterator.Element: AnyObject & Equatable {
+    public static func <> (element: Iterator.Element?, collection: Self) -> Bool {
+        guard let element: Iterator.Element = element else { return false }
+        return collection.contains(element)
+    }
+    
+    public static func >< (element: Iterator.Element?, collection: Self) -> Bool {
+        guard let element: Iterator.Element = element else { return true }
+        return !(collection.contains(element))
+    }
 }
