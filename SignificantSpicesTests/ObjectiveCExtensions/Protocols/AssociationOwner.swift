@@ -6,4 +6,26 @@
 //  Copyright © 2017 resmio. All rights reserved.
 //
 
-import Foundation
+import XCTest
+@testable import SignificantSpices
+
+
+private extension AssociationKey {
+    static var _fooKey: AssociationKey = AssociationKey()
+}
+
+
+class AssociationOwnerTests: XCTestCase {
+    class Foo: AssociationOwner {}
+    
+    func testWeakAssociation() {
+        let object: Foo = Foo()
+        let objectToAssociate: NSObject = NSObject()
+        
+        object.associate(objectToAssociate, .weakly, by: &._fooKey)
+        
+        let associatedObject: NSObject? = object.associatedValue(for: &._fooKey)
+        
+        XCTAssertNil(associatedObject)
+    }
+}
