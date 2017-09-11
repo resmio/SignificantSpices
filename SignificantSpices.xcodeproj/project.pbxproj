@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0AC993D9746AB3977D211B75947D414F /* Optional (isNilOrEmpty).swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C4E806CB555E76963854AEFEC2150E /* Optional (isNilOrEmpty).swift */; };
 		188AD923142CB9CA49543076DBB8C188 /* Sequence (none).swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C93D92DB1EA1B584CB52EDB279B03A /* Sequence (none).swift */; };
+		248A3FE78BC86E45DEF63B2C7504AB86 /* AssociationOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29689D1C609A0290FA840B1C47878E3 /* AssociationOwner.swift */; };
 		252FB39434BCA316CFDB0A41645BA6CB /* SignificantSpices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88CC5EAE04F668DD5A2ABA31EA54ACE /* SignificantSpices.framework */; };
 		36345A83F74D15E86C745E4F9FEDC51E /* Element in-not_in Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B520D32F5569CACA3F72F78B77F27 /* Element in-not_in Collection.swift */; };
 		37B75079F084B6878B1D694B505F26AE /* Pods_SignificantSpicesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F996EF7EB4B21593CFE79D23607ABBA /* Pods_SignificantSpicesTests.framework */; };
@@ -73,6 +74,7 @@
 		780566F922290E6A3B77805EB94F7AA5 /* (T) -> Bool Negation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "(T) -> Bool Negation.swift"; sourceTree = "<group>"; };
 		91CAB7E75F12356144B55651E6DE624E /* Set Combinations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Set Combinations.swift"; sourceTree = "<group>"; };
 		9C7AD0E68B3AEA498398C9FCCD8C8A6B /* Optional String Interpolation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional String Interpolation.swift"; sourceTree = "<group>"; };
+		A29689D1C609A0290FA840B1C47878E3 /* AssociationOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociationOwner.swift; sourceTree = "<group>"; };
 		A56B50F1CA7DA6B9E7EF910E5AF0D269 /* Bool Compound Assignments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool Compound Assignments.swift"; sourceTree = "<group>"; };
 		AB23BE19D6E3B867A63D0979046005EC /* SignificantSpices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignificantSpices.h; sourceTree = "<group>"; };
 		B4F481AE386C7E29E47CD9271832A4E7 /* Optional (isNilOrEmpty).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional (isNilOrEmpty).swift"; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				DD7D839703BD27A7861BF484B50063B1 /* FoundationExtensions */,
+				67384CDF42CA17D7A9048BD208F5A898 /* ObjectiveCExtensions */,
 				041C989C002FC52C36AEC8ED57B38C03 /* SwiftExtensions */,
 			);
 			path = Sources;
@@ -209,6 +212,14 @@
 				57DF21D845A5D8E2BB891546FD2EB8B5 /* Collection (safe-subscript).swift */,
 			);
 			path = Collection;
+			sourceTree = "<group>";
+		};
+		67384CDF42CA17D7A9048BD208F5A898 /* ObjectiveCExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				866B8E6FCC3775D92B0F11C3D6C5E50B /* Protocols */,
+			);
+			path = ObjectiveCExtensions;
 			sourceTree = "<group>";
 		};
 		6E892EE25D340E5983CD927681957491 /* Collection */ = {
@@ -260,6 +271,14 @@
 				91CAB7E75F12356144B55651E6DE624E /* Set Combinations.swift */,
 			);
 			path = CustomOperators;
+			sourceTree = "<group>";
+		};
+		866B8E6FCC3775D92B0F11C3D6C5E50B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A29689D1C609A0290FA840B1C47878E3 /* AssociationOwner.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		9A18CC7B833C53AEB8ABDE71D5780CE6 /* SwiftExtensions */ = {
@@ -550,6 +569,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9862C2ECCE67D524B656E5E0C770BB8 /* (T) -> Bool Negation.swift in Sources */,
+				248A3FE78BC86E45DEF63B2C7504AB86 /* AssociationOwner.swift in Sources */,
 				EADD65D3C92F10BCFE8BC374ADDB3D78 /* Bool Compound Assignments.swift in Sources */,
 				FC7F9DC48515BB7CE759F05FED112968 /* Collection (safe-subscript).swift in Sources */,
 				832D9DF5F5B2549C3E4FF207359CD27F /* Element in-not_in Collection.swift in Sources */,
