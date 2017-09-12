@@ -11,7 +11,8 @@ import XCTest
 
 
 private extension AssociationKey {
-    static var _fooKey: AssociationKey = AssociationKey()
+    static var _objectKey: AssociationKey = AssociationKey()
+    static var _valueKey: AssociationKey = AssociationKey()
 }
 
 
@@ -22,20 +23,20 @@ class AssociationOwnerTests: XCTestCase {
     
     func testWeakAssociation() {
         let rootObject: RootObject = RootObject()
-        rootObject.associate(NSObject(), .weakly, by: &._fooKey)
-        let associatedObject: NSObject? = rootObject.associatedObject(for: &._fooKey)
+        rootObject.associate(NSObject(), .weakly, by: &._objectKey)
+        let associatedObject: NSObject? = rootObject.associatedObject(for: &._objectKey)
         XCTAssertNil(associatedObject)
     }
     
     func testWeakAssociationDoesNotNilAssociationIfDifferentType() {
         let rootObject: RootObject = RootObject()
         let objectToAssociate: Foo = Foo()
-        rootObject.associate(objectToAssociate, .weakly, by: &._fooKey)
+        rootObject.associate(objectToAssociate, .weakly, by: &._objectKey)
         
-        let associatedObjectWrongType: Bar? = rootObject.associatedObject(for: &._fooKey)
+        let associatedObjectWrongType: Bar? = rootObject.associatedObject(for: &._objectKey)
         XCTAssertNil(associatedObjectWrongType)
         
-        guard let associatedObjectRightType: Foo = rootObject.associatedObject(for: &._fooKey) else {
+        guard let associatedObjectRightType: Foo = rootObject.associatedObject(for: &._objectKey) else {
             XCTFail("Association should not be nil")
             return
         }
@@ -47,25 +48,32 @@ class AssociationOwnerTests: XCTestCase {
         let rootObject: RootObject = RootObject()
         let objectToAssociate: Foo = Foo()
         
-        rootObject.associate(objectToAssociate, .weakly, by: &._fooKey)
-        rootObject.associate(nil, .weakly, by: &._fooKey)
+        rootObject.associate(objectToAssociate, .weakly, by: &._objectKey)
+        rootObject.associate(nil, .weakly, by: &._objectKey)
         
-        let associatedObject: AnyObject? = rootObject.associatedObject(for: &._fooKey)
+        let associatedObject: AnyObject? = rootObject.associatedObject(for: &._objectKey)
         XCTAssertNil(associatedObject)
     }
     
     func testStrongAssociation() {
         let rootObject: RootObject = RootObject()
-        rootObject.associate(NSObject(), .strongly, by: &._fooKey)
-        let associatedObject: NSObject? = rootObject.associatedObject(for: &._fooKey)
+        rootObject.associate(NSObject(), .strongly, by: &._objectKey)
+        let associatedObject: NSObject? = rootObject.associatedObject(for: &._objectKey)
         XCTAssertNotNil(associatedObject)
     }
     
     func testNilOutStrongAssociation() {
         let rootObject: RootObject = RootObject()
-        rootObject.associate(NSObject(), .strongly, by: &._fooKey)
-        rootObject.associate(nil, .strongly, by: &._fooKey)
-        let associatedObject: NSObject? = rootObject.associatedObject(for: &._fooKey)
+        rootObject.associate(NSObject(), .strongly, by: &._objectKey)
+        rootObject.associate(nil, .strongly, by: &._objectKey)
+        let associatedObject: NSObject? = rootObject.associatedObject(for: &._objectKey)
         XCTAssertNil(associatedObject)
+    }
+    
+    func testValueTypeAssociation() {
+        let rootObject: RootObject = RootObject()
+        rootObject.associate(5, by: &._valueKey)
+        let associatedValue: Int? = rootObject.associatedValue(for: &._valueKey)
+        XCTAssertEqual(5, associatedValue)
     }
 }
