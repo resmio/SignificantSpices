@@ -16,16 +16,30 @@ private extension AssociationKey {
 
 
 class AssociationOwnerTests: XCTestCase {
-    class Foo: AssociationOwner {}
+    class RootObject: AssociationOwner {}
+    class Foo {}
+    class Bar {}
     
     func testWeakAssociation() {
-        let object: Foo = Foo()
-        let objectToAssociate: NSObject = NSObject()
-        
-        object.associate(objectToAssociate, .weakly, by: &._fooKey)
-        
-        let associatedObject: NSObject? = object.associatedValue(for: &._fooKey)
-        
+        let rootObject: RootObject = RootObject()
+        rootObject.associate(NSObject(), .weakly, by: &._fooKey)
+        let associatedObject: NSObject? = rootObject.associatedObject(for: &._fooKey)
         XCTAssertNil(associatedObject)
+    }
+    
+    func testWeakAssociationDoesNotNilAssociationIfDifferentType() {
+        let rootObject: RootObject = RootObject()
+        let objectToAssociate: Foo = Foo()
+        rootObject.associate(objectToAssociate, .weakly, by: &._fooKey)
+        
+        let associatedObjectWrongType: Bar? = rootObject.associatedObject(for: &._fooKey)
+        XCTAssertNil(associatedObjectWrongType)
+        
+        guard let associatedObjectRightType: Foo = rootObject.associatedObject(for: &._fooKey) else {
+            XCTFail("Association should not be nil")
+            return
+        }
+        
+        XCTAssert(associatedObjectRightType === objectToAssociate)
     }
 }
