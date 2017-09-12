@@ -26,19 +26,19 @@ public enum AssociationType {
 // MARK: - AssociationOwner
 // MARK: Protocol Declaration
 public protocol AssociationOwner {
-    func associate(_ object: AnyObject?, _ associationType: AssociationType, by key: inout AssociationKey)
+    func associate<T: AnyObject>(_ object: T?, _ associationType: AssociationType, by key: inout AssociationKey)
     func associatedObject<T: AnyObject>(for key: inout AssociationKey) -> T?
 }
 
 
 // MARK: Default Implementations
 public extension AssociationOwner {
-    public func associate(_ object: AnyObject?, _ associationType: AssociationType, by key: inout AssociationKey) {
-        self._associate(object, associationType, by: &key._key)
+    public func associate<T: AnyObject>(_ object: T?, _ associationType: AssociationType, by key: inout AssociationKey) {
+        self._associate(object, associationType, by: &key)
     }
     
     public func associatedObject<T: AnyObject>(for key: inout AssociationKey) -> T? {
-        return self._associatedObject(for: &key._key)
+        return self._associatedObject(for: &key)
     }
 }
 
@@ -58,16 +58,16 @@ private class _WeakBox {
 
 // MARK: - AssociationOwner
 private extension AssociationOwner {
-    func _associate(_ object: AnyObject?, _ associationType: AssociationType, by key: inout Void?) {
+    func _associate<T: AnyObject>(_ object: T?, _ associationType: AssociationType, by key: inout AssociationKey) {
         switch associationType {
         case .strongly:
-            objc_setAssociatedObject(self, &key, object, .OBJC_ASSOCIATION_RETAIN);
+            self._stronglyAssociate(object, by: &key)
         case .weakly:
             self._weaklyAssociate(object, by: &key)
         }
     }
     
-    func _associatedObject<T: AnyObject>(for key: inout Void?) -> T? {
+    func _associatedObject<T: AnyObject>(for key: inout AssociationKey) -> T? {
         // First, we retrieve the associated object.
         let object: AnyObject? = objc_getAssociatedObject(self, &key) as AnyObject
         
@@ -82,7 +82,7 @@ private extension AssociationOwner {
         // If there is a _WeakBox associated but it's empty,
         // we nil the association and return nil.
         guard let boxedObject: T = box.object as? T else {
-            self._associate(nil, .strongly, by: &key)
+            self._setAssociationToNil(for: &key)
             return nil
         }
         
@@ -91,14 +91,22 @@ private extension AssociationOwner {
     }
     
     // Private Helpers
-    private func _weaklyAssociate<T: AnyObject>(_ object: T?, by key: inout Void?) {
+    private func _weaklyAssociate<T: AnyObject>(_ object: T?, by key: inout AssociationKey) {
         // If the new value is nil, we just nil the association.
         guard let object: T = object else {
-            self._associate(nil, .strongly, by: &key)
+            self._setAssociationToNil(for: &key)
             return
         }
         
         // Else, we associate a new _WeakBox containing the object.
-        self._associate(_WeakBox(object), .strongly, by: &key)
+        self._stronglyAssociate(_WeakBox(object), by: &key)
+    }
+    
+    private func _stronglyAssociate<T: AnyObject>(_ object: T?, by key: inout AssociationKey) {
+        objc_setAssociatedObject(self, &key._key, object, .OBJC_ASSOCIATION_RETAIN)
+    }
+    
+    private func _setAssociationToNil(for key: inout AssociationKey) {
+        objc_setAssociatedObject(self, &key._key, nil, .OBJC_ASSOCIATION_RETAIN)
     }
 }
