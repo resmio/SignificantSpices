@@ -10,9 +10,13 @@ import XCTest
 @testable import SignificantSpices
 
 
-private extension AssociationKey {
-    static var _objectKey: AssociationKey = AssociationKey()
-    static var _valueKey: AssociationKey = AssociationKey()
+private extension ObjectAssociationKey {
+    static var _objectKey: ObjectAssociationKey = ObjectAssociationKey()
+}
+
+
+private extension ValueAssociationKey {
+    static var _valueKey: ValueAssociationKey = ValueAssociationKey()
 }
 
 
