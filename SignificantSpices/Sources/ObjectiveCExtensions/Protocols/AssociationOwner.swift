@@ -45,14 +45,14 @@ public extension AssociationOwner {
 
 // MARK: // Private
 // MARK: - _WeakBox
-private class _WeakBox<T: AnyObject> {
+private class _WeakBox {
     // Init
-    init(_ object: T?) {
+    init(_ object: AnyObject?) {
         self.object = object
     }
     
     // Weak Variables
-    weak var object: T?
+    weak var object: AnyObject?
 }
 
 
@@ -73,7 +73,7 @@ private extension AssociationOwner {
         
         // Next, we check if it's a weak association
         // by conditionally casting it to a _WeakBox.
-        guard let box: _WeakBox<T> = object as? _WeakBox<T> else {
+        guard let box: _WeakBox = object as? _WeakBox else {
             // If it wasn't a weak association (i.e. it wasn't a _WeakBox),
             // we just return the object (conditionally cast to T)
             return object as? T
@@ -81,7 +81,7 @@ private extension AssociationOwner {
         
         // If there is a _WeakBox associated but it's empty,
         // we nil the association and return nil.
-        guard let boxedObject: T = box.object else {
+        guard let boxedObject: T = box.object as? T else {
             self._associate(nil, .strongly, by: &key)
             return nil
         }
