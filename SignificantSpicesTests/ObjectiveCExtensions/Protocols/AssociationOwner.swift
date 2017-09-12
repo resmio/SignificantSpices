@@ -42,4 +42,15 @@ class AssociationOwnerTests: XCTestCase {
         
         XCTAssert(associatedObjectRightType === objectToAssociate)
     }
+    
+    func testNilOutWeakAssociation() {
+        let rootObject: RootObject = RootObject()
+        let objectToAssociate: Foo = Foo()
+        
+        rootObject.associate(objectToAssociate, .weakly, by: &._fooKey)
+        rootObject.associate(nil, .weakly, by: &._fooKey)
+        
+        let associatedObject: AnyObject? = rootObject.associatedObject(for: &._fooKey)
+        XCTAssertNil(associatedObject)
+    }
 }
