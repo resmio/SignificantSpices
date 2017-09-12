@@ -26,19 +26,19 @@ public enum AssociationType {
 // MARK: - AssociationOwner
 // MARK: Protocol Declaration
 public protocol AssociationOwner {
-    func associate(_ value: AnyObject?, _ associationType: AssociationType, by key: inout AssociationKey)
-    func associatedValue<T: AnyObject>(for key: inout AssociationKey) -> T?
+    func associate(_ object: AnyObject?, _ associationType: AssociationType, by key: inout AssociationKey)
+    func associatedObject<T: AnyObject>(for key: inout AssociationKey) -> T?
 }
 
 
 // MARK: Default Implementations
 public extension AssociationOwner {
-    public func associate(_ value: AnyObject?, _ associationType: AssociationType, by key: inout AssociationKey) {
-        self._associate(value, associationType, by: &key._key)
+    public func associate(_ object: AnyObject?, _ associationType: AssociationType, by key: inout AssociationKey) {
+        self._associate(object, associationType, by: &key._key)
     }
     
-    public func associatedValue<T: AnyObject>(for key: inout AssociationKey) -> T? {
-        return self._associatedValue(for: &key._key)
+    public func associatedObject<T: AnyObject>(for key: inout AssociationKey) -> T? {
+        return self._associatedObject(for: &key._key)
     }
 }
 
@@ -58,16 +58,16 @@ private class _WeakBox<T: AnyObject> {
 
 // MARK: - AssociationOwner
 private extension AssociationOwner {
-    func _associate(_ value: AnyObject?, _ associationType: AssociationType, by key: inout Void?) {
+    func _associate(_ object: AnyObject?, _ associationType: AssociationType, by key: inout Void?) {
         switch associationType {
         case .strongly:
-            objc_setAssociatedObject(self, &key, value, .OBJC_ASSOCIATION_RETAIN);
+            objc_setAssociatedObject(self, &key, object, .OBJC_ASSOCIATION_RETAIN);
         case .weakly:
-            self._weaklyAssociate(value, by: &key)
+            self._weaklyAssociate(object, by: &key)
         }
     }
     
-    func _associatedValue<T: AnyObject>(for key: inout Void?) -> T? {
+    func _associatedObject<T: AnyObject>(for key: inout Void?) -> T? {
         // First, we retrieve the associated object.
         let object: AnyObject? = objc_getAssociatedObject(self, &key) as AnyObject
         
