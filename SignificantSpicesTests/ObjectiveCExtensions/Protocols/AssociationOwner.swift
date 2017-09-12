@@ -80,4 +80,12 @@ class AssociationOwnerTests: XCTestCase {
         let associatedValue: Int? = rootObject.associatedValue(for: &._valueKey)
         XCTAssertEqual(5, associatedValue)
     }
+    
+    func testNilOutValueTypeAssociation() {
+        let rootObject: RootObject = RootObject()
+        rootObject.associate(5, by: &._valueKey)
+        rootObject.associate(nil, by: &._valueKey)
+        let associatedValue: Int? = rootObject.associatedValue(for: &._valueKey)
+        XCTAssertNil(associatedValue)
+    }
 }
