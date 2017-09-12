@@ -26,14 +26,14 @@ public enum AssociationType {
 // MARK: - AssociationOwner
 // MARK: Protocol Declaration
 public protocol AssociationOwner {
-    func associate<T: AnyObject>(_ object: T?, _ associationType: AssociationType, by key: inout AssociationKey)
+    func associate(_ object: AnyObject?, _ associationType: AssociationType, by key: inout AssociationKey)
     func associatedObject<T: AnyObject>(for key: inout AssociationKey) -> T?
 }
 
 
 // MARK: Default Implementations
 public extension AssociationOwner {
-    public func associate<T: AnyObject>(_ object: T?, _ associationType: AssociationType, by key: inout AssociationKey) {
+    public func associate(_ object: AnyObject?, _ associationType: AssociationType, by key: inout AssociationKey) {
         self._associate(object, associationType, by: &key)
     }
     
@@ -58,7 +58,7 @@ private class _WeakBox {
 
 // MARK: - AssociationOwner
 private extension AssociationOwner {
-    func _associate<T: AnyObject>(_ object: T?, _ associationType: AssociationType, by key: inout AssociationKey) {
+    func _associate(_ object: AnyObject?, _ associationType: AssociationType, by key: inout AssociationKey) {
         switch associationType {
         case .strongly:
             self._stronglyAssociate(object, by: &key)
@@ -92,9 +92,9 @@ private extension AssociationOwner {
     }
     
     // Private Helpers
-    private func _weaklyAssociate<T: AnyObject>(_ object: T?, by key: inout AssociationKey) {
+    private func _weaklyAssociate(_ object: AnyObject?, by key: inout AssociationKey) {
         // If the new value is nil, we just nil the association.
-        guard let object: T = object else {
+        guard let object: AnyObject = object else {
             self._setAssociationToNil(for: &key)
             return
         }
@@ -103,7 +103,7 @@ private extension AssociationOwner {
         self._stronglyAssociate(_WeakBox(object), by: &key)
     }
     
-    private func _stronglyAssociate<T: AnyObject>(_ object: T?, by key: inout AssociationKey) {
+    private func _stronglyAssociate(_ object: AnyObject?, by key: inout AssociationKey) {
         objc_setAssociatedObject(self, &key._key, object, .OBJC_ASSOCIATION_RETAIN)
     }
     
