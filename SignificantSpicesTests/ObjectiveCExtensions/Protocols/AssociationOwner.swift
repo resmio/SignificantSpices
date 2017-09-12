@@ -53,4 +53,19 @@ class AssociationOwnerTests: XCTestCase {
         let associatedObject: AnyObject? = rootObject.associatedObject(for: &._fooKey)
         XCTAssertNil(associatedObject)
     }
+    
+    func testStrongAssociation() {
+        let rootObject: RootObject = RootObject()
+        rootObject.associate(NSObject(), .strongly, by: &._fooKey)
+        let associatedObject: NSObject? = rootObject.associatedObject(for: &._fooKey)
+        XCTAssertNotNil(associatedObject)
+    }
+    
+    func testNilOutStrongAssociation() {
+        let rootObject: RootObject = RootObject()
+        rootObject.associate(NSObject(), .strongly, by: &._fooKey)
+        rootObject.associate(nil, .strongly, by: &._fooKey)
+        let associatedObject: NSObject? = rootObject.associatedObject(for: &._fooKey)
+        XCTAssertNil(associatedObject)
+    }
 }
