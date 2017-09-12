@@ -26,6 +26,11 @@ public enum AssociationType {
 // MARK: - AssociationOwner
 // MARK: Protocol Declaration
 public protocol AssociationOwner {
+    // Value Types
+    func associate(_ value: Any?, by key: inout AssociationKey)
+    func associatedValue<T: Any>(for key: inout AssociationKey) -> T?
+    
+    // Reference Types
     func associate(_ object: AnyObject?, _ associationType: AssociationType, by key: inout AssociationKey)
     func associatedObject<T: AnyObject>(for key: inout AssociationKey) -> T?
 }
@@ -33,6 +38,14 @@ public protocol AssociationOwner {
 
 // MARK: Default Implementations
 public extension AssociationOwner {
+    func associate(_ value: Any?, by key: inout AssociationKey) {
+        self._associate(value, by: &key)
+    }
+    
+    func associatedValue<T: Any>(for key: inout AssociationKey) -> T? {
+        return self._associatedValue(for: &key)
+    }
+    
     public func associate(_ object: AnyObject?, _ associationType: AssociationType, by key: inout AssociationKey) {
         self._associate(object, associationType, by: &key)
     }
@@ -57,6 +70,18 @@ private class _WeakBox {
 
 
 // MARK: - AssociationOwner
+// MARK: Value Type Implementations
+private extension AssociationOwner {
+    func _associate(_ value: Any?, by key: inout AssociationKey) {
+        self._stronglyAssociate(value, by: &key)
+    }
+
+    func _associatedValue<T: Any>(for key: inout AssociationKey) -> T? {
+        return objc_getAssociatedObject(self, &key) as? T
+    }
+}
+
+// MARK: Reference Type Implementations
 private extension AssociationOwner {
     func _associate(_ object: AnyObject?, _ associationType: AssociationType, by key: inout AssociationKey) {
         switch associationType {
@@ -102,12 +127,16 @@ private extension AssociationOwner {
         // Else, we associate a new _WeakBox containing the object.
         self._stronglyAssociate(_WeakBox(object), by: &key)
     }
-    
-    private func _stronglyAssociate(_ object: AnyObject?, by key: inout AssociationKey) {
-        objc_setAssociatedObject(self, &key._key, object, .OBJC_ASSOCIATION_RETAIN)
+}
+
+
+// MARK: Helpers
+private extension AssociationOwner {
+    func _stronglyAssociate(_ objectOrValue: Any?, by key: inout AssociationKey) {
+        objc_setAssociatedObject(self, &key._key, objectOrValue, .OBJC_ASSOCIATION_RETAIN)
     }
     
-    private func _setAssociationToNil(for key: inout AssociationKey) {
+    func _setAssociationToNil(for key: inout AssociationKey) {
         objc_setAssociatedObject(self, &key._key, nil, .OBJC_ASSOCIATION_RETAIN)
     }
 }
