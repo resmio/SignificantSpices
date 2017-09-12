@@ -69,7 +69,7 @@ private extension AssociationOwner {
     
     func _associatedObject<T: AnyObject>(for key: inout AssociationKey) -> T? {
         // First, we retrieve the associated object.
-        let object: AnyObject? = objc_getAssociatedObject(self, &key) as AnyObject
+        let object: AnyObject? = objc_getAssociatedObject(self, &key) as AnyObject?
         
         // Next, we check if it's a weak association
         // by conditionally casting it to a _WeakBox.
