@@ -81,13 +81,14 @@ private extension AssociationOwner {
         
         // If there is a _WeakBox associated but it's empty,
         // we nil the association and return nil.
-        guard let boxedObject: T = box.object as? T else {
+        let boxedObject: AnyObject? = box.object
+        if boxedObject == nil {
             self._setAssociationToNil(for: &key)
             return nil
         }
         
         // Else, we return the object that was in the box.
-        return boxedObject
+        return boxedObject as? T
     }
     
     // Private Helpers
