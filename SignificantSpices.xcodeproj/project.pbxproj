@@ -124,6 +124,14 @@
 			path = SignificantSpices;
 			sourceTree = "<group>";
 		};
+		03F07436D7E5FA8CB35F0F831C6B6E20 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1053F39F81F80CE878683AF137FF5613 /* AssociationOwner.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		041C989C002FC52C36AEC8ED57B38C03 /* SwiftExtensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,22 +207,6 @@
 			);
 			sourceTree = "<group>";
 		};
-		77CCF2D8FBD953D415F351CE6BABC3F4 /* ObjectiveCExtensions */ = {
-			isa = PBXGroup;
-			children = (
-				03F07436D7E5FA8CB35F0F831C6B6E20 /* Protocols */,
-			);
-			path = ObjectiveCExtensions;
-			sourceTree = "<group>";
-		};
-		03F07436D7E5FA8CB35F0F831C6B6E20 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				1053F39F81F80CE878683AF137FF5613 /* AssociationOwner.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
 		5FDCC4404EE92CAA91B282136ED9615A /* SignificantSpicesTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +239,14 @@
 				2810505F6A1DDD0449E37700D10F4B3F /* Collection (safe-subscript).swift */,
 			);
 			path = Collection;
+			sourceTree = "<group>";
+		};
+		77CCF2D8FBD953D415F351CE6BABC3F4 /* ObjectiveCExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				03F07436D7E5FA8CB35F0F831C6B6E20 /* Protocols */,
+			);
+			path = ObjectiveCExtensions;
 			sourceTree = "<group>";
 		};
 		7B21558072D46F1283F6A798D53F2339 /* Frameworks */ = {
