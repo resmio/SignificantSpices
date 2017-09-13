@@ -46,11 +46,11 @@ public protocol AssociationOwner {
 
 // MARK: Default Implementations
 public extension AssociationOwner {
-    func associate(_ value: Any?, by key: inout ValueAssociationKey) {
+    public func associate(_ value: Any?, by key: inout ValueAssociationKey) {
         self._associate(value, by: &key)
     }
     
-    func associatedValue<T: Any>(for key: inout ValueAssociationKey) -> T? {
+    public func associatedValue<T: Any>(for key: inout ValueAssociationKey) -> T? {
         return self._associatedValue(for: &key)
     }
     
