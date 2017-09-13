@@ -12,12 +12,14 @@ import ObjectiveC
 // MARK: // Public
 // MARK: - ObjectAssociationKey
 public struct ObjectAssociationKey {
+    public init() {}
     fileprivate var _key: Void?
 }
 
 
 // MARK: - ValueAssociationKey
 public struct ValueAssociationKey {
+    public init() {}
     fileprivate var _key: Void?
 }
 
