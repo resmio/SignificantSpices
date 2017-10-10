@@ -26,6 +26,10 @@ Pod::Spec.new do |s|
     swiftext.source_files = 'SignificantSpices/Sources/SwiftExtensions/**/*.{swift}'
   end
 
+  s.subspec 'ObjectiveCExtensions' do |objcext|
+    objcext.source_files = 'SignificantSpices/Sources/ObjectiveCExtensions/**/*.{swift}'
+  end
+
   # s.subspec 'FoundationExtensions' do |foundationext|
   #   foundationext.source_files = 'SignificantSpices/Sources/FoundationExtensions/**/*.{swift}'
   # end
