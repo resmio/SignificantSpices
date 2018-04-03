@@ -8,31 +8,31 @@
 
 
 // MARK: // Public
-// MARK: where Iterator.Element : AnyObject
-extension RangeReplaceableCollection where Iterator.Element : AnyObject {
-    public mutating func remove(_ object : Iterator.Element?) {
-        guard let _object: Iterator.Element = object else { return }
-        guard let index: Index = self.index(where: { $0 === _object }) else { return }
+// MARK: where Self.Element : AnyObject
+extension RangeReplaceableCollection where Self.Element : AnyObject {
+    public mutating func remove(_ object : Self.Element?) {
+        guard let object: Self.Element = object else { return }
+        guard let index: Index = self.index(where: { $0 === object }) else { return }
         self.remove(at: index)
     }
 }
 
 
-// MARK: where Iterator.Element : Equatable
-extension RangeReplaceableCollection where Iterator.Element : Equatable {
-    public mutating func remove(_ object : Iterator.Element?) {
-        guard let _object: Iterator.Element = object else { return }
-        guard let index: Index = self.index(of: _object) else { return }
+// MARK: where Self.Element : Equatable
+extension RangeReplaceableCollection where Self.Element : Equatable {
+    public mutating func remove(_ object : Self.Element?) {
+        guard let object: Self.Element = object else { return }
+        guard let index: Index = self.index(of: object) else { return }
         self.remove(at: index)
     }
 }
 
 
-// MARK: where Iterator.Element : AnyObject & Equatable
-extension RangeReplaceableCollection where Iterator.Element : AnyObject & Equatable {
-    public mutating func remove(_ object : Iterator.Element?) {
-        guard let _object: Iterator.Element = object else { return }
-        guard let index: Index = self.index(of: _object) else { return }
+// MARK: where Self.Element : AnyObject & Equatable
+extension RangeReplaceableCollection where Self.Element : AnyObject & Equatable {
+    public mutating func remove(_ object : Self.Element?) {
+        guard let object: Self.Element = object else { return }
+        guard let index: Index = self.index(of: object) else { return }
         self.remove(at: index)
     }
 }
