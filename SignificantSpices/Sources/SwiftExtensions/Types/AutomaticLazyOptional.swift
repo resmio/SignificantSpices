@@ -25,6 +25,14 @@ public extension AutomaticLazyOptional {
     public mutating func clear() {
         self._value = nil
     }
+    
+    public static postfix func ¿ (_ alo: ALO<T>) -> T? {
+        return alo._value
+    }
+    
+    public static postfix func ¡ (_ alo: inout ALO<T>) -> T {
+        return alo._get()
+    }
 }
 
 
