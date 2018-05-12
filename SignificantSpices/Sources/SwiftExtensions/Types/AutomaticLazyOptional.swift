@@ -22,7 +22,7 @@ public typealias ALO = AutomaticLazyOptional
 
 // MARK: Interface
 public extension AutomaticLazyOptional {
-    mutating func clear() {
+    public mutating func clear() {
         self._value = nil
     }
 }
