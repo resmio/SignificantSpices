@@ -25,10 +25,6 @@ public extension AutomaticLazyOptional {
     mutating func clear() {
         self._value = nil
     }
-    
-    mutating func get() -> T {
-        return self._get()
-    }
 }
 
 
