@@ -14,7 +14,7 @@ class AutomaticLazyOptionalTests: XCTestCase {
     func testGetterReturnsCorrectValue() {
         let testString: String = "Foo"
         var lzy: AutomaticLazyOptional<String> = AutomaticLazyOptional({ return testString })
-        XCTAssertEqual(lzy.get(), testString)
+        XCTAssertEqual(lzy¡, testString)
     }
     
     func testValueCreationIsEvaluatedLazily() {
@@ -26,7 +26,7 @@ class AutomaticLazyOptionalTests: XCTestCase {
             return "Foo"
         })
         mustNotBeEvaluatedYet = false
-        let _: String = lzy.get()
+        let _: String = lzy¡
     }
     
     func testValueCaching() {
@@ -40,14 +40,14 @@ class AutomaticLazyOptionalTests: XCTestCase {
         })
         
         for _ in 0..<10 {
-            let _: String = lzy.get()
+            let _: String = lzy¡
         }
     }
     
     func testClear() {
         class Foo {}
         var lzy: AutomaticLazyOptional<Foo> = AutomaticLazyOptional({ Foo() })
-        weak var foo: Foo? = lzy.get()
+        weak var foo: Foo? = lzy¡
         
         XCTAssertNotNil(foo)
         lzy.clear()
