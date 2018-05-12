@@ -29,7 +29,7 @@ public extension AutomaticLazyOptional {
     }
     
     public static postfix func ¡ (_ alo: inout ALO<T>) -> T {
-        return alo._get()
+        return alo._getValueAndCreateIfNecessary()
     }
 }
 
@@ -48,7 +48,7 @@ public struct AutomaticLazyOptional<T> {
 // MARK: // Private
 // MARK: Get Implementation
 private extension AutomaticLazyOptional {
-    mutating func _get() -> T {
+    mutating func _getValueAndCreateIfNecessary() -> T {
         guard let value: T = self._value else {
             let value: T = self._createValue()
             self._value = value
