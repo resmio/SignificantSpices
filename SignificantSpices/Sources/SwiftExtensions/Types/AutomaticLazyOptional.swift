@@ -8,6 +8,10 @@
 
 
 // MARK: // Public
+// MARK: Convenience Typealias
+public typealias ALO = AutomaticLazyOptional
+
+
 // MARK: Interface
 public extension AutomaticLazyOptional {
     mutating func clear() {
