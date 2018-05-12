@@ -6,8 +6,6 @@
 //  Copyright © 2018 resmio. All rights reserved.
 //
 
-import Foundation
-
 
 // MARK: // Public
 // MARK: - Custom Operators
