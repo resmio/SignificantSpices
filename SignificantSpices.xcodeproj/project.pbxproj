@@ -29,6 +29,7 @@
 		A6E506444C9B6E03115CAFE42F0C8222 /* (T) -> Bool Negation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14485D49E147342A7AE6BD90BCE62E26 /* (T) -> Bool Negation.swift */; };
 		A810B2F084DEB5258A1BEE3E71F7FA2A /* Pods_SignificantSpices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4332FB54B157D2121723BA622DC5398F /* Pods_SignificantSpices.framework */; };
 		ABB06CD0EAEF0367573B795329B02FDE /* SignificantSpices.h in Headers */ = {isa = PBXBuildFile; fileRef = AB23BE19D6E3B867A63D0979046005EC /* SignificantSpices.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD6A37B995FEFA77F3606130FF1E92D9 /* LazyClearable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3262E83D0E897968E9C6D058FF8846 /* LazyClearable.swift */; };
 		B4513A9F04E83A5307C7D825F31532AB /* Sequence (all).swift in Sources */ = {isa = PBXBuildFile; fileRef = F450E435AE89F89C72B9992B8F07E05B /* Sequence (all).swift */; };
 		B487EDD5391E3C969BE0A8086220CD23 /* Sequence (firstNfulfilling).swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AB7253074A32D6322D51823F64E024 /* Sequence (firstNfulfilling).swift */; };
 		B807F9801D0BAD6236D7A311E1416BF1 /* gcd.swift in Sources */ = {isa = PBXBuildFile; fileRef = E102AC7E989B17FB2DF4EA944C6AE04E /* gcd.swift */; };
@@ -38,6 +39,7 @@
 		EADD65D3C92F10BCFE8BC374ADDB3D78 /* Bool Compound Assignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56B50F1CA7DA6B9E7EF910E5AF0D269 /* Bool Compound Assignments.swift */; };
 		EB0480DA3B43BD9DD50B25DDCC089BB8 /* gcd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1695AADE547C73501244B90BE8CD0FC9 /* gcd.swift */; };
 		EFB7CE6B0558756037BEC9F24BBE48FB /* Optional (isNilOrEmpty).swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F481AE386C7E29E47CD9271832A4E7 /* Optional (isNilOrEmpty).swift */; };
+		F70C8D4F4247699D20DC803C67708056 /* LazyClearable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E88761AD2B406919D5B30A5443FF2C /* LazyClearable.swift */; };
 		FC7F9DC48515BB7CE759F05FED112968 /* Collection (safe-subscript).swift in Sources */ = {isa = PBXBuildFile; fileRef = 2810505F6A1DDD0449E37700D10F4B3F /* Collection (safe-subscript).swift */; };
 /* End PBXBuildFile section */
 
@@ -59,11 +61,13 @@
 		11F6AA1BEB3DFD3602B6833F83F1BFFB /* Sequence (groupedBy).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence (groupedBy).swift"; sourceTree = "<group>"; };
 		14485D49E147342A7AE6BD90BCE62E26 /* (T) -> Bool Negation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "(T) -> Bool Negation.swift"; sourceTree = "<group>"; };
 		1695AADE547C73501244B90BE8CD0FC9 /* gcd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gcd.swift; sourceTree = "<group>"; };
+		1D3262E83D0E897968E9C6D058FF8846 /* LazyClearable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyClearable.swift; sourceTree = "<group>"; };
 		1EE922369843DBDB5DC5B42B514EAAE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F996EF7EB4B21593CFE79D23607ABBA /* Pods_SignificantSpicesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignificantSpicesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B90D582F525A518FDE35E9096449FB /* RangeReplacableCollection (remove) .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RangeReplacableCollection (remove) .swift"; sourceTree = "<group>"; };
 		257531F71D7463EA6D2428D9B3754819 /* Sequence (firstNfulfilling).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence (firstNfulfilling).swift"; sourceTree = "<group>"; };
 		2810505F6A1DDD0449E37700D10F4B3F /* Collection (safe-subscript).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection (safe-subscript).swift"; sourceTree = "<group>"; };
+		38E88761AD2B406919D5B30A5443FF2C /* LazyClearable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyClearable.swift; sourceTree = "<group>"; };
 		404779EE3747A0D2687233C5E744E1B3 /* Sequence (all).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence (all).swift"; sourceTree = "<group>"; };
 		4332FB54B157D2121723BA622DC5398F /* Pods_SignificantSpices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignificantSpices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		433EC6EBDF037456C440365C93A5E114 /* Set Combinations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Set Combinations.swift"; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 				E1468A1A983AF1A9FB362DB8315F6743 /* CustomOperators */,
 				7E8761BFD617245998A4FD9951DF758D /* Extensions */,
 				A5F8D92A527B0868D7DCEDC4FB235286 /* Functions */,
+				63E9B1E37A8DA89C837F23FFEEF90F55 /* Types */,
 			);
 			path = SwiftExtensions;
 			sourceTree = "<group>";
@@ -159,6 +164,14 @@
 				E4C93D92DB1EA1B584CB52EDB279B03A /* Sequence (none).swift */,
 			);
 			path = Sequence;
+			sourceTree = "<group>";
+		};
+		0CC75CBAD20D55BD130CCB5A95490FBD /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				1D3262E83D0E897968E9C6D058FF8846 /* LazyClearable.swift */,
+			);
+			path = Types;
 			sourceTree = "<group>";
 		};
 		0CEA0099273EB6879AB42C0B76BCF88E /* Optional */ = {
@@ -223,6 +236,14 @@
 				57DF21D845A5D8E2BB891546FD2EB8B5 /* Collection (safe-subscript).swift */,
 			);
 			path = Collection;
+			sourceTree = "<group>";
+		};
+		63E9B1E37A8DA89C837F23FFEEF90F55 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				38E88761AD2B406919D5B30A5443FF2C /* LazyClearable.swift */,
+			);
+			path = Types;
 			sourceTree = "<group>";
 		};
 		67384CDF42CA17D7A9048BD208F5A898 /* ObjectiveCExtensions */ = {
@@ -306,6 +327,7 @@
 				858CF9DD255B939672F8FED6FC362E41 /* CustomOperators */,
 				EFDCB05A237FD189C2400F9B8482C818 /* Extensions */,
 				CA31FD21DCC243082FCABF7B36CE5AFC /* Functions */,
+				0CC75CBAD20D55BD130CCB5A95490FBD /* Types */,
 			);
 			path = SwiftExtensions;
 			sourceTree = "<group>";
@@ -550,6 +572,7 @@
 				EADD65D3C92F10BCFE8BC374ADDB3D78 /* Bool Compound Assignments.swift in Sources */,
 				FC7F9DC48515BB7CE759F05FED112968 /* Collection (safe-subscript).swift in Sources */,
 				832D9DF5F5B2549C3E4FF207359CD27F /* Element in-not_in Collection.swift in Sources */,
+				F70C8D4F4247699D20DC803C67708056 /* LazyClearable.swift in Sources */,
 				0AC993D9746AB3977D211B75947D414F /* Optional (isNilOrEmpty).swift in Sources */,
 				A201C5566EBD04E9B8267ABED314702B /* Optional String Interpolation.swift in Sources */,
 				5FAD50C8E980CF20EB58AD96E67D0A51 /* RangeReplacableCollection (remove).swift in Sources */,
@@ -571,6 +594,7 @@
 				3F70C4CDFF3F81E3E729FB50BF5D72E3 /* Bool Compound Assignment.swift in Sources */,
 				BB5D0A9457A460A8DA1067BCB4008795 /* Collection (safe-subscript).swift in Sources */,
 				36345A83F74D15E86C745E4F9FEDC51E /* Element in-not_in Collection.swift in Sources */,
+				AD6A37B995FEFA77F3606130FF1E92D9 /* LazyClearable.swift in Sources */,
 				EFB7CE6B0558756037BEC9F24BBE48FB /* Optional (isNilOrEmpty).swift in Sources */,
 				C095F469CFD56F726E47DBD93A8E71BD /* Optional String Interpolation.swift in Sources */,
 				5065931E5111544BBAAA342E48071B74 /* RangeReplacableCollection (remove) .swift in Sources */,
