@@ -6,8 +6,16 @@
 //  Copyright © 2018 resmio. All rights reserved.
 //
 
+import Foundation
+
 
 // MARK: // Public
+// MARK: - Custom Operators
+postfix operator ¡
+postfix operator ¿
+
+
+// MARK: - AutomaticLazyOptional
 // MARK: Convenience Typealias
 public typealias ALO = AutomaticLazyOptional
 
