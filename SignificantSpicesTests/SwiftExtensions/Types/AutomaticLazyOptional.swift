@@ -29,6 +29,14 @@ class AutomaticLazyOptionalTests: XCTestCase {
         let _: String = lzy¡
     }
     
+    func testValueIsntCreatedWhenCallingOptional() {
+        let lzy: AutomaticLazyOptional<String> = AutomaticLazyOptional({
+            XCTFail("The value creation closure should not have been evaluated")
+            return "Foo"
+        })
+        XCTAssertNil(lzy¿)
+    }
+    
     func testValueCaching() {
         var evalTimes: Int = 0
         var lzy: AutomaticLazyOptional<String> = AutomaticLazyOptional({
