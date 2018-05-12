@@ -1,5 +1,5 @@
 //
-//  LazyClearable.swift
+//  AutomaticLazyOptional.swift
 //  SignificantSpicesTests
 //
 //  Created by Jan Nash (resmio) on 08.05.18.
@@ -10,16 +10,16 @@ import XCTest
 import SignificantSpices.Swift
 
 
-class LazyClearableTests: XCTestCase {
+class AutomaticLazyOptionalTests: XCTestCase {
     func testGetterReturnsCorrectValue() {
         let testString: String = "Foo"
-        var lzy: LazyClearable<String> = LazyClearable({ return testString })
+        var lzy: AutomaticLazyOptional<String> = AutomaticLazyOptional({ return testString })
         XCTAssertEqual(lzy.get(), testString)
     }
     
     func testValueCreationIsEvaluatedLazily() {
         var mustNotBeEvaluatedYet: Bool = true
-        var lzy: LazyClearable<String> = LazyClearable({
+        var lzy: AutomaticLazyOptional<String> = AutomaticLazyOptional({
             if mustNotBeEvaluatedYet {
                 XCTFail("The value creation closure should not have been evaluated yet")
             }
@@ -31,7 +31,7 @@ class LazyClearableTests: XCTestCase {
     
     func testValueCaching() {
         var evalTimes: Int = 0
-        var lzy: LazyClearable<String> = LazyClearable({
+        var lzy: AutomaticLazyOptional<String> = AutomaticLazyOptional({
             evalTimes += 1
             if evalTimes > 1 {
                 XCTFail("The value creation closure should not have been evaluated more than once")
@@ -46,7 +46,7 @@ class LazyClearableTests: XCTestCase {
     
     func testClear() {
         class Foo {}
-        var lzy: LazyClearable<Foo> = LazyClearable({ Foo() })
+        var lzy: AutomaticLazyOptional<Foo> = AutomaticLazyOptional({ Foo() })
         weak var foo: Foo? = lzy.get()
         
         XCTAssertNotNil(foo)

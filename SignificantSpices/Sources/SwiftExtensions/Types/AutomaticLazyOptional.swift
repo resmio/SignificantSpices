@@ -1,5 +1,5 @@
 //
-//  LazyClearable.swift
+//  AutomaticLazyOptional.swift
 //  SignificantSpices
 //
 //  Created by Jan Nash (resmio) on 08.05.18.
@@ -9,7 +9,7 @@
 
 // MARK: // Public
 // MARK: Interface
-public extension LazyClearable {
+public extension AutomaticLazyOptional {
     mutating func clear() {
         self._value = nil
     }
@@ -21,7 +21,7 @@ public extension LazyClearable {
 
 
 // MARK: Struct Declaration
-public struct LazyClearable<T> {
+public struct AutomaticLazyOptional<T> {
     public init(_ createValue: @escaping () -> T) {
         self._createValue = createValue
     }
@@ -33,7 +33,7 @@ public struct LazyClearable<T> {
 
 // MARK: // Private
 // MARK: Get Implementation
-private extension LazyClearable {
+private extension AutomaticLazyOptional {
     mutating func _get() -> T {
         guard let value: T = self._value else {
             let value: T = self._createValue()
