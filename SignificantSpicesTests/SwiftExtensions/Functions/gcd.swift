@@ -85,7 +85,7 @@ class GCDSignedIntegerTests: XCTestCase {
         XCTAssertEqual(gcd(m, n), r)
     }
     
-    func testBothNegative() {
+    func testBothAreNegative() {
         let m: T = -2061517
         let n: T = -624129
         let r: T = 18913
