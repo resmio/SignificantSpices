@@ -1,5 +1,5 @@
 //
-//  LazyClearable.swift
+//  AutomaticLazyOptional.swift
 //  SignificantSpices
 //
 //  Created by Jan Nash (resmio) on 08.05.18.
@@ -8,20 +8,34 @@
 
 
 // MARK: // Public
+// MARK: - Custom Operators
+postfix operator ¡
+postfix operator ¿
+
+
+// MARK: - AutomaticLazyOptional
+// MARK: Convenience Typealias
+public typealias ALO = AutomaticLazyOptional
+
+
 // MARK: Interface
-public extension LazyClearable {
-    mutating func clear() {
+public extension AutomaticLazyOptional {
+    public mutating func clear() {
         self._value = nil
     }
     
-    mutating func get() -> T {
-        return self._get()
+    public static postfix func ¿ (_ alo: ALO<T>) -> T? {
+        return alo._value
+    }
+    
+    public static postfix func ¡ (_ alo: inout ALO<T>) -> T {
+        return alo._getValueAndCreateIfNecessary()
     }
 }
 
 
 // MARK: Struct Declaration
-public struct LazyClearable<T> {
+public struct AutomaticLazyOptional<T> {
     public init(_ createValue: @escaping () -> T) {
         self._createValue = createValue
     }
@@ -33,8 +47,8 @@ public struct LazyClearable<T> {
 
 // MARK: // Private
 // MARK: Get Implementation
-private extension LazyClearable {
-    mutating func _get() -> T {
+private extension AutomaticLazyOptional {
+    mutating func _getValueAndCreateIfNecessary() -> T {
         guard let value: T = self._value else {
             let value: T = self._createValue()
             self._value = value
