@@ -92,7 +92,7 @@ class GCDSignedIntegerTests: XCTestCase {
 
 class GCDUnsignedIntegerTests: XCTestCase {
     func test0and0() {
-        XCTAssertEqual(gcd(UInt(0), 0), 0)
+        XCTAssertEqual(gcd(0, 0), 0)
     }
     
     func testMAnd0() {
