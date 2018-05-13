@@ -10,7 +10,7 @@
 // MARK: // Public
 // MARK: SignedInteger Version
 public func gcd<T: SignedInteger>(_ m: T, _ n: T) -> T {
-    return _gcd(abs(m), abs(n))
+    return _gcd(abs(m), n)
 }
 
 
