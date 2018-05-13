@@ -30,66 +30,66 @@ class GCDSignedIntegerTests: XCTestCase {
     }
     
     func testCommutativity() {
-        let a: T = 2061517
-        let b: T = 624129
-        XCTAssertEqual(gcd(a, b), gcd(b, a))
+        let m: T = 2061517
+        let n: T = 624129
+        XCTAssertEqual(gcd(m, n), gcd(n, m))
     }
     
     func testEqualMAndN() {
-        let a: T = 624129
-        XCTAssertEqual(gcd(a, a), a)
+        let mn: T = 624129
+        XCTAssertEqual(gcd(mn, mn), mn)
     }
     
     func testMIsMultipleOfN() {
-        let a: T = 100
-        let b: T = 20
-        XCTAssertEqual(gcd(a, b), a)
+        let m: T = 100
+        let n: T = 20
+        XCTAssertEqual(gcd(m, n), m)
     }
     
     func testNIsMultipleOfM() {
-        let a: T = 20
-        let b: T = 100
-        XCTAssertEqual(gcd(a, b), a)
+        let m: T = 20
+        let n: T = 100
+        XCTAssertEqual(gcd(m, n), m)
     }
     
     func testMIsPrime() {
-        let a: T = 37
-        let b: T = 600
-        XCTAssertEqual(gcd(a, b), self.one)
+        let m: T = 37
+        let n: T = 600
+        XCTAssertEqual(gcd(m, n), self.one)
     }
     
     func testNIsPrime() {
-        let a: T = 600
-        let b: T = 37
-        XCTAssertEqual(gcd(a, b), self.one)
+        let m: T = 600
+        let n: T = 37
+        XCTAssertEqual(gcd(m, n), self.one)
     }
     
     func testNonEdgeCase() {
-        let a: T = 2061517
-        let b: T = 624129
-        let c: T = 18913
-        XCTAssertEqual(gcd(a, b), c)
+        let m: T = 2061517
+        let n: T = 624129
+        let r: T = 18913
+        XCTAssertEqual(gcd(m, n), r)
     }
     
     func testMIsNegative() {
-        let a: T = -2061517
-        let b: T = 624129
-        let c: T = 18913
-        XCTAssertEqual(gcd(a, b), c)
+        let m: T = -2061517
+        let n: T = 624129
+        let r: T = 18913
+        XCTAssertEqual(gcd(m, n), r)
     }
     
     func testNIsNegative() {
-        let a: T = 2061517
-        let b: T = -624129
-        let c: T = 18913
-        XCTAssertEqual(gcd(a, b), c)
+        let m: T = 2061517
+        let n: T = -624129
+        let r: T = 18913
+        XCTAssertEqual(gcd(m, n), r)
     }
     
     func testBothNegative() {
-        let a: T = -2061517
-        let b: T = -624129
-        let c: T = 18913
-        XCTAssertEqual(gcd(a, b), c)
+        let m: T = -2061517
+        let n: T = -624129
+        let r: T = 18913
+        XCTAssertEqual(gcd(m, n), r)
     }
 }
 
@@ -114,44 +114,44 @@ class GCDUnsignedIntegerTests: XCTestCase {
     }
     
     func testCommutativity() {
-        let a: T = 2061517
-        let b: T = 624129
-        XCTAssertEqual(gcd(a, b), gcd(b, a))
+        let m: T = 2061517
+        let n: T = 624129
+        XCTAssertEqual(gcd(m, n), gcd(n, m))
     }
     
     func testEqualMAndN() {
-        let a: T = 624129
-        XCTAssertEqual(gcd(a, a), a)
+        let mn: T = 624129
+        XCTAssertEqual(gcd(mn, mn), mn)
     }
     
     func testMIsMultipleOfN() {
-        let a: T = 100
-        let b: T = 20
-        XCTAssertEqual(gcd(a, b), a)
+        let m: T = 100
+        let n: T = 20
+        XCTAssertEqual(gcd(m, n), m)
     }
     
     func testNIsMultipleOfM() {
-        let a: T = 20
-        let b: T = 100
-        XCTAssertEqual(gcd(a, b), a)
+        let m: T = 20
+        let n: T = 100
+        XCTAssertEqual(gcd(m, n), m)
     }
     
     func testMIsPrime() {
-        let a: T = 37
-        let b: T = 600
-        XCTAssertEqual(gcd(a, b), self.one)
+        let m: T = 37
+        let n: T = 600
+        XCTAssertEqual(gcd(m, n), self.one)
     }
     
     func testNIsPrime() {
-        let a: T = 600
-        let b: T = 37
-        XCTAssertEqual(gcd(a, b), self.one)
+        let m: T = 600
+        let n: T = 37
+        XCTAssertEqual(gcd(m, n), self.one)
     }
     
     func testNonEdgeCase() {
-        let a: T = 2061517
-        let b: T = 624129
-        let c: T = 18913
-        XCTAssertEqual(gcd(a, b), c)
+        let m: T = 2061517
+        let n: T = 624129
+        let r: T = 18913
+        XCTAssertEqual(gcd(m, n), r)
     }
 }
