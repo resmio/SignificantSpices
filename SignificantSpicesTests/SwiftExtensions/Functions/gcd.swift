@@ -43,7 +43,7 @@ class GCDSignedIntegerTests: XCTestCase {
     func testMIsMultipleOfN() {
         let m: T = 100
         let n: T = 20
-        XCTAssertEqual(gcd(m, n), m)
+        XCTAssertEqual(gcd(m, n), n)
     }
     
     func testNIsMultipleOfM() {
@@ -127,7 +127,7 @@ class GCDUnsignedIntegerTests: XCTestCase {
     func testMIsMultipleOfN() {
         let m: T = 100
         let n: T = 20
-        XCTAssertEqual(gcd(m, n), m)
+        XCTAssertEqual(gcd(m, n), n)
     }
     
     func testNIsMultipleOfM() {
