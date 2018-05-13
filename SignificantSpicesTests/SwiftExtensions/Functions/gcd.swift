@@ -11,18 +11,21 @@ import SignificantSpices
 
 
 class GCDSignedIntegerTests: XCTestCase {
+    let zero: Int = 0
+    let one: Int = 1
+    
     func test0and0() {
-        XCTAssertEqual(gcd(0, 0), 0)
+        XCTAssertEqual(gcd(self.zero, self.zero), self.zero)
     }
     
     func testMAnd0() {
         let m: Int = 2061517
-        XCTAssertEqual(gcd(m, 0), m)
+        XCTAssertEqual(gcd(m, self.zero), m)
     }
     
     func test0AndN() {
         let n: Int = 2061517
-        XCTAssertEqual(gcd(0, n), n)
+        XCTAssertEqual(gcd(self.zero, n), n)
     }
     
     func testCommutativity() {
@@ -51,13 +54,13 @@ class GCDSignedIntegerTests: XCTestCase {
     func testMIsPrime() {
         let a: Int = 37
         let b: Int = 600
-        XCTAssertEqual(gcd(a, b), 1)
+        XCTAssertEqual(gcd(a, b), self.one)
     }
     
     func testNIsPrime() {
         let a: Int = 600
         let b: Int = 37
-        XCTAssertEqual(gcd(a, b), 1)
+        XCTAssertEqual(gcd(a, b), self.one)
     }
     
     func testNonEdgeCase() {
@@ -91,18 +94,21 @@ class GCDSignedIntegerTests: XCTestCase {
 
 
 class GCDUnsignedIntegerTests: XCTestCase {
+    let zero: UInt = 0
+    let one: UInt = 1
+    
     func test0and0() {
-        XCTAssertEqual(gcd(0, 0), 0)
+        XCTAssertEqual(gcd(self.zero, self.zero), self.zero)
     }
     
     func testMAnd0() {
         let m: UInt = 2061517
-        XCTAssertEqual(gcd(m, 0), m)
+        XCTAssertEqual(gcd(m, self.zero), m)
     }
     
     func test0AndN() {
         let n: UInt = 2061517
-        XCTAssertEqual(gcd(0, n), n)
+        XCTAssertEqual(gcd(self.zero, n), n)
     }
     
     func testCommutativity() {
@@ -131,13 +137,13 @@ class GCDUnsignedIntegerTests: XCTestCase {
     func testMIsPrime() {
         let a: UInt = 37
         let b: UInt = 600
-        XCTAssertEqual(gcd(a, b), 1)
+        XCTAssertEqual(gcd(a, b), self.one)
     }
     
     func testNIsPrime() {
         let a: UInt = 600
         let b: UInt = 37
-        XCTAssertEqual(gcd(a, b), 1)
+        XCTAssertEqual(gcd(a, b), self.one)
     }
     
     func testNonEdgeCase() {
