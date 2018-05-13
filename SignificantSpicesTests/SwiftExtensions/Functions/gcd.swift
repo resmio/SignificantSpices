@@ -11,105 +11,147 @@ import SignificantSpices
 
 
 class GCDSignedIntegerTests: XCTestCase {
+    private typealias T = Int
+    private let zero: T = 0
+    private let one: T = 1
+    
     func test0and0() {
-        XCTAssertEqual(gcd(0, 0), 0)
+        XCTAssertEqual(gcd(self.zero, self.zero), self.zero)
+    }
+    
+    func testMAnd0() {
+        let m: T = 2061517
+        XCTAssertEqual(gcd(m, self.zero), m)
     }
     
     func test0AndN() {
-        let n: Int = 2061517
-        XCTAssertEqual(gcd(n, 0), n)
+        let n: T = 2061517
+        XCTAssertEqual(gcd(self.zero, n), n)
     }
     
     func testCommutativity() {
-        let a: Int = 2061517
-        let b: Int = 624129
-        XCTAssertEqual(gcd(a, b), gcd(b, a))
+        let m: T = 2061517
+        let n: T = 624129
+        XCTAssertEqual(gcd(m, n), gcd(n, m))
     }
     
     func testEqualMAndN() {
-        let a: Int = 624129
-        XCTAssertEqual(gcd(a, a), a)
+        let mn: T = 624129
+        XCTAssertEqual(gcd(mn, mn), mn)
     }
     
-    func testOneIsMultipleOfOther() {
-        let a: Int = 20
-        let b: Int = 100
-        XCTAssertEqual(gcd(a, b), a)
+    func testMIsMultipleOfN() {
+        let m: T = 100
+        let n: T = 20
+        XCTAssertEqual(gcd(m, n), n)
     }
     
-    func testOneIsPrime() {
-        let a: Int = 37
-        let b: Int = 600
-        XCTAssertEqual(gcd(a, b), 1)
+    func testNIsMultipleOfM() {
+        let m: T = 20
+        let n: T = 100
+        XCTAssertEqual(gcd(m, n), m)
     }
     
-    func testNormalCase() {
-        let a: Int = 2061517
-        let b: Int = 624129
-        let c: Int = 18913
-        XCTAssertEqual(gcd(a, b), c)
+    func testMIsPrime() {
+        let m: T = 37
+        let n: T = 600
+        XCTAssertEqual(gcd(m, n), self.one)
     }
     
-    func testNormalCaseOneNegative() {
-        let a: Int = -2061517
-        let b: Int = 624129
-        let c: Int = 18913
-        XCTAssertEqual(gcd(a, b), c)
+    func testNIsPrime() {
+        let m: T = 600
+        let n: T = 37
+        XCTAssertEqual(gcd(m, n), self.one)
     }
     
-    func testNormalCaseTheOtherNegative() {
-        let a: Int = 2061517
-        let b: Int = -624129
-        let c: Int = 18913
-        XCTAssertEqual(gcd(a, b), c)
+    func testNonEdgeCase() {
+        let m: T = 2061517
+        let n: T = 624129
+        let r: T = 18913
+        XCTAssertEqual(gcd(m, n), r)
     }
     
-    func testNormalCaseTheBothNegative() {
-        let a: Int = -2061517
-        let b: Int = -624129
-        let c: Int = 18913
-        XCTAssertEqual(gcd(a, b), c)
+    func testMIsNegative() {
+        let m: T = -2061517
+        let n: T = 624129
+        let r: T = 18913
+        XCTAssertEqual(gcd(m, n), r)
+    }
+    
+    func testNIsNegative() {
+        let m: T = 2061517
+        let n: T = -624129
+        let r: T = 18913
+        XCTAssertEqual(gcd(m, n), r)
+    }
+    
+    func testBothAreNegative() {
+        let m: T = -2061517
+        let n: T = -624129
+        let r: T = 18913
+        XCTAssertEqual(gcd(m, n), r)
     }
 }
 
 
 class GCDUnsignedIntegerTests: XCTestCase {
+    private typealias T = UInt
+    private let zero: T = 0
+    private let one: T = 1
+    
     func test0and0() {
-        XCTAssertEqual(gcd(UInt(0), 0), 0)
+        XCTAssertEqual(gcd(self.zero, self.zero), self.zero)
+    }
+    
+    func testMAnd0() {
+        let m: T = 2061517
+        XCTAssertEqual(gcd(m, self.zero), m)
     }
     
     func test0AndN() {
-        let n: UInt = 2061517
-        XCTAssertEqual(gcd(n, 0), n)
+        let n: T = 2061517
+        XCTAssertEqual(gcd(self.zero, n), n)
     }
     
     func testCommutativity() {
-        let a: UInt = 2061517
-        let b: UInt = 624129
-        XCTAssertEqual(gcd(a, b), gcd(b, a))
+        let m: T = 2061517
+        let n: T = 624129
+        XCTAssertEqual(gcd(m, n), gcd(n, m))
     }
     
     func testEqualMAndN() {
-        let a: UInt = 624129
-        XCTAssertEqual(gcd(a, a), a)
+        let mn: T = 624129
+        XCTAssertEqual(gcd(mn, mn), mn)
     }
     
-    func testOneIsMultipleOfOther() {
-        let a: UInt = 20
-        let b: UInt = 100
-        XCTAssertEqual(gcd(a, b), a)
+    func testMIsMultipleOfN() {
+        let m: T = 100
+        let n: T = 20
+        XCTAssertEqual(gcd(m, n), n)
     }
     
-    func testOneIsPrime() {
-        let a: UInt = 37
-        let b: UInt = 600
-        XCTAssertEqual(gcd(a, b), 1)
+    func testNIsMultipleOfM() {
+        let m: T = 20
+        let n: T = 100
+        XCTAssertEqual(gcd(m, n), m)
     }
     
-    func testNormalCase() {
-        let a: UInt = 2061517
-        let b: UInt = 624129
-        let c: UInt = 18913
-        XCTAssertEqual(gcd(a, b), c)
+    func testMIsPrime() {
+        let m: T = 37
+        let n: T = 600
+        XCTAssertEqual(gcd(m, n), self.one)
+    }
+    
+    func testNIsPrime() {
+        let m: T = 600
+        let n: T = 37
+        XCTAssertEqual(gcd(m, n), self.one)
+    }
+    
+    func testNonEdgeCase() {
+        let m: T = 2061517
+        let n: T = 624129
+        let r: T = 18913
+        XCTAssertEqual(gcd(m, n), r)
     }
 }
