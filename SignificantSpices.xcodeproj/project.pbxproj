@@ -37,6 +37,7 @@
 		C095F469CFD56F726E47DBD93A8E71BD /* Optional String Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7AD0E68B3AEA498398C9FCCD8C8A6B /* Optional String Interpolation.swift */; };
 		D9862C2ECCE67D524B656E5E0C770BB8 /* (T) -> Bool Negation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780566F922290E6A3B77805EB94F7AA5 /* (T) -> Bool Negation.swift */; };
 		DCC68DF54A349BDD0741DCB5FB6144E1 /* AutomaticLazyOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29925595007724769618CF29BD72FAEE /* AutomaticLazyOptional.swift */; };
+		E86152AA6120872F9C1CCE78326D69C6 /* Sequence (mapToDict).swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F6FAA1269607F2F7ED3637305484C /* Sequence (mapToDict).swift */; };
 		EADD65D3C92F10BCFE8BC374ADDB3D78 /* Bool Compound Assignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56B50F1CA7DA6B9E7EF910E5AF0D269 /* Bool Compound Assignments.swift */; };
 		EB0480DA3B43BD9DD50B25DDCC089BB8 /* gcd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1695AADE547C73501244B90BE8CD0FC9 /* gcd.swift */; };
 		EFB7CE6B0558756037BEC9F24BBE48FB /* Optional (isNilOrEmpty).swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F481AE386C7E29E47CD9271832A4E7 /* Optional (isNilOrEmpty).swift */; };
@@ -79,6 +80,7 @@
 		72C4E806CB555E76963854AEFEC2150E /* Optional (isNilOrEmpty).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional (isNilOrEmpty).swift"; sourceTree = "<group>"; };
 		780566F922290E6A3B77805EB94F7AA5 /* (T) -> Bool Negation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "(T) -> Bool Negation.swift"; sourceTree = "<group>"; };
 		91CAB7E75F12356144B55651E6DE624E /* Set Combinations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Set Combinations.swift"; sourceTree = "<group>"; };
+		965F6FAA1269607F2F7ED3637305484C /* Sequence (mapToDict).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence (mapToDict).swift"; sourceTree = "<group>"; };
 		9C7AD0E68B3AEA498398C9FCCD8C8A6B /* Optional String Interpolation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional String Interpolation.swift"; sourceTree = "<group>"; };
 		A29689D1C609A0290FA840B1C47878E3 /* AssociationOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociationOwner.swift; sourceTree = "<group>"; };
 		A56B50F1CA7DA6B9E7EF910E5AF0D269 /* Bool Compound Assignments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool Compound Assignments.swift"; sourceTree = "<group>"; };
@@ -296,6 +298,7 @@
 				F450E435AE89F89C72B9992B8F07E05B /* Sequence (all).swift */,
 				05AB7253074A32D6322D51823F64E024 /* Sequence (firstNfulfilling).swift */,
 				C7F2A9BFE73C0A940ECA52CE7033D93E /* Sequence (groupedBy).swift */,
+				965F6FAA1269607F2F7ED3637305484C /* Sequence (mapToDict).swift */,
 				49D20F81FF70D72516316518B924A6B0 /* Sequence (none).swift */,
 			);
 			path = Sequence;
@@ -579,6 +582,7 @@
 				B4513A9F04E83A5307C7D825F31532AB /* Sequence (all).swift in Sources */,
 				B487EDD5391E3C969BE0A8086220CD23 /* Sequence (firstNfulfilling).swift in Sources */,
 				5F3CAEEB12004BB92F651C3F9E55C7E1 /* Sequence (groupedBy).swift in Sources */,
+				E86152AA6120872F9C1CCE78326D69C6 /* Sequence (mapToDict).swift in Sources */,
 				846832E602657C74E8F36B6E59C112BF /* Sequence (none).swift in Sources */,
 				60593FE7AB730F7891530E5B24D38868 /* Set Combinations.swift in Sources */,
 				EB0480DA3B43BD9DD50B25DDCC089BB8 /* gcd.swift in Sources */,
