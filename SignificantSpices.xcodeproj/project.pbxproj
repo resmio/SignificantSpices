@@ -202,7 +202,6 @@
 		154CFBE020BB876E50EC81EF4A862464 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				DD7D839703BD27A7861BF484B50063B1 /* FoundationExtensions */,
 				67384CDF42CA17D7A9048BD208F5A898 /* ObjectiveCExtensions */,
 				041C989C002FC52C36AEC8ED57B38C03 /* SwiftExtensions */,
 			);
@@ -365,13 +364,6 @@
 				E102AC7E989B17FB2DF4EA944C6AE04E /* gcd.swift */,
 			);
 			path = Functions;
-			sourceTree = "<group>";
-		};
-		DD7D839703BD27A7861BF484B50063B1 /* FoundationExtensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = FoundationExtensions;
 			sourceTree = "<group>";
 		};
 		E1468A1A983AF1A9FB362DB8315F6743 /* CustomOperators */ = {
