@@ -1,5 +1,5 @@
 //
-//  Sequence (none).swift
+//  Sequence (noneSatisfy).swift
 //  SignificantSpices
 //
 //  Created by Jan Nash on 8/14/17.
@@ -23,7 +23,7 @@ extension Sequence {
     ///     `false` if the Sequence contains ANY element that DOES fulfill
     ///     the condition; otherwise `true`.
     ///
-    public func none(fulfills condition: (Iterator.Element) -> Bool) -> Bool {
-        return !self.contains(where: condition)
+    public func noneSatisfy(_ predicate: (Self.Element) throws -> Bool) rethrows -> Bool {
+        return try self.allSatisfy({ try !predicate($0) })
     }
 }
