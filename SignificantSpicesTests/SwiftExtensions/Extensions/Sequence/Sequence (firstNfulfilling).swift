@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import SignificantSpices.Swift
+import SignificantSpices
 
 
 class SequenceFirstNfulfillingTests: XCTestCase {
