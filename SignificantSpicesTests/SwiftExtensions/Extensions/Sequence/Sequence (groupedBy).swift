@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import SignificantSpices.Swift
+import SignificantSpices
 
 
 // MARK: Helper Types
