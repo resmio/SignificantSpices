@@ -21,6 +21,7 @@
 		5FAD50C8E980CF20EB58AD96E67D0A51 /* RangeReplacableCollection (remove).swift in Sources */ = {isa = PBXBuildFile; fileRef = 02796089AA1E6D3D50A494B192C5E412 /* RangeReplacableCollection (remove).swift */; };
 		60593FE7AB730F7891530E5B24D38868 /* Set Combinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433EC6EBDF037456C440365C93A5E114 /* Set Combinations.swift */; };
 		6C9F9CF8354D1E181BC988C532A4BB23 /* Sequence (groupedBy).swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F6AA1BEB3DFD3602B6833F83F1BFFB /* Sequence (groupedBy).swift */; };
+		806776E769CEFDD3DA27EA9B43BDCE56 /* Sequence (forEachWhereDo).swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7BDDF2A4218256578311F76ACBD015 /* Sequence (forEachWhereDo).swift */; };
 		832D9DF5F5B2549C3E4FF207359CD27F /* Element in-not_in Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E3474F79372C16C41036A71944E563 /* Element in-not_in Collection.swift */; };
 		8D8AE10448B13EEB837D4CFFEA66200B /* Set Combinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CAB7E75F12356144B55651E6DE624E /* Set Combinations.swift */; };
 		9132C472F830130473B715CDDE77D417 /* Sequence (noneSatisfy).swift in Sources */ = {isa = PBXBuildFile; fileRef = DA05DB1CA4F5CF8E02F01EAE94458271 /* Sequence (noneSatisfy).swift */; };
@@ -68,6 +69,7 @@
 		257531F71D7463EA6D2428D9B3754819 /* Sequence (firstNfulfilling).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence (firstNfulfilling).swift"; sourceTree = "<group>"; };
 		2810505F6A1DDD0449E37700D10F4B3F /* Collection (safe-subscript).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection (safe-subscript).swift"; sourceTree = "<group>"; };
 		29925595007724769618CF29BD72FAEE /* AutomaticLazyOptional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomaticLazyOptional.swift; sourceTree = "<group>"; };
+		3B7BDDF2A4218256578311F76ACBD015 /* Sequence (forEachWhereDo).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence (forEachWhereDo).swift"; sourceTree = "<group>"; };
 		4332FB54B157D2121723BA622DC5398F /* Pods_SignificantSpices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignificantSpices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		433EC6EBDF037456C440365C93A5E114 /* Set Combinations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Set Combinations.swift"; sourceTree = "<group>"; };
 		4469084B5F7D3ECA68156BE199E7596D /* Pods-SignificantSpices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignificantSpices.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignificantSpices/Pods-SignificantSpices.debug.xcconfig"; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				05AB7253074A32D6322D51823F64E024 /* Sequence (firstNfulfilling).swift */,
+				3B7BDDF2A4218256578311F76ACBD015 /* Sequence (forEachWhereDo).swift */,
 				C7F2A9BFE73C0A940ECA52CE7033D93E /* Sequence (groupedBy).swift */,
 				965F6FAA1269607F2F7ED3637305484C /* Sequence (mapToDict).swift */,
 				D93191016B3095E74F67D71EE9BBC9B1 /* Sequence (noneSatisfy).swift */,
@@ -569,6 +572,7 @@
 				A201C5566EBD04E9B8267ABED314702B /* Optional String Interpolation.swift in Sources */,
 				5FAD50C8E980CF20EB58AD96E67D0A51 /* RangeReplacableCollection (remove).swift in Sources */,
 				B487EDD5391E3C969BE0A8086220CD23 /* Sequence (firstNfulfilling).swift in Sources */,
+				806776E769CEFDD3DA27EA9B43BDCE56 /* Sequence (forEachWhereDo).swift in Sources */,
 				5F3CAEEB12004BB92F651C3F9E55C7E1 /* Sequence (groupedBy).swift in Sources */,
 				E86152AA6120872F9C1CCE78326D69C6 /* Sequence (mapToDict).swift in Sources */,
 				312BA8F15D7174A4A31CC9CAEB4795B2 /* Sequence (noneSatisfy).swift in Sources */,
