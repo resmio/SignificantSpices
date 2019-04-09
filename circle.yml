@@ -57,6 +57,7 @@ jobs:
           command: |
             which ruby
             echo ${GEM_HOME}
+            gem list
 
       ## Install bundle (cache-wrapped)
       - restore_cache:
