@@ -19,12 +19,12 @@ infix operator >< : ComparisonPrecedence
 // MARK: Extension Declarations
 // MARK: where Self.Element: AnyObject
 public extension Collection where Self.Element: AnyObject {
-    public static func <> (element: Self.Element?, collection: Self) -> Bool {
+    static func <> (element: Self.Element?, collection: Self) -> Bool {
         guard let element: Self.Element = element else { return false }
         return collection.contains(where: { $0 === element })
     }
     
-    public static func >< (element: Self.Element?, collection: Self) -> Bool {
+    static func >< (element: Self.Element?, collection: Self) -> Bool {
         guard let element: Self.Element = element else { return true }
         return !(collection.contains(where: { $0 === element }))
     }
@@ -33,12 +33,12 @@ public extension Collection where Self.Element: AnyObject {
 
 // MARK: where Self.Element: Equatable
 public extension Collection where Self.Element: Equatable {
-    public static func <> (element: Self.Element?, collection: Self) -> Bool {
+    static func <> (element: Self.Element?, collection: Self) -> Bool {
         guard let element: Self.Element = element else { return false }
         return collection.contains(element)
     }
     
-    public static func >< (element: Self.Element?, collection: Self) -> Bool {
+    static func >< (element: Self.Element?, collection: Self) -> Bool {
         guard let element: Self.Element = element else { return true }
         return !(collection.contains(element))
     }
@@ -47,12 +47,12 @@ public extension Collection where Self.Element: Equatable {
 
 // MARK: where Self.Element: AnyObject & Equatable
 public extension Collection where Self.Element: AnyObject & Equatable {
-    public static func <> (element: Self.Element?, collection: Self) -> Bool {
+    static func <> (element: Self.Element?, collection: Self) -> Bool {
         guard let element: Self.Element = element else { return false }
         return collection.contains(element)
     }
     
-    public static func >< (element: Self.Element?, collection: Self) -> Bool {
+    static func >< (element: Self.Element?, collection: Self) -> Bool {
         guard let element: Self.Element = element else { return true }
         return !(collection.contains(element))
     }

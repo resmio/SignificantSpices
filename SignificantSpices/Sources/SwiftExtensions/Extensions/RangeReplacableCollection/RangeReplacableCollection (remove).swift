@@ -12,7 +12,7 @@
 extension RangeReplaceableCollection where Self.Element : AnyObject {
     public mutating func remove(_ object : Self.Element?) {
         guard let object: Self.Element = object else { return }
-        guard let index: Index = self.index(where: { $0 === object }) else { return }
+        guard let index: Index = self.firstIndex(where: { $0 === object }) else { return }
         self.remove(at: index)
     }
 }
@@ -22,7 +22,7 @@ extension RangeReplaceableCollection where Self.Element : AnyObject {
 extension RangeReplaceableCollection where Self.Element : Equatable {
     public mutating func remove(_ object : Self.Element?) {
         guard let object: Self.Element = object else { return }
-        guard let index: Index = self.index(of: object) else { return }
+        guard let index: Index = self.firstIndex(of: object) else { return }
         self.remove(at: index)
     }
 }
@@ -32,7 +32,7 @@ extension RangeReplaceableCollection where Self.Element : Equatable {
 extension RangeReplaceableCollection where Self.Element : AnyObject & Equatable {
     public mutating func remove(_ object : Self.Element?) {
         guard let object: Self.Element = object else { return }
-        guard let index: Index = self.index(of: object) else { return }
+        guard let index: Index = self.firstIndex(of: object) else { return }
         self.remove(at: index)
     }
 }

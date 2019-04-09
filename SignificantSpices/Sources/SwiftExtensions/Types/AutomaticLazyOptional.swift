@@ -20,15 +20,15 @@ public typealias ALO = AutomaticLazyOptional
 
 // MARK: Interface
 public extension AutomaticLazyOptional {
-    public mutating func clear() {
+    mutating func clear() {
         self._value = nil
     }
     
-    public static postfix func ¿ (_ alo: ALO<T>) -> T? {
+    static postfix func ¿ (_ alo: ALO<T>) -> T? {
         return alo._value
     }
     
-    public static postfix func ¡ (_ alo: inout ALO<T>) -> T {
+    static postfix func ¡ (_ alo: inout ALO<T>) -> T {
         return alo._getValueAndCreateIfNecessary()
     }
 }
