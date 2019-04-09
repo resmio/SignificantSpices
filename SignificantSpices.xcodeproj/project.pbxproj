@@ -455,7 +455,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = resmio;
 				TargetAttributes = {
 					1269BF55A375A6C5DA75ECF603F1EC08 = {
@@ -474,7 +474,7 @@
 			};
 			buildConfigurationList = D4C45C6DA1FAD580F4F0C61CEA27E459 /* Build configuration list for PBXProject "SignificantSpices" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
