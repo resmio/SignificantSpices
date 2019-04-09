@@ -11,7 +11,7 @@ import Foundation
 
 // MARK: // Public
 public extension Sequence {
-    public func forEach(where condition: (Element) -> Bool, `do` body: (Element) -> Void) {
+    func forEach(where condition: (Element) -> Bool, `do` body: (Element) -> Void) {
         self.forEach({ if condition($0) { body($0) } })
     }
 }
