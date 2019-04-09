@@ -27,6 +27,27 @@ jobs:
             mkdir "/Users/distiller/output"
             mkdir "/Users/distiller/output/xcodebuild-logs"
 
+      ## Install ruby (cache-wrapped)
+      - restore_cache:
+          keys:
+            - v1_ruby-2.5.1_{{ .Branch }}
+            - v1_ruby-2.5.1
+      - run:
+          name: Install ruby
+          command: |
+            RUBY_VERSION="2.5.1"
+            RUBY_NAME="ruby-${RUBY_VERSION}"
+            RUBY_DIRECTORY="/Users/distiller/.rubies/${RUBY_NAME}"
+            if [ ! -d "${RUBY_DIRECTORY}" ]; then 
+                ruby-install ruby ${RUBY_VERSION}
+            else
+                echo "${RUBY_NAME} is already installed"
+            fi
+      - save_cache:
+          key: v1_ruby-2.5.1_{{ .Branch }}
+          paths:
+            - /Users/distiller/.rubies/ruby-2.5.1
+
       ## Checkout source
       - checkout
       
