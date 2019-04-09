@@ -21,7 +21,9 @@ private class _ERT: Equatable /*Equatable Reference Type*/ {
     }
 }
 private class _HERT: _ERT, Hashable /*Hashable Equatable Reference Type*/ {
-    var hashValue: Int { return self.value.hashValue }
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(self.value)
+    }
 }
 
 
