@@ -29,6 +29,7 @@
 		8D8AE10448B13EEB837D4CFFEA66200B /* Set Combinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CAB7E75F12356144B55651E6DE624E /* Set Combinations.swift */; };
 		9132C472F830130473B715CDDE77D417 /* Sequence (noneSatisfy).swift in Sources */ = {isa = PBXBuildFile; fileRef = DA05DB1CA4F5CF8E02F01EAE94458271 /* Sequence (noneSatisfy).swift */; };
 		9C46C3227EA5D142AED86B86D35C1A27 /* AutomaticLazyOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010483A92E7A743ABBC5D93A65564B77 /* AutomaticLazyOptional.swift */; };
+		A1F7C1FD1F68BE105160F7A03167DC12 /* WeakKeyDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = D434875A7410B89A809B15909D264536 /* WeakKeyDict.swift */; };
 		A201C5566EBD04E9B8267ABED314702B /* Optional String Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA266B0A911180714D2C958ECE81402 /* Optional String Interpolation.swift */; };
 		A5D4A01EECFC592F08E45287D15F1728 /* WeakDictKeyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35B73879807143BBD25FC9008212FD9 /* WeakDictKeyWrapper.swift */; };
 		A6E506444C9B6E03115CAFE42F0C8222 /* (T) -> Bool Negation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14485D49E147342A7AE6BD90BCE62E26 /* (T) -> Bool Negation.swift */; };
@@ -97,6 +98,7 @@
 		C76B520D32F5569CACA3F72F78B77F27 /* Element in-not_in Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Element in-not_in Collection.swift"; sourceTree = "<group>"; };
 		C7F2A9BFE73C0A940ECA52CE7033D93E /* Sequence (groupedBy).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence (groupedBy).swift"; sourceTree = "<group>"; };
 		C952148BBB2362E72B92A6906D6EC7AE /* Pods-SignificantSpicesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignificantSpicesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignificantSpicesTests/Pods-SignificantSpicesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D434875A7410B89A809B15909D264536 /* WeakKeyDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakKeyDict.swift; sourceTree = "<group>"; };
 		D93191016B3095E74F67D71EE9BBC9B1 /* Sequence (noneSatisfy).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence (noneSatisfy).swift"; sourceTree = "<group>"; };
 		D9E29ECD2A5624B351D2081F9C23DEBE /* Sequence (forEachWhereDo).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence (forEachWhereDo).swift"; sourceTree = "<group>"; };
 		DA05DB1CA4F5CF8E02F01EAE94458271 /* Sequence (noneSatisfy).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence (noneSatisfy).swift"; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				010483A92E7A743ABBC5D93A65564B77 /* AutomaticLazyOptional.swift */,
 				6D1B676C934F14D64C184FAAD34983C4 /* DeinitDetector.swift */,
 				F35B73879807143BBD25FC9008212FD9 /* WeakDictKeyWrapper.swift */,
+				D434875A7410B89A809B15909D264536 /* WeakKeyDict.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -604,6 +607,7 @@
 				312BA8F15D7174A4A31CC9CAEB4795B2 /* Sequence (noneSatisfy).swift in Sources */,
 				60593FE7AB730F7891530E5B24D38868 /* Set Combinations.swift in Sources */,
 				A5D4A01EECFC592F08E45287D15F1728 /* WeakDictKeyWrapper.swift in Sources */,
+				A1F7C1FD1F68BE105160F7A03167DC12 /* WeakKeyDict.swift in Sources */,
 				EB0480DA3B43BD9DD50B25DDCC089BB8 /* gcd.swift in Sources */,
 				84218721ABB954D240345F446FA46E81 /* shortPrint.swift in Sources */,
 			);
