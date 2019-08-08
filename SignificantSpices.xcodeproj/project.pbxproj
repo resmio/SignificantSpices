@@ -24,12 +24,14 @@
 		6C9F9CF8354D1E181BC988C532A4BB23 /* Sequence (groupedBy).swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F6AA1BEB3DFD3602B6833F83F1BFFB /* Sequence (groupedBy).swift */; };
 		806776E769CEFDD3DA27EA9B43BDCE56 /* Sequence (forEachWhereDo).swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7BDDF2A4218256578311F76ACBD015 /* Sequence (forEachWhereDo).swift */; };
 		832D9DF5F5B2549C3E4FF207359CD27F /* Element in-not_in Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E3474F79372C16C41036A71944E563 /* Element in-not_in Collection.swift */; };
+		84218721ABB954D240345F446FA46E81 /* shortPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E5CDD5AA539AA26DC41A6A3C025D10 /* shortPrint.swift */; };
 		8D8AE10448B13EEB837D4CFFEA66200B /* Set Combinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CAB7E75F12356144B55651E6DE624E /* Set Combinations.swift */; };
 		9132C472F830130473B715CDDE77D417 /* Sequence (noneSatisfy).swift in Sources */ = {isa = PBXBuildFile; fileRef = DA05DB1CA4F5CF8E02F01EAE94458271 /* Sequence (noneSatisfy).swift */; };
 		9C46C3227EA5D142AED86B86D35C1A27 /* AutomaticLazyOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010483A92E7A743ABBC5D93A65564B77 /* AutomaticLazyOptional.swift */; };
 		A201C5566EBD04E9B8267ABED314702B /* Optional String Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA266B0A911180714D2C958ECE81402 /* Optional String Interpolation.swift */; };
 		A6E506444C9B6E03115CAFE42F0C8222 /* (T) -> Bool Negation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14485D49E147342A7AE6BD90BCE62E26 /* (T) -> Bool Negation.swift */; };
 		A810B2F084DEB5258A1BEE3E71F7FA2A /* Pods_SignificantSpices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4332FB54B157D2121723BA622DC5398F /* Pods_SignificantSpices.framework */; };
+		A8B613A780213864CF792D653F81A65D /* CustomShortStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF2DC07543499D5E20B2CAE1F098C57 /* CustomShortStringConvertible.swift */; };
 		ABB06CD0EAEF0367573B795329B02FDE /* SignificantSpices.h in Headers */ = {isa = PBXBuildFile; fileRef = AB23BE19D6E3B867A63D0979046005EC /* SignificantSpices.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B487EDD5391E3C969BE0A8086220CD23 /* Sequence (firstNfulfilling).swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AB7253074A32D6322D51823F64E024 /* Sequence (firstNfulfilling).swift */; };
 		B807F9801D0BAD6236D7A311E1416BF1 /* gcd.swift in Sources */ = {isa = PBXBuildFile; fileRef = E102AC7E989B17FB2DF4EA944C6AE04E /* gcd.swift */; };
@@ -99,6 +101,8 @@
 		E013684E684B20237AD01BD8EC07F482 /* Pods-SignificantSpices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignificantSpices.release.xcconfig"; path = "Pods/Target Support Files/Pods-SignificantSpices/Pods-SignificantSpices.release.xcconfig"; sourceTree = "<group>"; };
 		E102AC7E989B17FB2DF4EA944C6AE04E /* gcd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gcd.swift; sourceTree = "<group>"; };
 		E237F779B339D37317197384A5A864CF /* SignificantSpicesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignificantSpicesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3E5CDD5AA539AA26DC41A6A3C025D10 /* shortPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shortPrint.swift; sourceTree = "<group>"; };
+		FDF2DC07543499D5E20B2CAE1F098C57 /* CustomShortStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShortStringConvertible.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,7 @@
 				E1468A1A983AF1A9FB362DB8315F6743 /* CustomOperators */,
 				7E8761BFD617245998A4FD9951DF758D /* Extensions */,
 				A5F8D92A527B0868D7DCEDC4FB235286 /* Functions */,
+				7133B3E9A03468C9F9BA82CDC3919D28 /* Protocols */,
 				63E9B1E37A8DA89C837F23FFEEF90F55 /* Types */,
 			);
 			path = SwiftExtensions;
@@ -266,6 +271,14 @@
 			path = Collection;
 			sourceTree = "<group>";
 		};
+		7133B3E9A03468C9F9BA82CDC3919D28 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FDF2DC07543499D5E20B2CAE1F098C57 /* CustomShortStringConvertible.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		77CCF2D8FBD953D415F351CE6BABC3F4 /* ObjectiveCExtensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,6 +365,7 @@
 			isa = PBXGroup;
 			children = (
 				1695AADE547C73501244B90BE8CD0FC9 /* gcd.swift */,
+				E3E5CDD5AA539AA26DC41A6A3C025D10 /* shortPrint.swift */,
 			);
 			path = Functions;
 			sourceTree = "<group>";
@@ -571,6 +585,7 @@
 				9C46C3227EA5D142AED86B86D35C1A27 /* AutomaticLazyOptional.swift in Sources */,
 				EADD65D3C92F10BCFE8BC374ADDB3D78 /* Bool Compound Assignments.swift in Sources */,
 				FC7F9DC48515BB7CE759F05FED112968 /* Collection (safe-subscript).swift in Sources */,
+				A8B613A780213864CF792D653F81A65D /* CustomShortStringConvertible.swift in Sources */,
 				832D9DF5F5B2549C3E4FF207359CD27F /* Element in-not_in Collection.swift in Sources */,
 				0AC993D9746AB3977D211B75947D414F /* Optional (isNilOrEmpty).swift in Sources */,
 				A201C5566EBD04E9B8267ABED314702B /* Optional String Interpolation.swift in Sources */,
@@ -582,6 +597,7 @@
 				312BA8F15D7174A4A31CC9CAEB4795B2 /* Sequence (noneSatisfy).swift in Sources */,
 				60593FE7AB730F7891530E5B24D38868 /* Set Combinations.swift in Sources */,
 				EB0480DA3B43BD9DD50B25DDCC089BB8 /* gcd.swift in Sources */,
+				84218721ABB954D240345F446FA46E81 /* shortPrint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
