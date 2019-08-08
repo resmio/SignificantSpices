@@ -24,7 +24,15 @@ public extension WeakKeyDict {
 
 
 // MARK: Class Declaration
-public class WeakKeyDict<Key: Hashable & AnyObject, Value> {
+public class WeakKeyDict<Key: Hashable & AnyObject, Value>: ExpressibleByDictionaryLiteral {
+    // ExpressibleByDictionaryLiteral Init
+    public required init(dictionaryLiteral elements: (Key, Value)...) {
+        self._dict = elements.mapToDict({ (WeakDictKeyWrapper(key: $0.0, delegate: self), $0.1) })
+    }
+    
+    // Init
+    public init() {}
+    
     // Private Variables
     private var _dict: [WeakDictKeyWrapper<Key>: Value] = [:]
 }
