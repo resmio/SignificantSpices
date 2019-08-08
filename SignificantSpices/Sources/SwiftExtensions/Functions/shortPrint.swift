@@ -12,11 +12,11 @@ import Foundation
 // MARK: // Public
 // MARK: Function Declarations
 public func shortPrint(_ inst: Any?) {
-    print(shortDescription(inst))
+    print(shortDescription(of: inst))
 }
 
 
-public func shortDescription(_ v: Any?) -> String {
+public func shortDescription(of v: Any?) -> String {
     guard let inst: Any = v else {
         return "nil"
     }
