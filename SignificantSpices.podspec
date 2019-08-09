@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "SignificantSpices"
-  s.version      = "0.13.1"
+  s.version      = "0.13.2"
   s.summary      = "An ensemble of extensions to Swift and Foundation that are commonly used in resmio's iOS Apps."
   s.description  = <<-DESC
     This framework contains extensions to Swift (Operators, extensions to native types, missing functions, &ct.)
