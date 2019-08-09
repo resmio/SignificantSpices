@@ -69,7 +69,7 @@ public class WeakDictKeyWrapper<K: Hashable & AnyObject> {
 // MARK: Hashable
 extension WeakDictKeyWrapper: Hashable {
     public func hash(into hasher: inout Hasher) {
-        hasher.combine(self.hashValue)
+        hasher.combine(self._hashValue)
     }
 }
 
