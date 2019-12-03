@@ -367,7 +367,6 @@
 				C952148BBB2362E72B92A6906D6EC7AE /* Pods-SignificantSpicesTests.debug.xcconfig */,
 				BF92CF8FDA925C867BA680BAE86641E7 /* Pods-SignificantSpicesTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -668,6 +667,7 @@
 				INFOPLIST_FILE = SignificantSpices/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 0.13.3;
 				PRODUCT_BUNDLE_IDENTIFIER = resmio.SignificantSpices;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -708,10 +708,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 0.13.2;
+				CURRENT_PROJECT_VERSION = 0.13.3;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DYLIB_COMPATIBILITY_VERSION = 0.13.2;
-				DYLIB_CURRENT_VERSION = 0.13.2;
+				DYLIB_COMPATIBILITY_VERSION = 0.13.3;
+				DYLIB_CURRENT_VERSION = 0.13.3;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -774,10 +774,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 0.13.2;
+				CURRENT_PROJECT_VERSION = 0.13.3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DYLIB_COMPATIBILITY_VERSION = 0.13.2;
-				DYLIB_CURRENT_VERSION = 0.13.2;
+				DYLIB_COMPATIBILITY_VERSION = 0.13.3;
+				DYLIB_CURRENT_VERSION = 0.13.3;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -812,6 +812,7 @@
 				INFOPLIST_FILE = SignificantSpices/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 0.13.3;
 				PRODUCT_BUNDLE_IDENTIFIER = resmio.SignificantSpices;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
