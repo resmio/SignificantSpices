@@ -28,9 +28,6 @@
          location = "group:scripts"
          name = "scripts">
          <FileRef
-            location = "group:post-merge">
-         </FileRef>
-         <FileRef
             location = "group:pre-push">
          </FileRef>
          <FileRef
