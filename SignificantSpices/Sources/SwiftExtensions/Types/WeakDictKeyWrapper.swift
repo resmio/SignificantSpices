@@ -45,7 +45,10 @@ public class WeakDictKeyWrapper<K: Hashable & AnyObject> {
         objc_setAssociatedObject(
             k,
             &self._deinitDetectorAssociationKey,
-            DeinitDetector({ [unowned self] in self.delegate?.disconnected(wrapper: self) }),
+            DeinitDetector({ [weak self] in
+                guard let self = self else { return }
+                self.delegate?.disconnected(wrapper: self)
+            }),
             .OBJC_ASSOCIATION_RETAIN_NONATOMIC
         )
     }
