@@ -45,7 +45,7 @@ public class WeakDictKeyWrapper<K: Hashable & AnyObject> {
         objc_setAssociatedObject(
             k,
             &self._deinitDetectorAssociationKey,
-            DeinitDetector(self.processValueDeinitialization),
+            DeinitDetector({ [unowned self] in self.delegate?.disconnected(wrapper: self) }),
             .OBJC_ASSOCIATION_RETAIN_NONATOMIC
         )
     }
@@ -57,11 +57,6 @@ public class WeakDictKeyWrapper<K: Hashable & AnyObject> {
     // Private Variables
     private var _deinitDetectorAssociationKey: Void?
     private var _hashValue: Int
-    
-    // MARK: DeinitCallbackWrapper Callback
-    var processValueDeinitialization: (() -> Void) {
-        return { self.delegate?.disconnected(wrapper: self) }
-    }
 }
 
 
