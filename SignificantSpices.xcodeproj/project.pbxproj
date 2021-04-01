@@ -31,7 +31,6 @@
 		9C46C3227EA5D142AED86B86D35C1A27 /* AutomaticLazyOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010483A92E7A743ABBC5D93A65564B77 /* AutomaticLazyOptional.swift */; };
 		A1F7C1FD1F68BE105160F7A03167DC12 /* WeakKeyDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = D434875A7410B89A809B15909D264536 /* WeakKeyDict.swift */; };
 		A201C5566EBD04E9B8267ABED314702B /* Optional String Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA266B0A911180714D2C958ECE81402 /* Optional String Interpolation.swift */; };
-		A5D4A01EECFC592F08E45287D15F1728 /* WeakDictKeyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35B73879807143BBD25FC9008212FD9 /* WeakDictKeyWrapper.swift */; };
 		A6E506444C9B6E03115CAFE42F0C8222 /* (T) -> Bool Negation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14485D49E147342A7AE6BD90BCE62E26 /* (T) -> Bool Negation.swift */; };
 		A810B2F084DEB5258A1BEE3E71F7FA2A /* Pods_SignificantSpices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4332FB54B157D2121723BA622DC5398F /* Pods_SignificantSpices.framework */; };
 		A8B613A780213864CF792D653F81A65D /* CustomShortStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF2DC07543499D5E20B2CAE1F098C57 /* CustomShortStringConvertible.swift */; };
@@ -107,7 +106,6 @@
 		E102AC7E989B17FB2DF4EA944C6AE04E /* gcd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gcd.swift; sourceTree = "<group>"; };
 		E237F779B339D37317197384A5A864CF /* SignificantSpicesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignificantSpicesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3E5CDD5AA539AA26DC41A6A3C025D10 /* shortPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shortPrint.swift; sourceTree = "<group>"; };
-		F35B73879807143BBD25FC9008212FD9 /* WeakDictKeyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakDictKeyWrapper.swift; sourceTree = "<group>"; };
 		FDF2DC07543499D5E20B2CAE1F098C57 /* CustomShortStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShortStringConvertible.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -258,7 +256,6 @@
 			children = (
 				010483A92E7A743ABBC5D93A65564B77 /* AutomaticLazyOptional.swift */,
 				6D1B676C934F14D64C184FAAD34983C4 /* DeinitDetector.swift */,
-				F35B73879807143BBD25FC9008212FD9 /* WeakDictKeyWrapper.swift */,
 				D434875A7410B89A809B15909D264536 /* WeakKeyDict.swift */,
 			);
 			path = Types;
@@ -614,7 +611,6 @@
 				E86152AA6120872F9C1CCE78326D69C6 /* Sequence (mapToDict).swift in Sources */,
 				312BA8F15D7174A4A31CC9CAEB4795B2 /* Sequence (noneSatisfy).swift in Sources */,
 				60593FE7AB730F7891530E5B24D38868 /* Set Combinations.swift in Sources */,
-				A5D4A01EECFC592F08E45287D15F1728 /* WeakDictKeyWrapper.swift in Sources */,
 				A1F7C1FD1F68BE105160F7A03167DC12 /* WeakKeyDict.swift in Sources */,
 				EB0480DA3B43BD9DD50B25DDCC089BB8 /* gcd.swift in Sources */,
 				84218721ABB954D240345F446FA46E81 /* shortPrint.swift in Sources */,
