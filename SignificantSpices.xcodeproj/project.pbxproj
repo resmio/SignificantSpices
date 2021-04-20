@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0AC993D9746AB3977D211B75947D414F /* Optional (isNilOrEmpty).swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C4E806CB555E76963854AEFEC2150E /* Optional (isNilOrEmpty).swift */; };
-		0E5A62D34949A21FC76E05E59A3EDB1D /* DeinitDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1B676C934F14D64C184FAAD34983C4 /* DeinitDetector.swift */; };
 		248A3FE78BC86E45DEF63B2C7504AB86 /* AssociationOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29689D1C609A0290FA840B1C47878E3 /* AssociationOwner.swift */; };
 		252FB39434BCA316CFDB0A41645BA6CB /* SignificantSpices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88CC5EAE04F668DD5A2ABA31EA54ACE /* SignificantSpices.framework */; };
 		2DD197F0BA789947446183729F949D82 /* AssociationOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1053F39F81F80CE878683AF137FF5613 /* AssociationOwner.swift */; };
@@ -29,7 +28,6 @@
 		8D8AE10448B13EEB837D4CFFEA66200B /* Set Combinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CAB7E75F12356144B55651E6DE624E /* Set Combinations.swift */; };
 		9132C472F830130473B715CDDE77D417 /* Sequence (noneSatisfy).swift in Sources */ = {isa = PBXBuildFile; fileRef = DA05DB1CA4F5CF8E02F01EAE94458271 /* Sequence (noneSatisfy).swift */; };
 		9C46C3227EA5D142AED86B86D35C1A27 /* AutomaticLazyOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010483A92E7A743ABBC5D93A65564B77 /* AutomaticLazyOptional.swift */; };
-		A1F7C1FD1F68BE105160F7A03167DC12 /* WeakKeyDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = D434875A7410B89A809B15909D264536 /* WeakKeyDict.swift */; };
 		A201C5566EBD04E9B8267ABED314702B /* Optional String Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA266B0A911180714D2C958ECE81402 /* Optional String Interpolation.swift */; };
 		A6E506444C9B6E03115CAFE42F0C8222 /* (T) -> Bool Negation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14485D49E147342A7AE6BD90BCE62E26 /* (T) -> Bool Negation.swift */; };
 		A810B2F084DEB5258A1BEE3E71F7FA2A /* Pods_SignificantSpices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4332FB54B157D2121723BA622DC5398F /* Pods_SignificantSpices.framework */; };
@@ -81,7 +79,6 @@
 		4FCAB712E0C0C5F9467523A7B4806058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57DF21D845A5D8E2BB891546FD2EB8B5 /* Collection (safe-subscript).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection (safe-subscript).swift"; sourceTree = "<group>"; };
 		6AA75BE18162D821FB876D9A7FFA0152 /* Bool Compound Assignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool Compound Assignment.swift"; sourceTree = "<group>"; };
-		6D1B676C934F14D64C184FAAD34983C4 /* DeinitDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeinitDetector.swift; sourceTree = "<group>"; };
 		72C4E806CB555E76963854AEFEC2150E /* Optional (isNilOrEmpty).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional (isNilOrEmpty).swift"; sourceTree = "<group>"; };
 		780566F922290E6A3B77805EB94F7AA5 /* (T) -> Bool Negation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "(T) -> Bool Negation.swift"; sourceTree = "<group>"; };
 		91CAB7E75F12356144B55651E6DE624E /* Set Combinations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Set Combinations.swift"; sourceTree = "<group>"; };
@@ -97,7 +94,6 @@
 		C76B520D32F5569CACA3F72F78B77F27 /* Element in-not_in Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Element in-not_in Collection.swift"; sourceTree = "<group>"; };
 		C7F2A9BFE73C0A940ECA52CE7033D93E /* Sequence (groupedBy).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence (groupedBy).swift"; sourceTree = "<group>"; };
 		C952148BBB2362E72B92A6906D6EC7AE /* Pods-SignificantSpicesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignificantSpicesTests.debug.xcconfig"; path = "Target Support Files/Pods-SignificantSpicesTests/Pods-SignificantSpicesTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D434875A7410B89A809B15909D264536 /* WeakKeyDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakKeyDict.swift; sourceTree = "<group>"; };
 		D93191016B3095E74F67D71EE9BBC9B1 /* Sequence (noneSatisfy).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence (noneSatisfy).swift"; sourceTree = "<group>"; };
 		D9E29ECD2A5624B351D2081F9C23DEBE /* Sequence (forEachWhereDo).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence (forEachWhereDo).swift"; sourceTree = "<group>"; };
 		DA05DB1CA4F5CF8E02F01EAE94458271 /* Sequence (noneSatisfy).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence (noneSatisfy).swift"; sourceTree = "<group>"; };
@@ -255,8 +251,6 @@
 			isa = PBXGroup;
 			children = (
 				010483A92E7A743ABBC5D93A65564B77 /* AutomaticLazyOptional.swift */,
-				6D1B676C934F14D64C184FAAD34983C4 /* DeinitDetector.swift */,
-				D434875A7410B89A809B15909D264536 /* WeakKeyDict.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -600,7 +594,6 @@
 				EADD65D3C92F10BCFE8BC374ADDB3D78 /* Bool Compound Assignments.swift in Sources */,
 				FC7F9DC48515BB7CE759F05FED112968 /* Collection (safe-subscript).swift in Sources */,
 				A8B613A780213864CF792D653F81A65D /* CustomShortStringConvertible.swift in Sources */,
-				0E5A62D34949A21FC76E05E59A3EDB1D /* DeinitDetector.swift in Sources */,
 				832D9DF5F5B2549C3E4FF207359CD27F /* Element in-not_in Collection.swift in Sources */,
 				0AC993D9746AB3977D211B75947D414F /* Optional (isNilOrEmpty).swift in Sources */,
 				A201C5566EBD04E9B8267ABED314702B /* Optional String Interpolation.swift in Sources */,
@@ -611,7 +604,6 @@
 				E86152AA6120872F9C1CCE78326D69C6 /* Sequence (mapToDict).swift in Sources */,
 				312BA8F15D7174A4A31CC9CAEB4795B2 /* Sequence (noneSatisfy).swift in Sources */,
 				60593FE7AB730F7891530E5B24D38868 /* Set Combinations.swift in Sources */,
-				A1F7C1FD1F68BE105160F7A03167DC12 /* WeakKeyDict.swift in Sources */,
 				EB0480DA3B43BD9DD50B25DDCC089BB8 /* gcd.swift in Sources */,
 				84218721ABB954D240345F446FA46E81 /* shortPrint.swift in Sources */,
 			);
