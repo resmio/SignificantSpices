@@ -28,11 +28,11 @@ jobs:
       run: |
         _BUILD_OUTPUT_DIR=$HOME/build_output
         mkdir $_BUILD_OUTPUT_DIR
-        echo "::set-env name=BUILD_OUTPUT_DIR::$_BUILD_OUTPUT_DIR"
+        echo "BUILD_OUTPUT_DIR=$_BUILD_OUTPUT_DIR" >> $GITHUB_ENV
         
         _XCODEBUILD_LOG_DIR=$_BUILD_OUTPUT_DIR/xcodebuild_logs
         mkdir $_XCODEBUILD_LOG_DIR
-        echo "::set-env name=XCODEBUILD_LOG_DIR::$_XCODEBUILD_LOG_DIR"
+        echo "XCODEBUILD_LOG_DIR=$_XCODEBUILD_LOG_DIR" >> $GITHUB_ENV
     
     - name: 'Checkout code'
       uses: actions/checkout@v2
