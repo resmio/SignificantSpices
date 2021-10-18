@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "Jan Nash" => "jan@resmio.com" }
 
-  s.swift_version = '5.2'
+  s.swift_version = '5.5'
   s.ios.deployment_target = "10.0"
 
   s.source       = { 
