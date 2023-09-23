@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "SignificantSpices"
-  s.version      = "0.15.8"
+  s.version      = "0.15.9"
   s.summary      = "An ensemble of extensions to Swift and Foundation that are commonly used in resmio's iOS Apps."
   s.description  = <<-DESC
     This framework contains extensions to Swift (Operators, extensions to native types, missing functions, &ct.)
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.author       = { "Jan Nash" => "jan@resmio.com" }
 
   s.swift_version = '5.5'
-  s.ios.deployment_target = "10.0"
+  s.ios.deployment_target = "11.0"
 
   s.source       = { 
     :git => "https://github.com/resmio/SignificantSpices.git", 
