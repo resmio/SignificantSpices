@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.author       = { "Jan Nash" => "jan@resmio.com" }
 
   s.swift_version = '5.8'
-  s.ios.deployment_target = "12.0"
+  s.ios.deployment_target = "15.0"
 
   s.source       = { 
     :git => "https://github.com/resmio/SignificantSpices.git", 
